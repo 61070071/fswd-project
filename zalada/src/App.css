@@ -49,6 +49,9 @@ body,h1,h2,h4,h5,h6,li,span,input{
 .flex-100{
   flex: 1 1 100%;
 }
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
