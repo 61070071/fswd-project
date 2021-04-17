@@ -10,6 +10,7 @@ import {
 import Home from "./pages/Home/Home.js";
 import Shop from "./pages/Shop/Shop.js";
 import About_Us from "./pages/About_Us/About_Us.js";
+import Cart from "./pages/Cart/Cart.js";
 import NavBar from "./components/NavBar/NavBar.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/shop">
             <Shop />
+          </Route>
+          <Route path="/cart">
+            <Cart />
           </Route>
           <Route path="/">
             <Home />
