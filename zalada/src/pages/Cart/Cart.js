@@ -4,7 +4,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import CartLogo from "../../images/shopping-cart-black-shape.svg"
-import Goods from "../../images/leather_jacket_PNG41.svg"
+import Goods from "../../images/leather_jacket_PNG41.png"
 import Del from "../../images/del-product.svg"
 import Add from "../../images/add-product.svg"
 

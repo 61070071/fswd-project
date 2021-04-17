@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
 .App {
   text-align: center;
 }
@@ -61,6 +61,24 @@ body,h1,h2,h4,h5,h6,li,span,input{
 .px-0-5-v{
   padding: 0vw 0.5vw;
 }
+.px-1-v{
+  padding: 0vw 1vw;
+}
+.px-1-5-v{
+  padding: 0vw 1.5vw;
+}
+.px-2-v{
+  padding: 0vw 2vw;
+}
+.pt-3-v{
+  padding-top: 3vw;
+}
+.mt-0-5-v{
+  margin-top: 0.5vw;
+}
+.ml-1-v{
+  margin-left: 1vw;
+}
 .pr-2-v{
   padding-right: 2vw;
 }
@@ -78,3 +96,4 @@ body,h1,h2,h4,h5,h6,li,span,input{
     transform: rotate(360deg);
   }
 }
+
