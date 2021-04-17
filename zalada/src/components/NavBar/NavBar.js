@@ -3,6 +3,7 @@ import "../../App.css"
 import "./NavBar.css";
 import HomeLogo from "../../images/Zalada.svg"
 import CartLogo from "../../images/shopping-cart-black-shape.svg"
+import SearchLogo from "../../images/search.svg"
 import {
     BrowserRouter as Router,
     Switch,
@@ -33,12 +34,13 @@ function NavBar() {
             </div>
             <div className="d-flex justify-content-end flex-50">
                 <div className="d-flex mr-6-v">
-                    <input type="text" placeholder="Search and hit enter..." />
+                    <img className="search_logo" src={SearchLogo}/>
+                    <input className="mr-1-v pr-2-v" type="text" placeholder="Search and hit enter..." />
                     <Link ><img className="cart_logo" src={CartLogo} /></Link>
                 </div>
                 <div className="d-flex align-items-center">
-                    <span>SIGN IN</span>
-                    <span>SIGN UP</span>
+                    <span id="sign_in_text" className="px-0-5-v">SIGN IN</span>
+                    <span className="px-0-5-v">SIGN UP</span>
                 </div>
             </div>
         </div>
