@@ -8,10 +8,10 @@ import {
   Link
 } from "react-router-dom";
 import Home from "./pages/Home/Home.js";
-import Login from "./pages/Login/Login.js";
-import Register from "./pages/Register/Register.js";
+import Shop from "./pages/Shop/Shop.js";
+import About_Us from "./pages/About_Us/About_Us.js";
 import NavBar from "./components/NavBar/NavBar.js";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
@@ -21,11 +21,11 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/register">
-            <Register />
+          <Route path="/About_Us">
+            <About_Us />
           </Route>
-          <Route path="/login">
-            <Login />
+          <Route path="/Shop">
+            <Shop />
           </Route>
           <Route path="/">
             <Home />

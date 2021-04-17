@@ -1,4 +1,8 @@
 import React from "react";
+import "../../App.css"
+import "./NavBar.css";
+import HomeLogo from "../../images/Zalada.svg"
+import CartLogo from "../../images/shopping-cart-black-shape.svg"
 import {
     BrowserRouter as Router,
     Switch,
@@ -8,19 +12,35 @@ import {
 } from "react-router-dom";
 function NavBar() {
     return (
-        <div>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/register">Register</Link>
-                </li>
-                <li>
-                    <Link to="/login">login</Link>
-                </li>
-            </ul>
-            
+        <div className="bg_navbar d-flex align-items-center mx-auto">
+            <div className="d-flex align-items-center flex-25">
+                <div className="flex-25">
+                    <Link to="/"><img className="home_logo" src={HomeLogo} /></Link>
+                </div>
+                <div className="align-items-center flex-100">
+                    <ul className="d-flex align-items-center justify-content-evenly">
+                        <li>
+                            <Link to="/">HOME</Link>
+                        </li>
+                        <li>
+                            <Link to="/shop">SHOP</Link>
+                        </li>
+                        <li>
+                            <Link to="/about us">ABOUT US</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className="d-flex justify-content-end flex-50">
+                <div>
+                    <input type="text" placeholder="Search and hit enter..." />
+                    <Link ><img className="cart_logo" src={CartLogo} /></Link>
+                </div>
+                <div className="d-flex align-items-center">
+                    <span>SIGN IN</span>
+                    <span>SIGN UP</span>
+                </div>
+            </div>
         </div>
 
     );

@@ -1,0 +1,17 @@
+ul{
+    margin: 0 !important;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none !important;
+    color: #504C4C;
+}
+.home_logo{
+    height: 4vw;
+}
+.bg_navbar{
+    width: 90%;
+    background: bisque;
+}
