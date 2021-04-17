@@ -4,8 +4,8 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 function Home() {
   return (
-    <div>
-      <h2>Home</h2>
+    <div className="container test">
+      <h2 >Home</h2>
       <Carousel>
         <Carousel.Item interval={1000}>
           <img
