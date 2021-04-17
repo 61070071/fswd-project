@@ -1,0 +1,26 @@
+.login{
+    height: 100%;
+    width: 100%;
+}
+.login_face{
+    background-color: rgb(255, 255, 255);
+    width: 25vw;
+    height: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.login_btn{
+    width: 60%!important;
+    background-color: #527022;
+    border: none;
+}
+.login_btn:hover{
+    background-color: #7fa344;
+}
+.likable{
+    font-style: bold!important; 
+    color: #527022 !important;
+    cursor: pointer;
+    font-size: 0.8rem !important;
+}
