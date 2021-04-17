@@ -14,6 +14,7 @@ import Cart from "./pages/Cart/Cart.js";
 import NavBar from "./components/NavBar/NavBar.js";
 import Login from "./pages/Login/Login.js";
 import Register from "./pages/Register/Register.js";
+import Account_Info from "./pages/Account_Info/Account_Info.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route path="/Register">
             <Register />
+          </Route>
+          <Route path="/account_info">
+            <Account_Info />
           </Route>
         </Switch>
       </div>
