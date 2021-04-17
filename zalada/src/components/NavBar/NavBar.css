@@ -8,10 +8,27 @@ li a{
     text-decoration: none !important;
     color: #504C4C;
 }
+input{
+    border:none;
+    border-bottom: 1px solid #707070;
+    width: 15vw;
+    
+}
+input::placeholder{
+    text-align: right;
+}
 .home_logo{
     height: 4vw;
 }
 .bg_navbar{
     width: 90%;
-    background: bisque;
+}
+.search_logo{
+    position: relative;
+    left: 80%;
+    top: 15%;
+    height: 1.1vw;
+}
+#sign_in_text{
+    border-right: 1px solid #707070;
 }
