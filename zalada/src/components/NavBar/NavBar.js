@@ -32,7 +32,7 @@ function NavBar() {
                 </div>
             </div>
             <div className="d-flex justify-content-end flex-50">
-                <div>
+                <div className="d-flex mr-6-v">
                     <input type="text" placeholder="Search and hit enter..." />
                     <Link ><img className="cart_logo" src={CartLogo} /></Link>
                 </div>
