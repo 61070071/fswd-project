@@ -14,9 +14,9 @@ input{
     width: 15vw;
     
 }
-input::placeholder{
+/* input::placeholder{
     text-align: right;
-}
+} */
 .home_logo{
     height: 4vw;
 }

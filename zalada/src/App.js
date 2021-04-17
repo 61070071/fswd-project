@@ -12,6 +12,8 @@ import Shop from "./pages/Shop/Shop.js";
 import About_Us from "./pages/About_Us/About_Us.js";
 import Cart from "./pages/Cart/Cart.js";
 import NavBar from "./components/NavBar/NavBar.js";
+import Login from "./pages/Login/Login.js";
+import Register from "./pages/Register/Register.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -31,8 +33,14 @@ function App() {
           <Route path="/cart">
             <Cart />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/Register">
+            <Register />
           </Route>
         </Switch>
       </div>
