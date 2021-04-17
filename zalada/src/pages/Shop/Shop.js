@@ -64,7 +64,7 @@ function Shop() {
       <p className="color-main">HOME &gt; SHOP</p>
       <div className="w-100"> <img className="w-100" src={Img_Shop} /> </div>
       <div className="d-flex w-100">
-        <div className="flex-25 bg-success">
+        <div className="flex-25">
           <div className="d-flex w-100 align-items-center px-1-5-v pt-3-v flex-wrap">
             <div className="d-flex justify-content-start flex-50">
               <span>FILTER</span>
