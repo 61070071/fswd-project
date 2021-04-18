@@ -1,6 +1,6 @@
 import "./Home.css";
-import React, { useState } from "react";
-import { Carousel, Button, Modal, Card } from "react-bootstrap";
+import React from "react";
+import { Carousel, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import C1img from "../../images/carousel/crs_1.png";
 import C2img from "../../images/carousel/crs_2.png";
@@ -8,25 +8,25 @@ import C3img from "../../images/carousel/crs_3.png";
 import C4img from "../../images/carousel/crs_4.png";
 import TestImg from "../../images/leather_jacket_PNG41.png";
 import PromotionProduct from "../../components/PromotionProduct/PromotionProduct";
-function Card_Carousal(props) {
-  return (
-    <Card style={{ width: "16rem", marginLeft: "2%", marginRight: "2%" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Button variant="primary">Go somewhere</Button>
-      <Card.Body>
-        <Card.Title>{props.product}</Card.Title>
-        <Card.Text>
-          1553 ฿
-        </Card.Text>
+// function Card_Carousal(props) {
+//   return (
+//     <Card style={{ width: "16rem", marginLeft: "2%", marginRight: "2%" }}>
+//       <Card.Img variant="top" src="holder.js/100px180" />
+//       <Button variant="primary">Go somewhere</Button>
+//       <Card.Body>
+//         <Card.Title>{props.product}</Card.Title>
+//         <Card.Text>
+//           1553 ฿
+//         </Card.Text>
 
-      </Card.Body>
-    </Card>
-  );
-}
+//       </Card.Body>
+//     </Card>
+//   );
+// }
 function Home() {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const [show, setShow] = useState(false);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
   const products = [{
     img: TestImg,
     promotion: "30% WHEN BUY 2",
