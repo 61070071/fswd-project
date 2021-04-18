@@ -1,3 +1,24 @@
-/* body{
-    background: #F2F2F2;
-} */
+.box-details{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shirt{
+    padding: 1vw 1.5vw;
+    border: 0.1vw solid #D6D6D6;
+    background-color: #FDFDFD;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.details_price{
+    font-size: 2vw;
+}
+.details_sale{
+    font-size: 1.5vw;
+    text-decoration: line-through;
+    color: #504C4C;
+}
+.text_status{
+    color: #259119;
+}
+.text_desc{
+    color: #504C4C;
+    font-size: 1vw;
+}
