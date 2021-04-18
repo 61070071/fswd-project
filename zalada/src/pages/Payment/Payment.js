@@ -7,11 +7,11 @@ import mastercard from "../../images/mastercard.svg"
 import visa from "../../images/visa.svg"
 import paypal from "../../images/paypal.svg"
 import delivery from "../../images/delivery.svg"
-import Goods from "../../images/leather_jacket_PNG41.png"
-import Del from "../../images/del-product.svg"
-import Add from "../../images/add-product.svg"
+// import Goods from "../../images/leather_jacket_PNG41.png"
+// import Del from "../../images/del-product.svg"
+// import Add from "../../images/add-product.svg"
 
-import Deliver_goods from "../../components/Payment/Payment.js"
+import DeliverGoods from "../../components/Payment/Payment.js"
 
 function Payment() {
   return (
@@ -22,19 +22,19 @@ function Payment() {
 
                 <div className="d-flex justify-content-center">
                     <div className="choose_to_pay d-flex flex-column justify-content-center align-content-between text-center m-3">
-                        <img src={mastercard}></img>
+                        <img alt="" src={mastercard}></img>
                         <p className="m-0">mastercard</p>
                     </div>
                     <div className="choose_to_pay d-flex flex-column justify-content-center align-content-between text-center m-3">
-                        <img src={visa}></img>
+                        <img alt="" src={visa}></img>
                         <p className="m-0">visa</p>
                     </div>
                     <div className="choose_to_pay d-flex flex-column justify-content-center align-content-between text-center m-3">
-                        <img src={paypal}></img>
+                        <img alt="" src={paypal}></img>
                         <p className="m-0">paypal</p>
                     </div>
                     <div className="choose_to_pay d-flex flex-column justify-content-center align-content-between text-center m-3">
-                        <img src={delivery}></img>
+                        <img alt="" src={delivery}></img>
                         <p className="m-0">delivery</p>
                     </div>
                 </div>
@@ -83,9 +83,9 @@ function Payment() {
                 <hr></hr>
 
                 {/* component */}
-                <Deliver_goods/>
-                <Deliver_goods/>
-                <Deliver_goods/>
+                <DeliverGoods/>
+                <DeliverGoods/>
+                <DeliverGoods/>
 
                 <hr></hr>
                 <div className="d-flex justify-content-between">

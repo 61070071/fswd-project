@@ -37,10 +37,18 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .color-second{
   color: #527022;
 }
+.color-third{
+  color: #504C4C;
+}
+.color-white{
+  color: white;
+}
 .bg-main{
   background: #F2F2F2;
 }
-
+.bg-second{
+  background: #527022;
+}
 .bg-white{
   background: white;
 }
@@ -67,6 +75,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .w-20{
   width: 20%;
+}
+.w-30{
+  width: 30%;
 }
 .w-80{
   width: 80%;

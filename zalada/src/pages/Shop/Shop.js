@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import "../../App.css"
 import "./Shop.css";
 import Img_Shop from "../../images/Component_3.svg"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useLocation
-} from "react-router-dom";
 import PromotionProduct from "../../components/PromotionProduct/PromotionProduct";
 import TestImg from "../../images/leather_jacket_PNG41.png";
 function Shop() {
@@ -62,7 +55,7 @@ function Shop() {
   return (
     <div className="page_shop mx-auto">
       <p className="color-main">HOME &gt; SHOP</p>
-      <div className="w-100"> <img className="w-100" src={Img_Shop} /> </div>
+      <div className="w-100"> <img alt="" className="w-100" src={Img_Shop} /> </div>
       <div className="d-flex w-100">
         <div className="flex-25">
           <div className="d-flex w-100 align-items-center px-1-5-v pt-3-v flex-wrap">

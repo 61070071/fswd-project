@@ -4,11 +4,11 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import CartLogo from "../../images/shopping-cart-black-shape.svg"
-import Goods from "../../images/leather_jacket_PNG41.png"
-import Del from "../../images/del-product.svg"
-import Add from "../../images/add-product.svg"
+// import Goods from "../../images/leather_jacket_PNG41.png"
+// import Del from "../../images/del-product.svg"
+// import Add from "../../images/add-product.svg"
 
-import Item_goods from "../../components/Cart/Cart.js"
+import ItemGoods from "../../components/Cart/Cart.js"
 function Cart() {
   return (
     <div className="container">
@@ -16,11 +16,11 @@ function Cart() {
             <div className="col-10 mt-5 p-0">
                 <div className="d-flex align-items-center">
                     <p className="cart_header">CART</p>
-                    <img src={CartLogo} className="img_cart ml-3"></img>
+                    <img alt="" src={CartLogo} className="img_cart ml-3"></img>
                 </div>
                 <div className="cart_shop mt-2 d-flex">
                     {/* component */}
-                    <Item_goods/>
+                    <ItemGoods/>
 
                     {/* total price */}
                     <hr className="line mt-5 mb-2"></hr>

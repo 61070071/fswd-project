@@ -2,10 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
 import HomeLogo from "../../images/Zalada.svg"
-import {
-    BrowserRouter as Router,
-    Link,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Login() {
@@ -13,7 +10,7 @@ function Login() {
         <div className="login d-flex justify-content-center mt-5">
             <div className="login_face d-flex flex-column align-items-center">
                 <div className="mt-5">
-                    <Link to="/"><img className="home_logo" src={HomeLogo} /></Link>
+                    <Link to="/"><img alt="" className="home_logo" src={HomeLogo} /></Link>
                 </div>
                 <div className="mt-5">
                     <div className="">
@@ -22,10 +19,10 @@ function Login() {
                     <div className="mt-5">
                         <input className="" type="text" placeholder="PASSWORD" />
                     </div>
-                    <a className="d-flex justify-content-end likable forgot">FORGOT PASSWORD ?</a>
+                    <Link to="#" className="d-flex justify-content-end likable forgot">FORGOT PASSWORD ?</Link>
                 </div>
                 <button type="button" class="btn btn-primary btn-lg mt-5 login_btn" >LOGIN</button>
-                <span className="mt-1">or you haven't an account yet ? <a className="likable">Register</a></span>
+                <span className="mt-1">or you haven't an account yet ? <Link to="#" className="likable">Register</Link></span>
             </div>
         </div>
     )

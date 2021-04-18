@@ -3,7 +3,7 @@ import React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import CartLogo from "../../images/shopping-cart-black-shape.svg"
+// import CartLogo from "../../images/shopping-cart-black-shape.svg"
 
 function Account_Info() {
   return (

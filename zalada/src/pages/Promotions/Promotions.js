@@ -3,13 +3,6 @@ import "../../App.css"
 import "./Promotions.css";
 import Img_Promotions from "../../images/Group_429.svg"
 import Img_Sale from "../../images/585680404f6ae202fedf26f0.svg"
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useLocation
-} from "react-router-dom";
 import ProductSale from "../../components/Products_Sale/Products_Sale";
 import PromotionProduct from "../../components/PromotionProduct/PromotionProduct"
 function Promotion() {
@@ -55,7 +48,7 @@ function Promotion() {
         <div className="w-90 mx-auto">
             <p className="color-main mt-0-5-v">HOME &gt; PROMOTIONS</p>
             <div className="w-100">
-                <img className="w-100" src={Img_Promotions} />
+                <img alt="" className="w-100" src={Img_Promotions} />
             </div>
             <div className="w-90 mt-2-5-v d-flex justify-content-center flex-wrap mx-auto">
                 <span className="mx-auto">HOT DEAL</span>
