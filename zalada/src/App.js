@@ -17,6 +17,7 @@ import Register from "./pages/Register/Register.js";
 import Promotions from "./pages/Promotions/Promotions.js";
 import Account_Info from "./pages/Account_Info/Account_Info.js";
 import Details from "./pages/Details/Details"
+import Payment from "./pages/Payment/Payment.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
           </Route>
           <Route path="/products/details">
             <Details />
+          </Route>
+          <Route path="/payment">
+            <Payment />
           </Route>
         </Switch>
       </div>
