@@ -34,6 +34,12 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .color-main{
   color: #504C4C;
 }
+.bg-main{
+  background: #F2F2F2;
+}
+.bg-white{
+  background: white;
+}
 .flex-5{
   flex: 1 1 5%;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../App.css"
 import "./Promotions.css";
 import Img_Promotions from "../../images/Group_429.svg"
