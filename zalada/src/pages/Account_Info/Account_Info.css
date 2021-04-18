@@ -1,0 +1,29 @@
+.bg_test {
+    background-color: teal;
+    height: 60vh;
+}
+
+.form_info {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 6px 0 rgb(0, 0, 0, 0.16);
+    padding: 2vw 5vw 2vw 5vw;
+}
+
+.dropdown_address {
+    width: 12.5vw;
+    height: 2.5vw;
+    background-image: linear-gradient( #FFFFFF, #d8d8d8);
+    border: #DEDEDE 1px solid;
+    border-radius: 4px;
+    margin: -3% 0 0 0;
+}
+
+.btn_accountInfo {
+    height: 3.5vw;
+    color: white;
+    background-color: #667B45;
+    box-shadow: 0 3px 6px 0 rgb(0, 0, 0, 0.16);
+    font-weight: bold;
+    border-radius: 0;
+}
