@@ -6,6 +6,8 @@ import C1img from "../../images/carousel/crs_1.png";
 import C2img from "../../images/carousel/crs_2.png";
 import C3img from "../../images/carousel/crs_3.png";
 import C4img from "../../images/carousel/crs_4.png";
+import TestImg from "../../images/leather_jacket_PNG41.png";
+import PromotionProduct from "../../components/PromotionProduct/PromotionProduct";
 function Card_Carousal(props) {
   return (
     <Card style={{ width: "16rem", marginLeft: "2%", marginRight: "2%" }}>
@@ -25,6 +27,89 @@ function Home() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const products = [{
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET1",
+    price: "1,553 ฿",
+  }, {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET2",
+    price: "1,553 ฿",
+  }, {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET3",
+    price: "1,553 ฿",
+  }, {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET4",
+    price: "1,553 ฿",
+  }, {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET5",
+    price: "1,553 ฿",
+  }, {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET6",
+    price: "1,553 ฿",
+  },
+  {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET BLACK7",
+    price: "1,450 ฿",
+  },
+  {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET RED8",
+    price: "1,500 ฿",
+  },
+  {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET GREEN9",
+    price: "1,650 ฿",
+  },
+  {
+    img: TestImg,
+    promotion: "30% WHEN BUY 2",
+    name: "JEANS JACKET BLUE10",
+    price: "1,850 ฿",
+  }]
+  const count_product = products.length;
+  let arr_product_items = []
+  let arr_products = []
+
+  for (let i = 0; i < count_product / 4; i++) {
+    for (let j = 0; j < 4; j++) {
+      let element
+      if (products[(i * 4) + j] == null) {
+        element = <div className="w-20"><PromotionProduct data={products[j]} /></div>
+      } else {
+        element = <div className="w-20"><PromotionProduct data={products[(i * 4) + j]} /></div>
+      }
+      arr_product_items.push(element)
+    }
+
+    const element = <Carousel.Item className="d-flex flex-row justify-content-center">
+      {
+        arr_product_items.map(function (element, index) {
+          return element
+        })
+      }
+    </Carousel.Item>;
+
+    arr_products.push(element)
+    arr_product_items = []
+  }
+
+  // console.log(arr_products)
   return (
 
     <div className="mx-auto w-90">
@@ -77,26 +162,40 @@ function Home() {
           </div>
 
           <div id="right_area" className="d-flex align-items-center right_area">
-              <Carousel fade id="crs" className="sub-carousel">
-                <Carousel.Item className="d-flex flex-row justify-content-center">
-                  <Card_Carousal product="Jacket 1" />
-                  <Card_Carousal product="Jacket 2" />
-                  <Card_Carousal product="Jacket 3" />
-                </Carousel.Item>
-                <Carousel.Item className="d-flex flex-row justify-content-center">
-                  <Card_Carousal product="Jacket 4" />
-                  <Card_Carousal product="Jacket 5" />
-                  <Card_Carousal product="Jacket 6" />
-                </Carousel.Item>
-                <Carousel.Item className="d-flex flex-row justify-content-center">
-                  <Card_Carousal product="Jacket 7" />
-                  <Card_Carousal product="Jacket 8" />
-                  <Card_Carousal product="Jacket 9" />
-                </Carousel.Item>
-              </Carousel>
-            </div>
+            <Carousel fade id="crs" className="sub-carousel">
+              {
+                arr_products.map(function (element, index) {
+                  return element
+                })
+              }
+            </Carousel>
+          </div>
 
         </div>
+
+        {/* <div className="d-flex flex-100 flex-wrap">
+          {
+            products.map(function (element, index) {
+              return <div className="w-25">
+                <PromotionProduct data={element} />
+              </div>
+            })
+          }
+
+        </div> */}
+        <div className="w-90 mt-1-v d-flex justify-content-start flex-wrap mx-auto">
+          <span className="mx-auto">MORE PRODUCTS</span>
+          <div className="w-100 d-flex flex-wrap">
+            {
+              products.map(function (element, index) {
+                return <div className="w-20">
+                  <PromotionProduct data={element} />
+                </div>
+              })
+            }
+          </div>
+        </div>
+
       </div>
     </div>
   );
