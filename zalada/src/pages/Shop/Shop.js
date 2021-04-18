@@ -136,7 +136,9 @@ function Shop() {
         <div className="d-flex flex-75 flex-wrap">
           {
             products.map(function (element, index) {
-              return <PromotionProduct data={element} />
+              return <div className="w-25">
+                <PromotionProduct data={element} />
+              </div>
             })
           }
 
