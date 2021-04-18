@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68.535" height="57.721" viewBox="0 0 68.535 57.721">
+  <g id="Group_430" data-name="Group 430" transform="translate(-980 -271.62)">
+    <path id="Icon_awesome-hand-holding" data-name="Icon awesome-hand-holding" d="M67.258,23.464a3.938,3.938,0,0,0-5.068,0L51.2,32.256a7.575,7.575,0,0,1-4.759,1.666H32.362a1.9,1.9,0,0,1,0-3.807h9.316A3.961,3.961,0,0,0,45.64,26.95a3.812,3.812,0,0,0-3.76-4.45H22.844a14,14,0,0,0-8.816,3.129L8.5,30.115H1.9a1.909,1.909,0,0,0-1.9,1.9V43.44a1.909,1.909,0,0,0,1.9,1.9H44.355a7.624,7.624,0,0,0,4.759-1.666L67.1,29.282A3.805,3.805,0,0,0,67.258,23.464Z" transform="translate(980 283.997)" fill="#858585"/>
+    <g id="Icon_feather-package" data-name="Icon feather-package" transform="translate(1001.965 272.659)">
+      <path id="Path_414" data-name="Path 414" d="M23.553,13.409,11.25,6.315" transform="translate(-5.099 -3.297)" fill="none" stroke="#757575" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_415" data-name="Path 415" d="M29.105,22.138V11.2a2.734,2.734,0,0,0-1.367-2.365L18.169,3.369a2.734,2.734,0,0,0-2.734,0L5.867,8.837A2.734,2.734,0,0,0,4.5,11.2V22.138A2.734,2.734,0,0,0,5.867,24.5l9.569,5.468a2.734,2.734,0,0,0,2.734,0L27.738,24.5A2.734,2.734,0,0,0,29.105,22.138Z" transform="translate(-4.5 -3.003)" fill="none" stroke="#757575" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_416" data-name="Path 416" d="M4.905,10.44l11.933,6.9,11.933-6.9" transform="translate(-4.536 -3.663)" fill="none" stroke="#757575" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_417" data-name="Path 417" d="M18,31.779V18" transform="translate(-5.697 -4.333)" fill="none" stroke="#757575" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
