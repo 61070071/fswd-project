@@ -17,8 +17,12 @@
 }
 .text_name{
     margin-top: 0.5vw;
+    color: #000000;
 }
 .text_price{
     font-size: 2vw;
     margin-top: 0vw;
+}
+a:hover{
+    text-decoration: none;
 }

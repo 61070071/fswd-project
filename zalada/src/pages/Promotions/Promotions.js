@@ -8,7 +8,7 @@ import PromotionProduct from "../../components/PromotionProduct/PromotionProduct
 function Promotion() {
     const ProSale = [{
         img: Img_Sale,
-        promotion: "HOT SALE !",
+        promotion: "BUY 2 FREE 1",
         name: "JEANS JACKET",
         price: "2,807 ฿",
         price_pro: "1,752 ฿"
@@ -16,14 +16,14 @@ function Promotion() {
     },
     {
         img: Img_Sale,
-        promotion: "HOT SALE !",
+        promotion: "BUY 2 FREE 1",
         name: "JEANS JACKET BLACK",
         price: "2,702 ฿",
         price_pro: "1,450 ฿"
     },
     {
         img: Img_Sale,
-        promotion: "HOT SALE !",
+        promotion: "BUY 2 FREE 1",
         name: "JEANS JACKET RED",
         price: "2,350 ฿",
         price_pro: "1,500 ฿"
@@ -31,14 +31,14 @@ function Promotion() {
     },
     {
         img: Img_Sale,
-        promotion: "HOT SALE !",
+        promotion: "BUY 2 FREE 1",
         name: "JEANS JACKET GREEN",
         price: "2,570 ฿",
         price_pro: "1,650 ฿"
     },
     {
         img: Img_Sale,
-        promotion: "HOT SALE !",
+        promotion: "BUY 2 FREE 1",
         name: "JEANS JACKET BLUE",
         price: "2,621 ฿",
         price_pro: "1,850 ฿"
