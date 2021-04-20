@@ -18,7 +18,8 @@
     width: 100vw;
 }
 .left-area{
-    /* background-color: aquamarine; */
+    /* background-color: blue; */
+    line-height: 1.6;
 }
 .right_area{
     /* background-color:blue; */
@@ -32,4 +33,5 @@
    }
    .sub-carousel{
        /* width: 100%; */
+       /* background-color: aquamarine; */
    }

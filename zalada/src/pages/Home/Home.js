@@ -155,13 +155,13 @@ function Home() {
         </div>
 
 
-        <div className="d-flex flex-row">
-          <div id="left_area" className="left-area d-flex flex-column flex-50">
-            <h1>TEST</h1>
-            <Button className="btn-smyar" variant="outline-primary">CHECK OUT =></Button>
+        <div className="d-flex flex-row ">
+          <div id="left_area" className="left-area d-flex flex-column flex-50 align-items-center justify-content-center">
+            <h3>TIME PROMOTIONS</h3>
+            <Button className="btn-smyar" variant="outline-dark">CHECK OUT -></Button>
           </div>
 
-          <div id="right_area" className="d-flex align-items-center right_area">
+          <div id="right_area" className="d-flex align-items-center right_area flex-100">
             <Carousel fade id="crs" className="sub-carousel">
               {
                 arr_products.map(function (element, index) {
@@ -184,7 +184,7 @@ function Home() {
 
         </div> */}
         <div className="w-90 mt-1-v d-flex justify-content-start flex-wrap mx-auto">
-          <span className="mx-auto">MORE PRODUCTS</span>
+          <h4 className="mr-auto">MORE PRODUCTS</h4>
           <div className="w-100 d-flex flex-wrap">
             {
               products.map(function (element, index) {
@@ -194,7 +194,13 @@ function Home() {
               })
             }
           </div>
+          
         </div>
+
+        <div className="w-90 mt-1-v d-flex justify-content-center flex-wrap mx-auto my-5">
+          <Button className="btn-smyar" variant="outline-dark">DISCOVER MORE</Button>
+        </div>
+
 
       </div>
     </div>
