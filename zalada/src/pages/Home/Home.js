@@ -1,6 +1,7 @@
-import "./Home.css";
 import React from "react";
+import { Link } from "react-router-dom";
 import { Carousel, Button } from "react-bootstrap";
+import "./Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import C1img from "../../images/carousel/crs_1.png";
 import C2img from "../../images/carousel/crs_2.png";
@@ -8,25 +9,9 @@ import C3img from "../../images/carousel/crs_3.png";
 import C4img from "../../images/carousel/crs_4.png";
 import TestImg from "../../images/leather_jacket_PNG41.png";
 import PromotionProduct from "../../components/PromotionProduct/PromotionProduct";
-// function Card_Carousal(props) {
-//   return (
-//     <Card style={{ width: "16rem", marginLeft: "2%", marginRight: "2%" }}>
-//       <Card.Img variant="top" src="holder.js/100px180" />
-//       <Button variant="primary">Go somewhere</Button>
-//       <Card.Body>
-//         <Card.Title>{props.product}</Card.Title>
-//         <Card.Text>
-//           1553 ฿
-//         </Card.Text>
 
-//       </Card.Body>
-//     </Card>
-//   );
-// }
+
 function Home() {
-  // const [show, setShow] = useState(false);
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
   const products = [{
     img: TestImg,
     promotion: "30% WHEN BUY 2",
@@ -97,7 +82,7 @@ function Home() {
       arr_product_items.push(element)
     }
 
-    const element = <Carousel.Item className="d-flex flex-row justify-content-center">
+    const element = <Carousel.Item className="d-flex flex-row justify-content-center" interval={6000}>
       {
         arr_product_items.map(function (element, index) {
           return element
@@ -115,40 +100,49 @@ function Home() {
     <div className="mx-auto w-90">
       <div className="carousel d-flex justify-content-center flex-column">
         <div><Carousel id="crs">
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={4000}>
             <img className="d-block w-100" src={C1img} alt="First slide" />
             <Carousel.Caption className="crs_desc">
               <h3>DISCOUNT UP TO 30%</h3>
               <p>MORE AND MORE PROMOTION</p>
-              <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
+              <Link to="/products">
+                <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
+              </Link>
+
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={500}>
+          <Carousel.Item interval={4000}>
             <img className="d-block w-100" src={C2img} alt="Second slide" />
             <Carousel.Caption className="crs_desc">
               <h3>LOOKING FOR ELECTRIC STUFF?</h3>
               <p>SAY NO MORE, FAM</p>
-              <Button variant="outline-light">DISCOVER NOW</Button>
+              <Link to="/products">
+                <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={500}>
+          <Carousel.Item interval={4000}>
             <img className="d-block w-100" src={C3img} alt="Third slide" />
             <Carousel.Caption className="crs_desc">
               <h3>STOCKING UP THESE FOOD</h3>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
-              <Button variant="outline-light">DISCOVER NOW</Button>
+              <Link to="/products">
+                <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item interval={4000}>
             <img className="d-block w-100" src={C4img} alt="Fourth slide" />
             <Carousel.Caption className="crs_desc">
               <h3>PACKING YOUR STUFF</h3>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
-              <Button variant="outline-light">DISCOVER NOW</Button>
+              <Link to="/products">
+                <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -158,7 +152,8 @@ function Home() {
         <div className="d-flex flex-row ">
           <div id="left_area" className="left-area d-flex flex-column flex-50 align-items-center justify-content-center">
             <h3>TIME PROMOTIONS</h3>
-            <Button className="btn-smyar" variant="outline-dark">CHECK OUT -></Button>
+            <Link to="/promotions"><Button className="btn-smyar" variant="outline-dark">CHECK OUT -></Button></Link>
+
           </div>
 
           <div id="right_area" className="d-flex align-items-center right_area flex-100">
@@ -194,11 +189,13 @@ function Home() {
               })
             }
           </div>
-          
+
         </div>
 
         <div className="w-90 mt-1-v d-flex justify-content-center flex-wrap mx-auto my-5">
-          <Button className="btn-smyar" variant="outline-dark">DISCOVER MORE</Button>
+          <Link to="/products">
+            <Button className="btn-smyar" variant="outline-dark">DISCOVER MORE</Button>
+          </Link>
         </div>
 
 

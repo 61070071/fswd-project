@@ -30,7 +30,7 @@ function NavBar() {
                 <div className="d-flex mr-6-v">
                     <img alt="" className="search_logo" src={SearchLogo} />
                     <input className="mr-1-v pr-2-v" type="text" placeholder="Search and hit enter..." />
-                    <Link ><img alt="" className="cart_logo" src={CartLogo} /></Link>
+                    <Link to="/cart"><img alt="" className="cart_logo" src={CartLogo} /></Link>
                 </div>
                 <div className="d-flex align-items-center">
                     <span id="sign_in_text" className="px-0-5-v">SIGN IN</span>
