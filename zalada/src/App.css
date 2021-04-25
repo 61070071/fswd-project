@@ -24,7 +24,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+html, body
+{
+    height: 100%;
+}
 .App-link {
   color: #61dafb;
 }
@@ -72,6 +75,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .w-10{
   width: 10%;
+}
+.w-15{
+  width: 15%;
 }
 .w-20{
   width: 20%;
