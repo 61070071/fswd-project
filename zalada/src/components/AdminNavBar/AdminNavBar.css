@@ -7,3 +7,26 @@
     background: #FFFFFF;
     opacity: 30%;
 }
+.space-select-page{
+    padding: 0.5vw 1vw;
+}
+.space-select-page span{
+    font-size: 1.2vw;
+}
+.box-admin-login img{
+    border-radius: 100%;
+    padding: 0.5vw 0vw;
+    height: 3.3vw;
+}
+.box-name-admin{
+    margin: 0.4vw 0vw 0.4vw -1vw;
+    width: 30;
+}
+.box-name-admin span{
+    font-size: 0.8vw;
+}
+.box-name-admin button{
+    margin-top: 0.2vw;
+    font-size: 0.6vw;
+    border-radius: 25px;
+}
