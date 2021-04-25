@@ -1,0 +1,20 @@
+.order_dashboard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5%;
+    padding: 2%;
+}
+
+.data_order {
+    background-image: linear-gradient(#FBFBFB, #F2F2F2);
+    height: 7vh;
+    border-radius: 6px;
+}
+
+.select_order{
+    height: 4vh;
+    width: 5vw;
+}
+
+.img_del {
+    width: 2.5vw;
+}
