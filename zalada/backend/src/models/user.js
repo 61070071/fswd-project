@@ -6,10 +6,25 @@ const { Schema } = mongoose
 
 const UserSchema = new Schema({
   username: {
-    type: String, required: true, index: true, unique: true,
+    type: String,
+    required: true,
+    index: true,
+    unique: true,
   },
-  name: { type: String, required: true },
-  password: { type: String, require: true, bcrypt: true },
+  name: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    require: true,
+    bcrypt: true
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
 })
 UserSchema.plugin(bcrypt)
 

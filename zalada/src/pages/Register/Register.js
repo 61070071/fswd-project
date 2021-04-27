@@ -9,7 +9,7 @@ function Register() {
     return (
 
         <div className="register d-flex justify-content-center mt-5">
-            <div className="register_face d-flex flex-column align-items-center">
+            <div className="register_face d-flex flex-column align-items-center p-4">
                 <div className="mt-5">
                     <Link to="/"><img alt="" className="home_logo" src={HomeLogo} /></Link>
                 </div>
@@ -18,7 +18,7 @@ function Register() {
                         <input className=" " type="text" placeholder="USERNAME" />
                     </div>
                     <div className="mt-5 d-flex justify-content-center">
-                        <input className="" type="text" placeholder="PASSWORD" />
+                        <input className="" type="text" placeholder="EMAIL" />
                     </div>
                     <div className="mt-5 d-flex justify-content-center">
                         <input className="" type="text" placeholder="CONFIRM PASSWORD" />
