@@ -19,6 +19,7 @@ import Details from "./pages/Details/Details"
 import Payment from "./pages/Payment/Payment.js"
 import Admin from "./pages/Admin/DashBoard/Admin"
 import AdminOrder from "./pages/Admin/Order/Order.js"
+import AdminProduct from "./pages/Admin/Product/Produst";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -64,6 +65,9 @@ function App() {
           </Route>
           <Route path="/admin/orders">
             <AdminOrder />
+          </Route>
+          <Route path="/product">
+            <AdminProduct />
           </Route>
         </Switch>
       </div>

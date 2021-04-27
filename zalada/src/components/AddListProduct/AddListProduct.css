@@ -1,0 +1,11 @@
+.box-add-list-product{
+    padding: 0.3vw 0.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.image-add-product-in-list{
+    padding: 0.3vw 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.image-add-product-in-list img{
+    height: 4vw;
+}
