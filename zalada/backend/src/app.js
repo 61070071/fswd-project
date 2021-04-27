@@ -50,7 +50,7 @@ app.use(
 )
 server.applyMiddleware({ app, path, cors: { origin: 'http://localhost:3000', credentials: true } })
 
-const port = process.env.PORT ?? 5001
+const port = process.env.PORT ?? 3001
 app.listen({ port }, () => {
   console.log(`🚀 Server ready at http://localhost:${port}${server.graphqlPath}`)
 })

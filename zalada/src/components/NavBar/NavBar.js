@@ -18,8 +18,8 @@ function NavBar() {
             if (user) {
                 return (
                     <Fragment>
-                        <span style={{ color: "red" }} className="px-0-5-v">{user?.name}</span>
-                        <button type="button" onClick={handleLogout}>Logout</button>
+                        <span style={{ color: "grey" }} className="px-0-5-v">{user?.name}</span>
+                        <button type="button" className="btn btn-outline-danger" onClick={handleLogout}>Logout</button>
                     </Fragment>
                 )
             }
