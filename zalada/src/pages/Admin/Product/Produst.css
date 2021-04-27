@@ -1,0 +1,18 @@
+.box-add-product{
+    padding: 0.7vw 1vw;
+}
+.btn-add-product-admin{
+    background: rgb(118,158,55);
+    background: linear-gradient(180deg, rgba(118,158,55,1) 0%, rgba(82,130,5,1) 100%);
+    border: 0;
+    border-radius: 5px;
+    padding: 0.3vw 1.5vw;
+}
+.btn-add-product-admin img{
+    margin-left: 0.5vw;
+    height: 1vw;
+} 
+.top-list-add-product{
+    padding: 0.5vw 1vw;
+    border-bottom: .1vw solid #707070;
+}
