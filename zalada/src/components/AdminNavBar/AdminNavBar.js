@@ -8,17 +8,12 @@ import IconPromotions from "../../images/icon-pricetag.svg"
 import { Link } from "react-router-dom";
 function AdminNavBar() {
     const [selectPage, setSelectPage] = useState(0);
-    const admin = {
-        page: ["DASHBOARD", "ORDERS", "PRODUCT", "PROMOTIONS"],
-        name: "THAPON CHANLAOR",
-        image: "http://dummyimage.com/34x34/",
-    }
     function handlePage(e) {
         setSelectPage(e);
     }
     return (
-        <div className="d-flex">
-            <div className="w-15 size-admin-nav d-flex flex-column">
+        <div className="w-100 m-0">
+            <div className="w-100 size-admin-nav d-flex flex-column">
                 <div className="d-flex mx-auto h-20">
                     <img alt="" src={logo} />
                 </div>
@@ -67,18 +62,7 @@ function AdminNavBar() {
                     </div>
                 </Link>
             </div>
-            <div className="w-85 bg-white h-100 d-flex align-items-center space-select-page">
-                <div className="w-70">
-                    <span>{admin.page[selectPage]}</span>
-                </div>
-                <div className="w-30 d-flex justify-content-center box-admin-login">
-                    <img alt="" src={admin.image}/>
-                    <div className="d-flex flex-wrap justify-content-center box-name-admin">
-                        <span className="w-100 text-center">{admin.name}</span>
-                        <button className="w-50 bg-second color-white border-0">LOG OUT</button>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     );
 }
