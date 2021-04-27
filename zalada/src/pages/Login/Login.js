@@ -40,7 +40,7 @@ function Login() {
     // )
     return (
         <div className="login d-flex justify-content-center mt-5">
-            <div className="login_face d-flex flex-column align-items-center">
+            <div className="login_face d-flex flex-column align-items-center p-4">
                 <div className="mt-5">
                     <Link to="/"><img alt="" className="home_logo" src={HomeLogo} /></Link>
                 </div>
@@ -54,9 +54,10 @@ function Login() {
                         </div>
                         <Link to="#" className="d-flex justify-content-end likable forgot">FORGOT PASSWORD ?</Link>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg mt-5 login_btn" >LOGIN</button>
+                    <div className="d-flex justify-content-center"><button type="submit" class=" btn btn-primary btn-lg mt-5 login_btn" >LOGIN</button></div>
+                    
                 </form>
-                <span className="mt-1">or you haven't an account yet ? <Link to="#" className="likable">Register</Link></span>
+                <span className="mt-1">or you haven't an account yet ? <Link to="/Register" className="likable">Register</Link></span>
             </div>
         </div>
     )
