@@ -18,7 +18,7 @@ function Register() {
                         <input className=" " type="text" placeholder="USERNAME" />
                     </div>
                     <div className="mt-5 d-flex justify-content-center">
-                        <input className="" type="text" placeholder="PASSWORD" />
+                        <input className="" type="text" placeholder="EMAIL" />
                     </div>
                     <div className="mt-5 d-flex justify-content-center">
                         <input className="" type="text" placeholder="CONFIRM PASSWORD" />
