@@ -9,3 +9,56 @@
 .image-add-product-in-list img{
     height: 4vw;
 }
+
+.toggle-wrapper {
+    width: 3.5vw;
+    height: 1.5vw;
+    border: 0;
+    background: #CADCAB;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.7vw 0.5vw;
+  }
+  
+  .toggle-circle {
+    width: 1.3vw;
+    height: 1.3vw;
+    background-color: #527022;
+    border-radius: 50%;
+    transition: 1s;
+    position: relative;
+    left: 0;
+  }
+  
+  .on {
+    animation-name: on;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .off {
+    animation-name: off;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes off {
+    0% {
+      left: -10%;
+    }
+    100% {
+      left: 60%;
+      background-color: #838383;
+    }
+  }
+  @keyframes on {
+    0% {
+      left: 60%;
+    }
+    100% {
+      left: -10%;
+      background-color: #527022;
+    }
+  }

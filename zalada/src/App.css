@@ -88,6 +88,15 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .w-40{
   width: 40%;
 }
+.w-45{
+  width: 45%;
+}
+.w-55{
+  width: 55%;
+}
+.w-60{
+  width: 60%;
+}
 .w-70{
   width: 70%;
 }
@@ -115,6 +124,12 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .h-30{
   height: 30%;
+}
+.h-40{
+  height: 40%;
+}
+.h-60{
+  height: 60%;
 }
 .h-70{
   height: 70%;
@@ -175,6 +190,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .mt-2-5-v{
   margin-top: 2.5vw;
+}
+.ml-0-5-v{
+  margin-left: 0.5vw;
 }
 .ml-1-v{
   margin-left: 1vw;
