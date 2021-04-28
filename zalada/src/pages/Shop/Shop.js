@@ -4,41 +4,46 @@ import "./Shop.css";
 import Img_Shop from "../../images/Component_3.svg"
 import PromotionProduct from "../../components/PromotionProduct/PromotionProduct";
 import TestImg from "../../images/leather_jacket_PNG41.png";
+import { useQuery } from '@apollo/client'
+import { PRODUCTS_QUERY } from '../../graphql/productsQuery.js'
 function Shop() {
   const [activeFilter, setActiveFilter] = useState(true);
   const [activePromotions, setActivePromotions] = useState(true);
   const [activeProducts, setActiveProducts] = useState(true);
   const [activePrice, setActivePrice] = useState(true);
-  const products = [{
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET",
-    price: "1,553 ฿",
-  },
-  {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET BLACK",
-    price: "1,450 ฿",
-  },
-  {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET RED",
-    price: "1,500 ฿",
-  },
-  {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET GREEN",
-    price: "1,650 ฿",
-  },
-  {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET BLUE",
-    price: "1,850 ฿",
-  }]
+  const { loading, error, data } = useQuery(PRODUCTS_QUERY)
+  // const products = [{
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET",
+  //   price: "1,553 ฿",
+  // },
+  // {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET BLACK",
+  //   price: "1,450 ฿",
+  // },
+  // {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET RED",
+  //   price: "1,500 ฿",
+  // },
+  // {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET GREEN",
+  //   price: "1,650 ฿",
+  // },
+  // {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET BLUE",
+  //   price: "1,850 ฿",
+  // }]
+  console.log(data?.products)
+  const products = data?.products
 
   function toggleFilter() {
     setActiveFilter(!activeFilter);
@@ -128,7 +133,7 @@ function Shop() {
         </div>
         <div className="d-flex flex-75 flex-wrap">
           {
-            products.map(function (element, index) {
+            data?.products.map(function (element, index) {
               return <div className="w-25">
                 <PromotionProduct data={element} />
               </div>

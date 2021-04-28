@@ -24,10 +24,10 @@ const ProductSchema = new Schema({
         type: Number,
         required: true,
     },
-    photourl: {
+    photourl: [{
         type: String,
         required: true,
-    },
+    }],
 })
 
 export const ProductModel = mongoose.model('Product', ProductSchema)
