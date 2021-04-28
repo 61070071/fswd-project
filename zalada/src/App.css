@@ -43,6 +43,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .color-third{
   color: #504C4C;
 }
+.color-no-4{
+  color: #C68645;
+}
 .color-white{
   color: white;
 }
@@ -73,6 +76,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .flex-100{
   flex: 1 1 100%;
 }
+.w-5{
+  width: 5%;
+}
 .w-10{
   width: 10%;
 }
@@ -84,6 +90,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .w-30{
   width: 30%;
+}
+.w-35{
+  width: 35%;
 }
 .w-40{
   width: 40%;

@@ -20,6 +20,7 @@ import Payment from "./pages/Payment/Payment.js"
 import Admin from "./pages/Admin/DashBoard/Admin"
 import AdminOrder from "./pages/Admin/Order/Order.js"
 import AdminProduct from "./pages/Admin/Product/Product";
+import AdminPromotions from "./pages/Admin/AdminPromotions/AdminPromotions"
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -66,9 +67,13 @@ function App() {
           <Route path="/admin/orders">
             <AdminOrder />
           </Route>
-          <Route path="/product">
+          <Route path="/admin/product">
             <AdminProduct />
           </Route>
+          <Route path="/admin/promotions">
+          <AdminPromotions/>
+          </Route>
+          
         </Switch>
       </div>
     </Router>
