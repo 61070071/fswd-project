@@ -9,65 +9,71 @@ import C3img from "../../images/carousel/crs_3.png";
 import C4img from "../../images/carousel/crs_4.png";
 import TestImg from "../../images/leather_jacket_PNG41.png";
 import PromotionProduct from "../../components/PromotionProduct/PromotionProduct";
-
+import { useQuery } from '@apollo/client'
+import { PRODUCTS_QUERY } from '../../graphql/productsQuery.js'
 
 function Home() {
-  const products = [{
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET1",
-    price: "1,553 ฿",
-  }, {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET2",
-    price: "1,553 ฿",
-  }, {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET3",
-    price: "1,553 ฿",
-  }, {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET4",
-    price: "1,553 ฿",
-  }, {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET5",
-    price: "1,553 ฿",
-  }, {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET6",
-    price: "1,553 ฿",
-  },
-  {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET BLACK7",
-    price: "1,450 ฿",
-  },
-  {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET RED8",
-    price: "1,500 ฿",
-  },
-  {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET GREEN9",
-    price: "1,650 ฿",
-  },
-  {
-    img: TestImg,
-    promotion: "30% WHEN BUY 2",
-    name: "JEANS JACKET BLUE10",
-    price: "1,850 ฿",
-  }]
-  const count_product = products.length;
+
+  const { loading, error, data } = useQuery(PRODUCTS_QUERY)
+  // const products = [{
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET1",
+  //   price: "1,553 ฿",
+  // }, {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET2",
+  //   price: "1,553 ฿",
+  // }, {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET3",
+  //   price: "1,553 ฿",
+  // }, {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET4",
+  //   price: "1,553 ฿",
+  // }, {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET5",
+  //   price: "1,553 ฿",
+  // }, {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET6",
+  //   price: "1,553 ฿",
+  // },
+  // {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET BLACK7",
+  //   price: "1,450 ฿",
+  // },
+  // {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET RED8",
+  //   price: "1,500 ฿",
+  // },
+  // {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET GREEN9",
+  //   price: "1,650 ฿",
+  // },
+  // {
+  //   img: TestImg,
+  //   promotion: "30% WHEN BUY 2",
+  //   name: "JEANS JACKET BLUE10",
+  //   price: "1,850 ฿",
+  // }]
+  console.log(data?.products)
+  const products = data?.products
+
+  const count_product = data?.products.length;
   let arr_product_items = []
   let arr_products = []
 
@@ -152,7 +158,7 @@ function Home() {
         <div className="d-flex flex-row ">
           <div id="left_area" className="left-area d-flex flex-column flex-50 align-items-center justify-content-center">
             <h3>TIME PROMOTIONS</h3>
-            <Link to="/promotions"><Button className="btn-smyar" variant="outline-dark">CHECK OUT -></Button></Link>
+            <Link to="/promotions"><Button className="btn-smyar" variant="outline-dark">CHECK OUT -&gt;</Button></Link>
 
           </div>
 
@@ -182,12 +188,24 @@ function Home() {
           <h4 className="mr-auto">MORE PRODUCTS</h4>
           <div className="w-100 d-flex flex-wrap">
             {
-              products.map(function (element, index) {
+              data?.products?.map(function (element, index) {
                 return <div className="w-20">
                   <PromotionProduct data={element} />
                 </div>
               })
             }
+            {/* {
+              data?.products?.map(function (products) {
+                return <div className="w-20">
+                  <PromotionProduct
+                    name={products?.productname}
+                    price={products?.price}
+                    promotion={products?.description}
+                    img={products?.photourl}
+                  />
+                </div>
+              })
+            } */}
           </div>
 
         </div>
