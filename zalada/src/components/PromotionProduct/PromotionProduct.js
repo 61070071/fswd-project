@@ -7,7 +7,7 @@ function PromotionProduct({ data }) {
             <img alt="" src={data.photourl[0]} />
             <span className="d-flex mx-auto justify-content-center box_pro">{data.description}</span>
             <span className="d-flex flex-100 justify-content-center text_name">{data.productname}</span>
-            <span className="d-flex flex-100 justify-content-center text_price color-main">{data.price}</span>
+            <span className="d-flex flex-100 justify-content-center text_price color-main">{data.price} ฿</span>
         </div>
         </Link>
     );
