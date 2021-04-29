@@ -68,6 +68,12 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .bg-pop-up{
   background: rgb(138, 138, 138);
 }
+.bg-gray {
+  background: #F1F1F1;
+}
+.bg-pearl {
+  background: #FCFCFC;
+}
 .flex-5{
   flex: 1 1 5%;
 }
@@ -204,6 +210,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .pt-3-v{
   padding-top: 3vw;
 }
+.m-2-v {
+  margin: 2vw;
+}
 .mt-0-5-v{
   margin-top: 0.5vw;
 }
@@ -224,6 +233,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .ml-1-v{
   margin-left: 1vw;
+}
+.ml-2-v{
+  margin-left: 2vw;
 }
 .pr-2-v{
   padding-right: 2vw;

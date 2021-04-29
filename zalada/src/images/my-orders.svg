@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <filter id="Ellipse_84" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="my-orders" transform="translate(-198 -325)">
+    <g transform="matrix(1, 0, 0, 1, 198, 325)" filter="url(#Ellipse_84)">
+      <circle id="Ellipse_84-2" data-name="Ellipse 84" cx="15" cy="15" r="15" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Icon_ionic-ios-document" data-name="Icon ionic-ios-document" transform="translate(208.833 334.359)" opacity="0.31">
+      <path id="Path_437" data-name="Path 437" d="M21.333,7.754h3.505a.191.191,0,0,0,.193-.193h0a1.14,1.14,0,0,0-.412-.882L21.68,4.23a1.237,1.237,0,0,0-.793-.285h0a.284.284,0,0,0-.285.285V7.022A.732.732,0,0,0,21.333,7.754Z" transform="translate(-6.009 -0.003)"/>
+      <path id="Path_438" data-name="Path 438" d="M13.591,7.019V3.938H8.545A1.236,1.236,0,0,0,7.313,5.17V18.112a1.236,1.236,0,0,0,1.233,1.233h9.244a1.236,1.236,0,0,0,1.233-1.233V8.752h-3.7A1.736,1.736,0,0,1,13.591,7.019Z"/>
+    </g>
+  </g>
+</svg>

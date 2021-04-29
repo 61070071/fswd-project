@@ -13,3 +13,19 @@ query{
     }
   }
 `
+
+export const PRODUCT_QUERY_ID = gql`
+query($productId: MongoID!){
+  productById(_id:$productId){
+      productname
+      _id
+      catagory
+      productdescription
+      price
+      quantity
+      photourl
+    }
+  }
+`
+
+

@@ -11,17 +11,16 @@ function AddListProduct({ data }) {
         <div className="w-100 d-flex mt-1-v box-add-list-product">
             <div className="w-50 d-flex align-items-center">
                 <div className="image-add-product-in-list">
-                    <img alt="" src={data.image} />
+                    <img class="thumbnail" src={data.photourl[0]} />
                 </div>
                 <div className="d-flex flex-wrap ml-1-v">
-                    <span className="w-100">#{data.id}</span>
-                    <span className="w-100 color-second">{data.name}</span>
+                    <span className="w-100">#{data._id}</span>
+                    <span className="w-100 color-second">{data.productname}</span>
                 </div>
-
             </div>
             <div className="w-50 d-flex align-items-center">
                 <div className="w-50">
-                    <span>IN STOCK : {data.stock}</span>
+                    <span>IN STOCK : {data.quantity}</span>
                 </div>
                 <div className="w-50 d-flex justify-content-end">
                     <div class="toggle-wrapper mr-1-v" onClick={toggleBtn}>
