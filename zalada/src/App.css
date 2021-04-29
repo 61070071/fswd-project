@@ -209,6 +209,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .mt-2-5-v{
   margin-top: 2.5vw;
 }
+.mb-1-v{
+  margin-bottom: 1vw;
+}
 .ml-0-5-v{
   margin-left: 0.5vw;
 }
@@ -217,6 +220,18 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .ml-2-v{
   margin-left: 2vw;
+}
+.mx-0-5-v{
+  margin: 0 0.5vw;
+}
+.mx-1-v{
+  margin: 0 1vw;
+}
+.mx-2-v{
+  margin: 0 2vw;
+}
+.mx-4-v{
+  margin: 0 4vw;
 }
 .pr-2-v{
   padding-right: 2vw;
