@@ -1,5 +1,6 @@
 import React from "react";
 import "./Customer.css"
+import CustomerMenu from "../../components/CustomerMenu/CustomerMenu.js"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -9,21 +10,7 @@ import order from "./../../images/my-orders.svg"
 function Customer() {
     return (
         <div className="d-flex justify-content-center bg-pearl">
-            <div className="w-20 frame_customer text-uppercase d-flex flex-column justify-content-center align-items-center align-self-start bg-white">
-                <p className="py-1-v m-0">my account</p>
-                <hr className="line_sep m-0"></hr>
-                <div className="d-flex flex-column">
-                    <div className="d-flex align-items-center py-1-v">
-                        <img src={account}></img>
-                        <p className="m-0">account setting</p>
-                    </div>
-                    <div className="d-flex align-items-center py-1-v">
-                        <img src={order}></img>
-                        <p className="m-0">my orders</p>
-                    </div>
-                    {/* color active อยู่ใน .menu */}
-                </div>
-            </div>
+            <CustomerMenu />
 
             <div className="w-60 frame_customer bg-white px-2-v">
                 <p className="text-uppercase py-1-v m-0">manage my account</p>
