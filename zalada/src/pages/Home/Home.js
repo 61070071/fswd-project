@@ -8,7 +8,7 @@ import C2img from "../../images/carousel/crs_2.png";
 import C3img from "../../images/carousel/crs_3.png";
 import C4img from "../../images/carousel/crs_4.png";
 import TestImg from "../../images/leather_jacket_PNG41.png";
-import PromotionProduct from "../../components/PromotionProduct/PromotionProduct";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import { useQuery } from '@apollo/client'
 import { PRODUCTS_QUERY } from '../../graphql/productsQuery.js'
 
@@ -81,9 +81,9 @@ function Home() {
     for (let j = 0; j < 4; j++) {
       let element
       if (products[(i * 4) + j] == null) {
-        element = <div className="w-20"><PromotionProduct data={products[j]} /></div>
+        element = <div className="w-20"><ProductCard data={products[j]} /></div>
       } else {
-        element = <div className="w-20"><PromotionProduct data={products[(i * 4) + j]} /></div>
+        element = <div className="w-20"><ProductCard data={products[(i * 4) + j]} /></div>
       }
       arr_product_items.push(element)
     }
@@ -178,7 +178,7 @@ function Home() {
           {
             products.map(function (element, index) {
               return <div className="w-25">
-                <PromotionProduct data={element} />
+                <ProductCard data={element} />
               </div>
             })
           }
@@ -190,14 +190,14 @@ function Home() {
             {
               data?.products?.map(function (element, index) {
                 return <div className="w-20">
-                  <PromotionProduct data={element} />
+                  <ProductCard data={element} />
                 </div>
               })
             }
             {/* {
               data?.products?.map(function (products) {
                 return <div className="w-20">
-                  <PromotionProduct
+                  <ProductCard
                     name={products?.productname}
                     price={products?.price}
                     promotion={products?.description}

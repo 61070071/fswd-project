@@ -1,0 +1,28 @@
+.box_product{
+    padding: 2vw 1vw;
+}
+.box_product img{
+    height: 12vw;
+    margin-bottom: 0.5vw;
+}
+.box_pro,.text_name,.text_price{
+    margin: 0.3vw auto;
+}
+.box_pro{
+    color: #527022;
+    border: 0.1vw solid #527022;
+    border-radius: 5px;
+    font-size: 0.5vw;
+    padding: 0.2vw 1.5vw;
+}
+.text_name{
+    margin-top: 0.5vw;
+    color: #000000;
+}
+.text_price{
+    font-size: 2vw;
+    margin-top: 0vw;
+}
+a:hover{
+    text-decoration: none;
+}
