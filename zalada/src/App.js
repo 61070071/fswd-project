@@ -17,6 +17,7 @@ import Promotions from "./pages/Promotions/Promotions.js";
 import AccountInfo from "./pages/Account_Info/Account_Info.js";
 import Details from "./pages/Details/Details"
 import Payment from "./pages/Payment/Payment.js"
+import Customer from "./pages/Customer/Customer.js";
 import Admin from "./pages/Admin/DashBoard/Admin"
 import AdminOrder from "./pages/Admin/Order/Order.js"
 import AdminProduct from "./pages/Admin/Product/Product";
@@ -26,7 +27,7 @@ function App() {
   return (
     <Router>
       <div>
-        <NavBar/>
+        <NavBar />
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -71,9 +72,12 @@ function App() {
             <AdminProduct />
           </Route>
           <Route path="/admin/promotions">
-          <AdminPromotions/>
+            <AdminPromotions />
           </Route>
-          
+          <Route path="/customer">
+            <Customer />
+          </Route>
+
         </Switch>
       </div>
     </Router>
