@@ -1,0 +1,43 @@
+.bg_circle_order {
+    width: 8vw;
+    height: 8vw;
+    background-image: linear-gradient(#527022, #466416);
+    border:#527022 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px 0 rgb(0, 0, 0, 0.2);
+}
+
+.border_circle_order {
+    width: 8vw;
+    height: 8vw;
+    border:#527022 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgb(0, 0, 0, 0.2);
+}
+
+.img_status {
+    width: 4vw;
+}
+
+.line_status {
+    background-color: #527022;
+    width: 7vw;
+    height: 0.4vw;
+}
+
+.img_product_customer {
+    width: 3vw;
+}
+
+.product_color {
+    background-color: #DBDBDB;
+    width: 1vw;
+    height: 1vw;
+}

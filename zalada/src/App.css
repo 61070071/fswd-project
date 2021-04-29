@@ -228,6 +228,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .mt-2-5-v{
   margin-top: 2.5vw;
 }
+.mb-0-5-v{
+  margin-bottom: 0.5vw;
+}
 .mb-1-v{
   margin-bottom: 1vw;
 }
@@ -275,6 +278,12 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .op-0{
   opacity:0;
+}
+.fs-small {
+  font-size: small;
+}
+.fs-large {
+  font-size: larger;
 }
 @keyframes App-logo-spin {
   from {

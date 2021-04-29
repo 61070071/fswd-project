@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92.317" height="92.82" viewBox="0 0 92.317 92.82">
+  <g id="delivered-white" transform="translate(-1297.341 -301.044)">
+    <g id="Icon_feather-package" data-name="Icon feather-package" transform="translate(1298.341 302.136)">
+      <path id="Path_414" data-name="Path 414" d="M46.247,26.5l-35-20.182" transform="translate(6.249 2.271)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_415" data-name="Path 415" d="M74.494,57.435V26.326A7.777,7.777,0,0,0,70.606,19.6L43.386,4.045a7.777,7.777,0,0,0-7.777,0L8.389,19.6A7.777,7.777,0,0,0,4.5,26.326V57.435a7.777,7.777,0,0,0,3.889,6.727l27.22,15.554a7.777,7.777,0,0,0,7.777,0l27.22-15.554A7.777,7.777,0,0,0,74.494,57.435Z" transform="translate(-4.5 -3.003)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_416" data-name="Path 416" d="M4.905,10.44,38.852,30.077,72.8,10.44" transform="translate(-3.855 8.839)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_417" data-name="Path 417" d="M18,57.2V18" transform="translate(16.997 20.878)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M43.208,21.885A21.323,21.323,0,1,1,21.885.563,21.323,21.323,0,0,1,43.208,21.885ZM19.419,33.176l15.82-15.82a1.376,1.376,0,0,0,0-1.945l-1.945-1.945a1.376,1.376,0,0,0-1.946,0l-12.9,12.9-6.024-6.024a1.376,1.376,0,0,0-1.946,0L8.532,22.288a1.376,1.376,0,0,0,0,1.945l8.942,8.942a1.376,1.376,0,0,0,1.946,0Z" transform="translate(1346.45 350.655)" fill="#fff"/>
+  </g>
+</svg>
