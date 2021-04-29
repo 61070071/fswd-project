@@ -43,7 +43,7 @@ function NavBar() {
                     <Link to="/"><img alt="" className="home_logo" src={HomeLogo} /></Link>
                 </div>
                 <div className="align-items-center flex-100">
-                    <ul className="d-flex align-items-center justify-content-evenly">
+                    <ul className="d-flex align-items-center justify-content-evenly nav-text">
                         <li>
                             <Link to="/">HOME</Link>
                         </li>
@@ -59,7 +59,7 @@ function NavBar() {
             <div className="d-flex justify-content-end flex-50">
                 <div className="d-flex mr-6-v">
                     <img alt="" className="search_logo" src={SearchLogo} />
-                    <input className="mr-1-v pr-2-v" type="text" placeholder="Search and hit enter..." />
+                    <input className="mr-1-v pr-2-v input-nav-bar" type="text" placeholder="Search and hit enter..." />
                     <Link to="/cart">
                         <img alt="" className="cart_logo" src={CartLogo} />
                     </Link>

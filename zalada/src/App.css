@@ -46,17 +46,27 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .color-no-4{
   color: #C68645;
 }
+.color-no-5{
+  color: #474747;
+}
 .color-white{
   color: white;
 }
+
 .bg-main{
   background: #F2F2F2;
 }
 .bg-second{
   background: #527022;
 }
+.bg-third{
+  background: #f3f3f3;
+}
 .bg-white{
   background: white;
+}
+.bg-pop-up{
+  background: rgb(138, 138, 138);
 }
 .flex-5{
   flex: 1 1 5%;
@@ -122,6 +132,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
   width: 95%;
 }
 
+.h-5{
+  height: 5%;
+}
 .h-10{
   height: 10%;
 }
@@ -173,6 +186,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .px-2-v{
   padding: 0vw 2vw;
 }
+.py-0-5-v{
+  padding: 0.5vw 0vw;
+}
 .py-1-v{
   padding: 1vw 0vw;
 }
@@ -181,6 +197,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .py-3-v{
   padding: 3vw 0vw;
+}
+.pb-1-v{
+  padding-bottom: 1vw;
 }
 .pt-3-v{
   padding-top: 3vw;
@@ -214,6 +233,21 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .mr-1-v{
   margin-right: 1vw;
+}
+.bd-1-gray{
+  border: .15vw solid #ddd;
+}
+.z-index-2{
+  z-index: 2;
+}
+.line-bottom-gray{
+  border-bottom: .1vw  solid #707070 ;
+}
+.line-right-gray{
+  border-right: .1vw  solid #707070 ;
+}
+.op-0{
+  opacity:0;
 }
 @keyframes App-logo-spin {
   from {

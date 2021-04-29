@@ -20,60 +20,67 @@ import Payment from "./pages/Payment/Payment.js"
 import Admin from "./pages/Admin/DashBoard/Admin"
 import AdminOrder from "./pages/Admin/Order/Order.js"
 import AdminProduct from "./pages/Admin/Product/Product";
-import AdminPromotions from "./pages/Admin/AdminPromotions/AdminPromotions"
+import AdminPromotions from "./pages/Admin/AdminPromotions/AdminPromotions";
+import AdminProductCreate from "./pages/Admin/AdminProductCreate/AdminProductCreate"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
       <div>
-        <NavBar/>
+        <NavBar />
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about_us">
-            <AboutUs />
-          </Route>
-          <Route path="/products">
-            <Shop />
-          </Route>
-          <Route path="/cart">
-            <Cart />
-          </Route>
           <Route path="/" exact>
             <Home />
           </Route>
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/Register">
+          <Route path="/register">
             <Register />
           </Route>
-          <Route path="/account_info">
-            <AccountInfo />
+          <Route path="/about_us">
+            <AboutUs />
+          </Route>
+          <Route path="/products" exact>
+            <Shop />
+          </Route>
+          <Route path="/product/details">
+            <Details />
           </Route>
           <Route path="/promotions">
             <Promotions />
           </Route>
-          <Route path="/details">
-            <Details />
+          <Route path="/cart">
+            <Cart />
           </Route>
+          <Route path="/checkout">
+            <AccountInfo />
+          </Route> 
           <Route path="/payment">
             <Payment />
           </Route>
+          
           <Route path="/admin" exact>
             <Admin />
           </Route>
+          <Route path="/admin/products">
+            <AdminProduct />
+          </Route>
+          <Route path="/admin/product/create">
+            <AdminProductCreate />
+          </Route>
+          <Route path="/admin/promotions">
+            <AdminPromotions />
+          </Route>
+
           <Route path="/admin/orders">
             <AdminOrder />
           </Route>
-          <Route path="/admin/product">
-            <AdminProduct />
-          </Route>
-          <Route path="/admin/promotions">
-          <AdminPromotions/>
-          </Route>
-          
+
         </Switch>
       </div>
     </Router>

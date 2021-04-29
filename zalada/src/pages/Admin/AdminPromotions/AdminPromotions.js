@@ -44,7 +44,7 @@ function AdminPromotions() {
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
                 <NamePageAdmin />
-                <div className="w-100 d-flex mx-auto h-100 bg-main">
+                <div className="w-100 mx-auto h-100 bg-main">
                     <div className="w-90 mx-auto bg-white ">
                         <div className="w-100 d-flex justify-content-end py-1-v bg-main">
                             <button className="btn-add-product-admin color-white font-weight-bold d-flex align-items-center">ADD PRODUCT <img alt="" src={Plus} /></button>
