@@ -5,26 +5,30 @@ import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
 import Plus from "../../../images/circle-plus.svg"
 import AddListProduct from "../../../components/AddListProduct/AddListProduct"
 import Shirt from "../../../images/brown_shirt.svg"
+import { useQuery } from '@apollo/client'
+import { PRODUCTS_QUERY } from '../../../graphql/productsQuery.js'
 
 function Product() {
-    const products = [{
-        id:"001",
-        name:"LEATHER JACKET",
-        image:Shirt,
-        stock:12,
-    },
-    {
-        id:"002",
-        name:"LEATHER JACKET",
-        image:Shirt,
-        stock:13,
-    },
-    {
-        id:"003",
-        name:"LEATHER JACKET",
-        image:Shirt,
-        stock:14,
-    }]
+    const { loading, error, data } = useQuery(PRODUCTS_QUERY)
+    const products = data?.products
+    // const products = [{
+    //     id:"001",
+    //     name:"LEATHER JACKET",
+    //     image:Shirt,
+    //     stock:12,
+    // },
+    // {
+    //     id:"002",
+    //     name:"LEATHER JACKET",
+    //     image:Shirt,
+    //     stock:13,
+    // },
+    // {
+    //     id:"003",
+    //     name:"LEATHER JACKET",
+    //     image:Shirt,
+    //     stock:14,
+    // }]
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
@@ -65,7 +69,7 @@ function Product() {
                             </div>
                             <div className="w-100">
                                 {
-                                    products.map(function (element, index) {
+                                    data?.products.map(function (element, index) {
                                         return <AddListProduct data={element}/>
                                     })
                                 }
