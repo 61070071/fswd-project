@@ -58,6 +58,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .bg-white{
   background: white;
 }
+.bg-gray {
+  background: #F1F1F1;
+}
 .flex-5{
   flex: 1 1 5%;
 }

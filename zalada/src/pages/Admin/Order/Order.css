@@ -1,7 +1,7 @@
 .order_dashboard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 5%;
-    padding: 2%;
+    margin: 1.5vw 4vw;
+    padding: 2vw;
 }
 
 .data_order {
@@ -17,4 +17,11 @@
 
 .img_del {
     width: 2.5vw;
+}
+
+.btn_page {
+    padding: 0.5vw 1vw;
+    border: #DFDFDF 1px solid;
+    margin: 0.5vw;
+    border-radius: 10px;
 }
