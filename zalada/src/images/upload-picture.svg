@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="210" viewBox="0 0 210 210">
+  <g id="Group_441" data-name="Group 441" transform="translate(-1360 -298)">
+    <g id="Rectangle_431" data-name="Rectangle 431" transform="translate(1360 298)" fill="#fff" stroke="#707070" stroke-width="3" stroke-dasharray="6" opacity="0.42">
+      <rect width="210" height="210" rx="16" stroke="none"/>
+      <rect x="1.5" y="1.5" width="207" height="207" rx="14.5" fill="none"/>
+    </g>
+    <g id="Icon_material-photo-camera" data-name="Icon material-photo-camera" transform="translate(1422.491 368.442)" opacity="0.14">
+      <path id="Path_433" data-name="Path 433" d="M38.485,25.843A12.643,12.643,0,1,1,25.843,13.2,12.643,12.643,0,0,1,38.485,25.843Z" transform="translate(16.666 16.666)"/>
+      <path id="Path_434" data-name="Path 434" d="M30.656,3l-7.23,7.9H10.9A7.925,7.925,0,0,0,3,18.8v47.41a7.925,7.925,0,0,0,7.9,7.9H74.115a7.925,7.925,0,0,0,7.9-7.9V18.8a7.925,7.925,0,0,0-7.9-7.9H61.591L54.361,3ZM42.509,62.263A19.754,19.754,0,1,1,62.263,42.509,19.761,19.761,0,0,1,42.509,62.263Z"/>
+    </g>
+  </g>
+</svg>

@@ -22,7 +22,9 @@ import OrderCustomer from "./pages/Customer/Orders_customer/Orders_customer.js";
 import Admin from "./pages/Admin/DashBoard/Admin"
 import AdminOrder from "./pages/Admin/Order/Order.js"
 import AdminProduct from "./pages/Admin/Product/Product";
-import AdminPromotions from "./pages/Admin/AdminPromotions/AdminPromotions"
+import AdminPromotions from "./pages/Admin/AdminPromotions/AdminPromotions";
+import AdminProductCreate from "./pages/Admin/AdminProductCreate/AdminProductCreate"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -48,11 +50,17 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/Register">
+          <Route path="/register">
             <Register />
           </Route>
-          <Route path="/account_info">
-            <AccountInfo />
+          <Route path="/about_us">
+            <AboutUs />
+          </Route>
+          <Route path="/products" exact>
+            <Shop />
+          </Route>
+          <Route path="/product/details">
+            <Details />
           </Route>
           <Route path="/promotions">
             <Promotions />
@@ -60,17 +68,21 @@ function App() {
           <Route path="/products/:productId" exact>
             <Details />
           </Route>
+          <Route path="/checkout">
+            <AccountInfo />
+          </Route> 
           <Route path="/payment">
             <Payment />
           </Route>
+          
           <Route path="/admin" exact>
             <Admin />
           </Route>
-          <Route path="/admin/orders">
-            <AdminOrder />
-          </Route>
-          <Route path="/admin/product">
+          <Route path="/admin/products">
             <AdminProduct />
+          </Route>
+          <Route path="/admin/product/create">
+            <AdminProductCreate />
           </Route>
           <Route path="/admin/promotions">
             <AdminPromotions />
@@ -80,6 +92,9 @@ function App() {
           </Route>
           <Route path="/customer/orders">
             <OrderCustomer />
+          </Route>
+          <Route path="/admin/orders">
+            <AdminOrder />
           </Route>
         </Switch>
       </div>
