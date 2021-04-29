@@ -19,6 +19,7 @@ import Details from "./pages/Details/Details"
 import Payment from "./pages/Payment/Payment.js"
 import Customer from "./pages/Customer/Customer.js";
 import OrderCustomer from "./pages/Customer/Orders_customer/Orders_customer.js";
+import OrderDetail from "./pages/Customer/Order_detail/Order_detail.js";
 import Admin from "./pages/Admin/DashBoard/Admin"
 import AdminOrder from "./pages/Admin/Order/Order.js"
 import AdminProduct from "./pages/Admin/Product/Product";
@@ -87,14 +88,17 @@ function App() {
           <Route path="/admin/promotions">
             <AdminPromotions />
           </Route>
+          <Route path="/admin/orders">
+            <AdminOrder />
+          </Route>
           <Route path="/customer" exact>
             <Customer />
           </Route>
-          <Route path="/customer/orders">
+          <Route path="/customer/orders" exact>
             <OrderCustomer />
           </Route>
-          <Route path="/admin/orders">
-            <AdminOrder />
+          <Route path="/customer/orders/detail">
+            <OrderDetail />
           </Route>
         </Switch>
       </div>
