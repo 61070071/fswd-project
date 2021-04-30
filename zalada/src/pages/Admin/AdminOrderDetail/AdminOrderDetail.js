@@ -49,6 +49,7 @@ function AdminOrderDetail() {
                             </div>
                             <hr className="m-0"></hr>
                             <p className="color-second mt-1-v">STATUS</p>
+
                             <div className="status d-flex align-items-center justify-content-center">
                                 <div className="d-flex flex-column justify-content-center">
                                     <div className="d-flex align-items-center">
