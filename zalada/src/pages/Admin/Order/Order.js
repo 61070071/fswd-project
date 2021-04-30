@@ -18,7 +18,7 @@ function Order() {
                 <div className="order_dashboard w-90 bg-white">
                     <div className="d-flex justify-content-between">
                         <div>
-                            <p>DashBoard</p>
+                            <p className="text-uppercase color-second">DashBoard</p>
                         </div>
                         <div className="d-flex">
                             <p className="mr-3">Display by : </p>
