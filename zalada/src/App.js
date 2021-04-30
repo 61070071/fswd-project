@@ -22,6 +22,7 @@ import OrderCustomer from "./pages/Customer/Orders_customer/Orders_customer.js";
 import OrderDetail from "./pages/Customer/Order_detail/Order_detail.js";
 import Admin from "./pages/Admin/DashBoard/Admin"
 import AdminOrder from "./pages/Admin/Order/Order.js"
+import AdminOrderDetail from "./pages/Admin/AdminOrderDetail/AdminOrderDetail.js"
 import AdminProduct from "./pages/Admin/Product/Product";
 import AdminPromotions from "./pages/Admin/AdminPromotions/AdminPromotions";
 import AdminProductCreate from "./pages/Admin/AdminProductCreate/AdminProductCreate"
@@ -85,7 +86,10 @@ function App() {
           <Route path="/admin/promotions">
             <AdminPromotions />
           </Route>
-          <Route path="/admin/orders">
+          <Route path="/admin/orders" exact>
+            <AdminOrderDetail />
+          </Route>
+          <Route path="/admin/orders/detail">
             <AdminOrder />
           </Route>
           <Route path="/customer" exact>
