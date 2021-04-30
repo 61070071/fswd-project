@@ -86,12 +86,14 @@ function App() {
           <Route path="/admin/promotions">
             <AdminPromotions />
           </Route>
+
           <Route path="/admin/orders" exact>
-            <AdminOrderDetail />
-          </Route>
-          <Route path="/admin/orders/detail">
             <AdminOrder />
           </Route>
+          <Route path="/admin/orders/detail">
+            <AdminOrderDetail />
+          </Route>
+
           <Route path="/customer" exact>
             <Customer />
           </Route>
