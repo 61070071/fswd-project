@@ -5,7 +5,7 @@ import Img_Shop from "../../images/Component_3.svg"
 import ProductCard from "../../components/ProductCard/ProductCard";
 import TestImg from "../../images/leather_jacket_PNG41.png";
 import { useQuery } from '@apollo/client'
-import { PRODUCTS_QUERY } from '../../graphql/productsQuery.js'
+import { PRODUCTS_QUERY } from '../../graphql/productsOGQuery.js'
 function Shop() {
   const [activeFilter, setActiveFilter] = useState(true);
   const [activePromotions, setActivePromotions] = useState(true);

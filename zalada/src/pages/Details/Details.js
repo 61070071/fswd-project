@@ -8,7 +8,7 @@ import RedShirt from "../../images/red_shirt.svg"
 import Plus from "../../images/add-product.svg"
 import Minus from "../../images/del-product.svg"
 import { useLazyQuery } from '@apollo/client'
-import { PRODUCT_QUERY_ID } from '../../graphql/productsQuery.js'
+import { PRODUCT_QUERY_ID } from '../../graphql/productsOGQuery.js'
 function Details() {
     const { productId } = useParams()
     const [selectProduct, setSelectProduct] = useState(0);
@@ -23,9 +23,10 @@ function Details() {
     const shirts = product
     useEffect(() => {
         getProduct()
+        
     }, [getProduct])
 
-    console.log(shirts?.photourl);
+    console.log(product?.photourl);
 
     const handleImage = (e) => {
         setSelectProduct(e)
@@ -45,10 +46,10 @@ function Details() {
 
                         <div className="w-80 bg-white shirt"
                             onClick={() => handleImage(0)}
-                        ><img alt="" className="w-100" src={shirts ?? shirts?.photourl[0]} /></div>
+                        ><img alt="" className="w-100" src={shirts?.photourl} /></div>
                         <div className="w-80 bg-white shirt mt-1-v"
                             onClick={() => handleImage(1)}
-                        ><img alt="" className="w-100" src={shirts?.photourl[0]} /></div>
+                        ><img alt="" className="w-100" src={shirts?.photourl} /></div>
                         <div className="w-80 bg-white shirt mt-1-v"
                             onClick={() => handleImage(2)}
                         ><img alt="" className="w-100" src={shirts?.photourl} /></div>

@@ -6,7 +6,7 @@ import Plus from "../../../images/circle-plus.svg"
 import AddListProduct from "../../../components/AddListProduct/AddListProduct"
 import Shirt from "../../../images/brown_shirt.svg"
 import { useQuery } from '@apollo/client'
-import { PRODUCTS_QUERY } from '../../../graphql/productsQuery.js'
+import { PRODUCTS_QUERY } from '../../../graphql/productsOGQuery.js'
 
 function Product() {
     const { loading, error, data } = useQuery(PRODUCTS_QUERY)
