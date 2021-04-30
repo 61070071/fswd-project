@@ -5,45 +5,54 @@ import Img_Promotions from "../../images/Group_429.svg"
 import Img_Sale from "../../images/585680404f6ae202fedf26f0.svg"
 import ProductSale from "../../components/Products_Sale/Products_Sale";
 import PromotionProduct from "../../components/PromotionProduct/PromotionProduct"
+import { useQuery } from '@apollo/client'
+import { PROMOTIONS_FREE_QUERY, PROMOTIONS_SALE_QUERY } from '../../graphql/productsOGQuery.js'
 function Promotion() {
-    const ProSale = [{
-        img: Img_Sale,
-        promotion: "BUY 2 FREE 1",
-        name: "JEANS JACKET",
-        price: "2,807 ฿",
-        price_pro: "1,752 ฿"
-        
-    },
-    {
-        img: Img_Sale,
-        promotion: "BUY 2 FREE 1",
-        name: "JEANS JACKET BLACK",
-        price: "2,702 ฿",
-        price_pro: "1,450 ฿"
-    },
-    {
-        img: Img_Sale,
-        promotion: "BUY 2 FREE 1",
-        name: "JEANS JACKET RED",
-        price: "2,350 ฿",
-        price_pro: "1,500 ฿"
-        
-    },
-    {
-        img: Img_Sale,
-        promotion: "BUY 2 FREE 1",
-        name: "JEANS JACKET GREEN",
-        price: "2,570 ฿",
-        price_pro: "1,650 ฿"
-    },
-    {
-        img: Img_Sale,
-        promotion: "BUY 2 FREE 1",
-        name: "JEANS JACKET BLUE",
-        price: "2,621 ฿",
-        price_pro: "1,850 ฿"
-        
-    }]
+    const dataSale = useQuery(PROMOTIONS_SALE_QUERY).data
+    const dataFree = useQuery(PROMOTIONS_FREE_QUERY).data
+    
+    const ProSale = dataSale?.promotionSales
+    const ProFree = dataFree?.promotionFrees
+    console.log(ProFree)
+    // const ProSale = [{
+    //     img: Img_Sale,
+    //     promotion: "BUY 2 FREE 1",
+    //     name: "JEANS JACKET",
+    //     price: "2,807 ฿",
+    //     price_pro: "1,752 ฿"
+
+    // },
+    // {
+    //     img: Img_Sale,
+    //     promotion: "BUY 2 FREE 1",
+    //     name: "JEANS JACKET BLACK",
+    //     price: "2,702 ฿",
+    //     price_pro: "1,450 ฿"
+    // },
+    // {
+    //     img: Img_Sale,
+    //     promotion: "BUY 2 FREE 1",
+    //     name: "JEANS JACKET RED",
+    //     price: "2,350 ฿",
+    //     price_pro: "1,500 ฿"
+
+    // },
+    // {
+    //     img: Img_Sale,
+    //     promotion: "BUY 2 FREE 1",
+    //     name: "JEANS JACKET GREEN",
+    //     price: "2,570 ฿",
+    //     price_pro: "1,650 ฿"
+    // },
+    // {
+    //     img: Img_Sale,
+    //     promotion: "BUY 2 FREE 1",
+    //     name: "JEANS JACKET BLUE",
+    //     price: "2,621 ฿",
+    //     price_pro: "1,850 ฿"
+
+    // }]
+
     return (
         <div className="w-90 mx-auto">
             <p className="color-main mt-0-5-v">HOME &gt; PROMOTIONS</p>
@@ -54,7 +63,7 @@ function Promotion() {
                 <span className="mx-auto">HOT DEAL</span>
                 <div className="w-100 d-flex flex-wrap">
                     {
-                        ProSale.map(function (element, index) {
+                        ProSale?.map(function (element, index) {
                             return <div className="w-20">
                                 <ProductSale data={element} />
                             </div>
@@ -66,7 +75,7 @@ function Promotion() {
                 <span className="mx-auto">BUY MORE FOR CHEAPER</span>
                 <div className="w-100 d-flex flex-wrap">
                     {
-                        ProSale.map(function (element, index) {
+                        ProFree?.map(function (element, index) {
                             return <div className="w-20">
                                 <PromotionProduct data={element} />
                             </div>
