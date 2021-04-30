@@ -255,6 +255,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .mx-4-v{
   margin: 0 4vw;
 }
+.my-1-v{
+  margin: 0 1vw;
+}
 .pr-2-v{
   padding-right: 2vw;
 }

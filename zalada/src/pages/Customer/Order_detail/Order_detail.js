@@ -1,6 +1,7 @@
 import React from "react";
 import "./Order_detail.css"
 import CustomerMenu from "../../../components/CustomerMenu/CustomerMenu.js"
+import CustomerProduct from "../../../components/CustomerProduct/CustomerProduct.js"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -10,8 +11,6 @@ import truckGray from "../../../images/truck-gray.svg";
 import deliveredWhite from "../../../images/delivered-white.svg";
 import deliveredGray from "../../../images/delivered-gray.svg";
 import brownShirt from "../../../images/brown_shirt.svg";
-
-import CustomerProduct from "../../../components/CustomerProduct/CustomerProduct.js"
 
 function OrderDetail() {
     return (
