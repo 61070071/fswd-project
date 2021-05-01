@@ -29,6 +29,7 @@ import AdminProductCreate from "./pages/Admin/AdminProductCreate/AdminProductCre
 import AdminPromotionCreate from "./pages/Admin/AdminPromotionCreate/AdminPromotionCreate";
 import AdminPromotionCreateOnSale from "./pages/Admin/AdminPromotionCreateOnSale/AdminPromotionCreateOnSale";
 import AdminPromotionCreateGet from "./pages/Admin/AdminPromotionCreateGet/AdminPromotionCreateGet";
+import AdminAssignPromotion from "./pages/Admin/AssignPromotion/AssignPromotion";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -83,6 +84,9 @@ function App() {
           </Route>
           <Route path="/admin/product/create">
             <AdminProductCreate />
+          </Route>
+          <Route path="/admin/promotions/create/onsale/assign">
+            <AdminAssignPromotion />
           </Route>
           <Route path="/admin/promotions/create/onsale">
             <AdminPromotionCreateOnSale />
