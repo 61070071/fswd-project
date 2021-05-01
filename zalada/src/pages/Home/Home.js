@@ -10,7 +10,7 @@ import C4img from "../../images/carousel/crs_4.png";
 import TestImg from "../../images/leather_jacket_PNG41.png";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { useQuery } from '@apollo/client'
-import { PRODUCTS_QUERY } from '../../graphql/productsQuery.js'
+import { PRODUCTS_QUERY } from '../../graphql/productsOGQuery.js'
 
 function Home() {
 

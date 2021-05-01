@@ -14,21 +14,23 @@ function Order() {
             </div>
             <div className="w-85 d-flex flex-column bg-gray">
                 <NamePageAdmin />
-                
+
                 <div className="order_dashboard w-90 bg-white">
                     <div className="d-flex justify-content-between">
                         <div>
-                            <p>DashBoard</p>
+                            <p className="text-uppercase color-second m-0">DashBoard</p>
                         </div>
                         <div className="d-flex">
-                            <p className="mr-3">Display by : </p>
-                            <span>
-                                <select>
-                                    <option>RECENTLY</option>
-                                </select>
-                            </span>
+                            <p className="m-0">Display by : </p>
+                            <select className="select_display">
+                                <option value="ALL">RECENTLY</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
                         </div>
                     </div>
+
                     <hr className="m-0"></hr>
 
                     <div className="row mt-3">

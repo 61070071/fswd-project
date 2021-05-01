@@ -25,3 +25,14 @@
     margin: 0.5vw;
     border-radius: 10px;
 }
+
+.select_display {
+    background: rgb(249,249,249);
+    background: linear-gradient(204deg, rgba(249,249,249,1) 82%, rgba(219,219,219,1) 100%);
+    border: 0.1vw solid #E3E3E3;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    padding: 0 1.5vw;
+}

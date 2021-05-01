@@ -7,3 +7,29 @@ mutation ($record: CreateOneCommentInput!) {
   }
 }
 `
+
+//ใช้ตัวนี้
+export const CREATE_PRODUCTOG_MUTATION = gql`
+mutation ($record: CreateOneCommentInput!) {
+  createProductOG (record: $record) {
+    recordId
+  }
+}
+`
+
+//สร้างโปรแบบsale
+export const CREATE_PRODUCT_SALE_MUTATION = gql`
+mutation ($record: CreateOneCommentInput!) {
+  createPromotionSale (record: $record) {
+    recordId
+  }
+}
+`
+//สร้างโปรแบบแถม
+export const CREATE_PRODUCT_FREE_MUTATION = gql`
+mutation ($record: CreateOneCommentInput!) {
+  createPromotionFree (record: $record) {
+    recordId
+  }
+}
+`
