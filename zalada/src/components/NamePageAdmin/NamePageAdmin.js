@@ -1,6 +1,6 @@
 import React from "react";
 import "./NamePageAdmin.css";
-function AdminNavBar() {
+function AdminNavBar({ page }) {
     const admin = {
         page: ["DASHBOARD", "ORDERS", "PRODUCT", "PROMOTIONS"],
         name: "THAPON CHANLAOR",
@@ -9,7 +9,7 @@ function AdminNavBar() {
     return (
         <div className="w-100 h-10 bg-white d-flex align-items-center space-select-page">
             <div className="w-70">
-                <span>{admin.page[0]}</span>
+                <span>{admin.page[page]}</span>
             </div>
             <div className="w-30 d-flex justify-content-center box-admin-login">
                 <img alt="" src={admin.image} />

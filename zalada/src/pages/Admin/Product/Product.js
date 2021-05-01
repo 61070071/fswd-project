@@ -32,10 +32,10 @@ function Product() {
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
-                <AdminNavBar />
+                <AdminNavBar page={2}/>
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin />
+                <NamePageAdmin page={2}/>
                 <div className="w-100 d-flex mx-auto h-90 bg-main py-1-v">
                     <div className="w-90 mx-auto bg-white ">
                         <div className="w-100 d-flex justify-content-end pb-1-v bg-main">

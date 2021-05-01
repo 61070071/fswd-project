@@ -6,8 +6,8 @@ import IconOrders from "../../images/icon-cart.svg"
 import IconProduct from "../../images/icon-package.svg"
 import IconPromotions from "../../images/icon-pricetag.svg"
 import { Link } from "react-router-dom";
-function AdminNavBar() {
-    const [selectPage, setSelectPage] = useState(0);
+function AdminNavBar({ page }) {
+    const [selectPage, setSelectPage] = useState(page);
     function handlePage(e) {
         setSelectPage(e);
     }
@@ -18,7 +18,7 @@ function AdminNavBar() {
                     <img alt="" src={logo} />
                 </div>
                 <Link to="/admin">
-                    <div className="w-100 d-flex align-items-center py-1-v position-relative" onClick={() => handlePage(0)}>
+                    <div className="w-100 d-flex align-items-center py-1-v position-relative">
                         <div className="w-30 d-flex justify-content-center align-items-center">
                             <img alt="" src={IconDashboard} />
                         </div>
@@ -28,8 +28,8 @@ function AdminNavBar() {
                         }
                     </div>
                 </Link>
-                <Link to="#">
-                    <div className="w-100 d-flex align-items-center py-1-v position-relative" onClick={() => handlePage(1)}>
+                <Link to="/admin/orders">
+                    <div className="w-100 d-flex align-items-center py-1-v position-relative">
                         <div className="w-30 d-flex justify-content-center align-items-center">
                             <img alt="" src={IconOrders} />
                         </div>
@@ -39,8 +39,8 @@ function AdminNavBar() {
                         }
                     </div>
                 </Link>
-                <Link to="#">
-                    <div className="w-100 d-flex align-items-center py-1-v position-relative" onClick={() => handlePage(2)}>
+                <Link to="/admin/products">
+                    <div className="w-100 d-flex align-items-center py-1-v position-relative">
                         <div className="w-30 d-flex justify-content-center align-items-center">
                             <img alt="" src={IconProduct} />
                         </div>
@@ -50,8 +50,8 @@ function AdminNavBar() {
                         }
                     </div>
                 </Link>
-                <Link to="#">
-                    <div className="w-100 d-flex align-items-center py-1-v position-relative" onClick={() => handlePage(3)}>
+                <Link to="/admin/promotions">
+                    <div className="w-100 d-flex align-items-center py-1-v position-relative">
                         <div className="w-30 d-flex justify-content-center align-items-center">
                             <img alt="" src={IconPromotions} />
                         </div>
@@ -62,7 +62,7 @@ function AdminNavBar() {
                     </div>
                 </Link>
             </div>
-            
+
         </div>
     );
 }

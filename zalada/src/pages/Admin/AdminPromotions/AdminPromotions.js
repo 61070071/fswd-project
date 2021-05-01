@@ -47,10 +47,10 @@ function AdminPromotions() {
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
-                <AdminNavBar />
+                <AdminNavBar page={3}/>
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin />
+                <NamePageAdmin page={3}/>
                 <div className="w-100 mx-auto h-100 bg-main">
                     <div className="w-90 mx-auto bg-white ">
                         <div className="w-100 d-flex justify-content-end py-1-v bg-main">

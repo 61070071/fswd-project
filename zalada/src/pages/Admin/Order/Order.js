@@ -10,10 +10,10 @@ function Order() {
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
-                <AdminNavBar />
+                <AdminNavBar page={1}/>
             </div>
             <div className="w-85 d-flex flex-column bg-gray">
-                <NamePageAdmin />
+                <NamePageAdmin page={1}/>
 
                 <div className="order_dashboard w-90 bg-white">
                     <div className="d-flex justify-content-between">
