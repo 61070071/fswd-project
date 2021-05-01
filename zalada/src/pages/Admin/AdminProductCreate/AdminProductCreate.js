@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AdminProductCreate.css"
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
 import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin";
 import Plus from "../../../images/plus-green.svg";
 import UploadPicture from "../../../images/upload-picture.svg";
 import Photo from "../../../images/add-a-photo.svg";
-import Close from "../../../images/icon-close.svg";
 function AdminProductCreate() {
     return (
         <div className="d-flex flex-wrap">

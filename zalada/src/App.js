@@ -87,7 +87,7 @@ function App() {
           <Route path="/admin/promotions/create/onsale">
             <AdminPromotionCreateOnSale />
           </Route>
-          <Route path="/admin/promotions/create/getmore">
+          <Route path="/admin/promotions/create/getfree">
             <AdminPromotionCreateGet />
           </Route>
           <Route path="/admin/promotions/create">

@@ -27,7 +27,7 @@ function AdminPromotionCreate() {
                             </div>
                             <span className="w-100 text-center mt-1-v fs-1-v color-second">ON SALE</span>
                         </Link>
-                        <Link to="/admin/promotions/create/getmore" className="w-50 justify-content-center d-flex flex-wrap">
+                        <Link to="/admin/promotions/create/getfree" className="w-50 justify-content-center d-flex flex-wrap">
                             <div className="w-70 d-flex justify-content-center position-relative bd-select-promotion align-items-center">
                                 <img alt="" src={ShopBag} className="z-index-1 image-select-promotion" />
                                 <div className="w-100 h-100 position-absolute bg-select-promotion" />

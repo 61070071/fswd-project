@@ -18,9 +18,15 @@
     padding: .3vw 1.5vw;
     border-radius: 3px;
 }
+.btn-promotion-done{
+    background: rgb(118,158,55);
+    background: linear-gradient(180deg, rgba(118,158,55,1) 0%, rgba(82,130,5,1) 100%);
+    padding: .3vw 5vw;
+    border-radius: 3px;
+}
 .input-admin-promotion-sale{
     color: #696969;
-    padding: 0vw 0.5vw;
+    padding: 0vw 0.3vw;
     border-radius: 3px;
     border: .1vw solid #7EAC35;
 }
@@ -28,4 +34,9 @@
     left: 90%;
     top: 15%;
     height: 1vw;
+}
+.box-list-promotion-onsale{
+    border: .1vw solid #E3E3E3;
+    border-radius: 3px;
+    padding: 0vw .7vw;
 }
