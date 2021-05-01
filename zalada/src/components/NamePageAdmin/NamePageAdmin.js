@@ -13,7 +13,7 @@ function AdminNavBar({ page }) {
             <div className="w-30 d-flex justify-content-center box-admin-login">
                 <img alt="" src={admin.image}/>
                 <div className="d-flex flex-wrap justify-content-center box-name-admin">
-                    <span className="w-100 text-center">{admin.name}</span>
+                    <span className="w-100 text-center color-second">{admin.name}</span>
                     <button className="w-50 bg-second color-white border-0">LOG OUT</button>
                 </div>
             </div>

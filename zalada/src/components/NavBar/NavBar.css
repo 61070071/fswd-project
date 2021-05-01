@@ -36,3 +36,6 @@
     height: 2vw;
     border-radius: 25px;
 }
+.color-second-hover:hover{
+    color: #435c1c;
+}

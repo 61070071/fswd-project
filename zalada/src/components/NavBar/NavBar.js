@@ -7,10 +7,6 @@ import SearchLogo from "../../images/search.svg"
 import { Link } from "react-router-dom";
 import { useSession } from '../../contexts/SessionContext'
 function NavBar() {
-    // อันนี้ใส่ dummy แทนรูปโปรเฉยๆนะ
-    const admin = {
-        image: "http://dummyimage.com/34x34/"
-    }
     const { loading, user, logout: handleLogout } = useSession()
     const userBox = useMemo(
         () => {
@@ -25,11 +21,10 @@ function NavBar() {
                 return (
                     <Fragment>
                         <div className="d-flex w-100">
-                            <img alt="" src={admin.image} className="image-profile-login mr-0-5-v" />
                             <div className="d-flex flex-wrap justify-content-center">
-                                <span className="w-100 text-center  fs-0-7-v">{user?.name}</span>
-                                <button className="w-55 mx-auto bg-second color-white border-0 fs-0-5-v rounded-pill">MANAGE ORDER</button>
-                                <button type="button" className="w-40 mx-auto bg-second color-white border-0 fs-0-5-v rounded-pill" onClick={handleLogout}>LOG OUT</button>
+                                <span className="w-100 text-center fs-0-7-v color-second">{user?.name}</span>
+                                <Link to="/admin" className="w-55 mx-auto d-flex"><button className="bg-second color-white border-0 fs-0-5-v rounded-pill">MANAGE ORDER</button></Link>
+                                <button type="button" className="w-45 mx-auto bg-second color-white border-0 fs-0-5-v rounded-pill" onClick={handleLogout}>LOG OUT</button>
                             </div>
                         </div>
                         {/* <span style={{ color: "grey" }} className="px-0-5-v">{user?.name}</span>
@@ -42,9 +37,12 @@ function NavBar() {
                 console.log("3");
                 return (
                     <Fragment>
-                        <span style={{ color: "grey" }} className="px-0-5-v">{user?.name}</span>
-                        <span style={{ color: "grey" }} className="px-0-5-v">CUSTOMER</span>
-                        <button type="button" className="btn btn-outline-danger" onClick={handleLogout}>Logout</button>
+                        <div className="d-flex w-100">
+                            <div className="d-flex flex-wrap justify-content-center">
+                                <Link className="w-100 text-center fs-0-7-v color-second color-second-hover">{user?.name}</Link>
+                                <button type="button" className="w-100 mx-auto bg-second color-white border-0 fs-0-5-v rounded-pill" onClick={handleLogout}>LOG OUT</button>
+                            </div>
+                        </div>
                     </Fragment>
                 )
             }
