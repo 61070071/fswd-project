@@ -1,11 +1,21 @@
 .box-details{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:0px 2px 8px -2px #777;
+}
+.btn-change-amount{
+    box-shadow:0px 2px 5px -2px #777;
+    border: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(120deg, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%);
+    border-radius: 5px;
+    height: 2vw;
+    padding: 0vw .5vw;
+}
+.btn-change-amount img{
+    width: 0.8vw;
 }
 .shirt{
-    padding: 1vw 1.5vw;
-    border: 0.1vw solid #D6D6D6;
     background-color: #FDFDFD;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 2px 8px -2px #777;
 }
 .details_price{
     font-size: 2vw;
@@ -17,10 +27,6 @@
 }
 .text_status{
     color: #259119;
-}
-.text_desc{
-    color: #504C4C;
-    font-size: 1vw;
 }
 .btn_change_num{
     background-color: white;

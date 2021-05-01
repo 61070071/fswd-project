@@ -300,6 +300,12 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .fs-1-2-v{
   font-size: 1.2vw;
 }
+.fs-1-5-v{
+  font-size: 1.5vw;
+}
+.fs-2-v{
+  font-size: 2vw;
+}
 .bd-1-gray{
   border: .15vw solid #ddd;
 }
