@@ -1,0 +1,8 @@
+.search_input {
+    width: 1.2vw;
+}
+
+.bar_select{
+    padding: 0.5vw 0vw 1vw 0vw;
+    border-bottom: .1vw solid #DFDFDF;
+}

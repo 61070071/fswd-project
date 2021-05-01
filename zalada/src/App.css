@@ -271,6 +271,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .mr-1-v{
   margin-right: 1vw;
 }
+.mr-2-v{
+  margin-right: 2vw;
+}
 .mb-1-v{
   margin-bottom: 1vw;
 }
