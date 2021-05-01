@@ -1,0 +1,13 @@
+.btn-assign-promotion {
+    position: fixed;
+    bottom: 0;
+    right: 2;
+    padding: 0 12vw 1.5vw 0;
+    background-image: linear-gradient(rgb(255, 255, 255, 0),#BABABA);
+}
+.btn-add-assign-admin {
+    background: linear-gradient(180deg, rgba(118,158,55,1) 0%, rgba(82,130,5,1) 100%);
+    border: 0;
+    border-radius: 5px;
+    padding: 0.3vw 1.5vw;
+}
