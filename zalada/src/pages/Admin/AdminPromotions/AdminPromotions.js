@@ -4,6 +4,7 @@ import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar"
 import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
 import Plus from "../../../images/circle-plus.svg"
 import AddAdminPromotions from "../../../components/AddAdminPromotions/AddAdminPromotions"
+import AddAdminPromotionOnsale from "../../../components/AddAdminPromotionOnsale/AddAdminPromotionOnsale"
 import Shirt from "../../../images/brown_shirt.svg"
 
 function AdminPromotions() {
@@ -14,6 +15,8 @@ function AdminPromotions() {
         stock:12,
         condition:"BUY 2",
         get:"1",
+        totalDeals: "30%",
+        totalSave: "30% OFF",
         promotionStart:"12 / 5 / 2564",
         promotionEnd:"13 / 5 / 2564"
     },
@@ -24,6 +27,8 @@ function AdminPromotions() {
         stock:13,
         condition:"BUY 2",
         get:"1",
+        totalDeals: "30%",
+        totalSave: "30% OFF",
         promotionStart:"10 / 5 / 2564",
         promotionEnd:"11 / 5 / 2564"
     },
@@ -34,6 +39,8 @@ function AdminPromotions() {
         stock:14,
         condition:"BUY 2",
         get:"1",
+        totalDeals: "30%",
+        totalSave: "30% OFF",
         promotionStart:"09 / 5 / 2564",
         promotionEnd:"14 / 6 / 2564"
     }]
@@ -79,6 +86,11 @@ function AdminPromotions() {
                                 {
                                     products.map(function (element, index) {
                                         return <AddAdminPromotions data={element}/>
+                                    })
+                                }
+                                {
+                                    products.map(function (element, index) {
+                                        return <AddAdminPromotionOnsale data={element}/>
                                     })
                                 }
                                 

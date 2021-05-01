@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./AddAdminPromotions.css";
+import "./AddAdminPromotionOnsale.css";
 import ThirdDot from "../../images/third-dot.svg"
-function AddAdminPromotions({ data }) {
+function AddAdminPromotionOnsale({ data }) {
     return (
         <div className="w-100 d-flex mt-1-v box-add-list-product">
             <div className="w-20 d-flex align-items-center">
@@ -19,14 +19,12 @@ function AddAdminPromotions({ data }) {
             </div>
             <div className="w-30 d-flex align-items-center justify-content-end py-0-5-v">
                 <div className="d-flex  w-50 flex-wrap flex-column align-items-end">
-                    <span className="fs-1-v">CONDITION :</span>
-                    <span className="fs-1-v">TOTAL SAVE :</span>
+                    <span className="fs-1-v">TOTAL DEALS :</span>
                     <span className="fs-1-v">PROMOTION START :</span>
                     <span className="fs-1-v">PROMOTION END :</span>
                 </div>
                 <div className="w-30 d-flex flex-column justify-content-end ml-1-v">
-                    <span className="color-no-4 fs-1-v">{data.condition}</span>
-                    <span className="color-no-4 fs-1-v">{data.totalSave}</span>
+                    <span className="color-no-4 fs-1-v">{data.totalDeals}</span>
                     <span className="color-second fs-1-v">{data.promotionStart}</span>
                     <span className="color-second fs-1-v">{data.promotionEnd}</span>
                 </div>
@@ -37,4 +35,4 @@ function AddAdminPromotions({ data }) {
         </div>
     );
 }
-export default AddAdminPromotions;
+export default AddAdminPromotionOnsale;
