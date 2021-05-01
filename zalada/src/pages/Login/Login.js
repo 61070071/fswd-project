@@ -39,25 +39,26 @@ function Login() {
     //     [history],
     // )
     return (
-        <div className="login d-flex justify-content-center mt-5">
-            <div className="login_face d-flex flex-column align-items-center p-4">
-                <div className="mt-5">
+        <div className="d-flex justify-content-center mt-2-5-v">
+            <div className="login_face d-flex flex-column align-items-center py-2-v">
+                <div>
                     <Link to="/"><img alt="" className="home_logo" src={HomeLogo} /></Link>
                 </div>
                 <form onSubmit={handleLogin}>
-                    <div className="mt-5">
-                        <div>
-                            <input type="text" placeholder="USERNAME" value={username} onChange={handleUsernameChange} required />
+                    <div className="mt-1-5-v d-flex w-80 flex-wrap mx-auto">
+                        <div className="w-100">
+                            <input type="text" placeholder="USERNAME" value={username} onChange={handleUsernameChange} required className="input-login-and-reg w-100" />
                         </div>
-                        <div className="mt-5">
-                            <input type="password" placeholder="PASSWORD" value={password} onChange={handlePasswordChange} required />
+                        <div className="mt-1-5-v w-100">
+                            <input type="password" placeholder="PASSWORD" value={password} onChange={handlePasswordChange} required className="input-login-and-reg w-100" />
                         </div>
-                        <Link to="#" className="d-flex justify-content-end likable forgot">FORGOT PASSWORD ?</Link>
                     </div>
-                    <div className="d-flex justify-content-center"><button type="submit" class=" btn btn-primary btn-lg mt-5 login_btn" >LOGIN</button></div>
+                    <div className="d-flex justify-content-center w-100">
+                        <button type="submit" class="mt-1-5-v login_btn w-80 fw-bold color-white py-0-5-v rounded" >LOGIN</button>
+                    </div>
                     
                 </form>
-                <span className="mt-1">or you haven't an account yet ? <Link to="/Register" className="likable">Register</Link></span>
+                <span className="mt-1-5-v">or you haven't an account yet ? <Link to="/Register" className="likable">Register</Link></span>
             </div>
         </div>
     )

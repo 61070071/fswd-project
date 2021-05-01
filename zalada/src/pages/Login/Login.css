@@ -1,6 +1,7 @@
-.login{
-    height: 100%;
-    width: 100%;
+.input-login-and-reg{
+   border: 0;
+   border-bottom: .1vw solid #777;
+   padding: 0.5vw;
 }
 .login_face{
     background-color: rgb(255, 255, 255);
@@ -10,7 +11,6 @@
 }
 
 .login_btn{
-    width: 60%!important;
     background-color: #527022;
     border: none;
 }

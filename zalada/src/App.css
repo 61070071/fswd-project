@@ -122,6 +122,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .w-60{
   width: 60%;
 }
+.w-65{
+  width: 65%;
+}
 .w-70{
   width: 70%;
 }
@@ -158,6 +161,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .h-60{
   height: 60%;
+}
+.h-65{
+  height: 65%;
 }
 .h-70{
   height: 70%;
@@ -215,6 +221,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .py-1-5-v{
   padding: 1.5vw 0vw;
+}
+.py-2-v{
+  padding: 2vw 0vw;
 }
 .py-3-v{
   padding: 3vw 0vw;

@@ -1,17 +1,12 @@
-.register{
-    height: 100%;
-    width: 100%;
-}
+
 .register_face{
     background-color: rgb(255, 255, 255);
-    width: 25vw;
-
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
+    width: 25vw;
 }
 
 .register_btn{
-    width: 60%!important;
     background-color: #527022;
     border: none;
 }
