@@ -25,6 +25,13 @@
     text-decoration: line-through;
     color: #504C4C;
 }
+.text_promotion {
+    color: #FF2424;
+    border: #FF2424 1px solid;
+    width: 12vw;
+    text-align: center;
+    border-radius: 20px;
+}
 .text_status{
     color: #259119;
 }

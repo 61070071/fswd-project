@@ -62,7 +62,8 @@ function Details() {
                 <div className="w-50 px-2-v d-flex flex-column">
                     <span className="fs-1-5-v">{shirts.productname}</span>
                     <span className="color-main fs-1-v">{shirts.productname}</span>
-                    <div className="mt-2-v"><span className="color-second details_price font-weight-bold fs-1-v">฿ {shirts.price} </span><span className="color-second details_sale font-weight-bold">{shirts.price}</span></div>
+                    <span className="text_promotion text-uppercase fs-1-v">buy 2 get free 1 !</span>
+                    <div className="mt-1-5-v"><span className="color-second details_price font-weight-bold fs-1-v">฿ {shirts.price} </span><span className="color-second details_sale font-weight-bold">{shirts.price}</span></div>
                     <span className="fs-0-8-v mb-0-5-v">Status : <span className="text_status">{shirts.productdescription}</span></span>
                     <hr className="w-25 m-0" />
                     <div className="w-75 mt-0-5-v">
