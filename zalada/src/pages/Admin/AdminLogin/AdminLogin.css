@@ -1,0 +1,18 @@
+.bg-admin-login{
+    background: rgb(149,198,69);
+    background: linear-gradient(157deg, rgba(149,198,69,1) 0%, rgba(75,99,35,1) 100%);
+    height: 100vh;
+}
+.bg-btn-admin-login{
+    background: #C4D2AD;
+    z-index: 1;
+}
+.bg-btn-admin-login span{
+    color: #2F4B00;
+    padding: .2vw 0;
+}
+.input-admin-login{
+    border-radius: 25px;
+    padding: 0.2vw .7vw;
+    border: 0;
+}

@@ -1,3 +1,9 @@
 .box-desc-dashboard{
     box-shadow: 0 2px 8px 1px rgb(212, 212, 212);
 }
+.box-desc-dashboard img{
+    height: 1.3vw;
+}
+.image-cart-loading{
+    height: 2vw !important;
+}

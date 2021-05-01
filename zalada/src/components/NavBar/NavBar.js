@@ -7,6 +7,10 @@ import SearchLogo from "../../images/search.svg"
 import { Link } from "react-router-dom";
 import { useSession } from '../../contexts/SessionContext'
 function NavBar() {
+    // อันนี้ใส่ dummy แทนรูปโปรเฉยๆนะ
+    const admin = {
+        image: "http://dummyimage.com/34x34/"
+    }
     const { loading, user, logout: handleLogout } = useSession()
     const userBox = useMemo(
         () => {
@@ -20,9 +24,17 @@ function NavBar() {
                 console.log("2");
                 return (
                     <Fragment>
-                        <span style={{ color: "grey" }} className="px-0-5-v">{user?.name}</span>
+                        <div className="d-flex w-100">
+                            <img alt="" src={admin.image} className="image-profile-login mr-0-5-v" />
+                            <div className="d-flex flex-wrap justify-content-center">
+                                <span className="w-100 text-center  fs-0-7-v">{user?.name}</span>
+                                <button className="w-55 mx-auto bg-second color-white border-0 fs-0-5-v rounded-pill">MANAGE ORDER</button>
+                                <button type="button" className="w-40 mx-auto bg-second color-white border-0 fs-0-5-v rounded-pill" onClick={handleLogout}>LOG OUT</button>
+                            </div>
+                        </div>
+                        {/* <span style={{ color: "grey" }} className="px-0-5-v">{user?.name}</span>
                         <span style={{ color: "grey" }} className="px-0-5-v">ADMIN</span>
-                        <button type="button" className="btn btn-outline-danger" onClick={handleLogout}>Logout</button>
+                        <button type="button" className="btn btn-outline-danger" onClick={handleLogout}>Logout</button> */}
                     </Fragment>
                 )
             }
@@ -73,7 +85,7 @@ function NavBar() {
                 </div>
             </div>
             <div className="d-flex justify-content-end flex-50">
-                <div className="d-flex mr-6-v">
+                <div className="d-flex mr-5-v">
                     <img alt="" className="search_logo" src={SearchLogo} />
                     <input className="mr-1-v pr-2-v input-nav-bar" type="text" placeholder="Search and hit enter..." />
                     <Link to="/cart">

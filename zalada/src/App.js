@@ -30,6 +30,7 @@ import AdminPromotionCreate from "./pages/Admin/AdminPromotionCreate/AdminPromot
 import AdminPromotionCreateOnSale from "./pages/Admin/AdminPromotionCreateOnSale/AdminPromotionCreateOnSale";
 import AdminPromotionCreateGet from "./pages/Admin/AdminPromotionCreateGet/AdminPromotionCreateGet";
 import AdminAssignPromotion from "./pages/Admin/AssignPromotion/AssignPromotion";
+import AdminLogin from "./pages/Admin/AdminLogin/AdminLogin";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -78,6 +79,9 @@ function App() {
           </Route>
           <Route path="/admin" exact>
             <Admin />
+          </Route>
+          <Route path="/admin/login">
+            <AdminLogin />
           </Route>
           <Route path="/admin/products">
             <AdminProduct />

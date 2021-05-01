@@ -4,6 +4,8 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
 import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin";
 import Cart from "../../../images/icon-cart.svg";
+import CartLoading from "../../../images/cart-load.svg";
+import Package from "../../../images/icon-package.svg";
 function Admin() {
     const data = [
         {
@@ -51,7 +53,7 @@ function Admin() {
                     </div>
                     <div className="w-20 h-50 d-flex mx-auto box-desc-dashboard">
                         <div className="w-25 d-flex justify-content-center align-items-center bg-second ">
-                            <img alt="" src={Cart} />
+                            <img alt="" src={CartLoading} className="image-cart-loading"/>
                         </div>
                         <div className="w-75 d-flex flex-wrap h-100 py-0-5-v bg-white">
                             <div className="w-90 mx-auto h-10 d-flex mt-0-1-v">
@@ -69,7 +71,7 @@ function Admin() {
                     </div>
                     <div className="w-20 h-50 d-flex mx-auto box-desc-dashboard">
                         <div className="w-25 d-flex justify-content-center align-items-center bg-second ">
-                            <img alt="" src={Cart} />
+                            <img alt="" src={Package} />
                         </div>
                         <div className="w-75 d-flex flex-wrap h-100 py-0-5-v bg-white">
                             <div className="w-90 mx-auto h-10 d-flex mt-0-1-v">
@@ -87,7 +89,7 @@ function Admin() {
                     </div>
                     <div className="w-20 h-50 d-flex mx-auto box-desc-dashboard">
                         <div className="w-25 d-flex justify-content-center align-items-center bg-second ">
-                            <img alt="" src={Cart} />
+                            <img alt="" src={Package} />
                         </div>
                         <div className="w-75 d-flex flex-wrap h-100 py-0-5-v bg-white">
                             <div className="w-90 mx-auto h-10 d-flex">
