@@ -5,6 +5,9 @@
     height: 12vw;
     margin-bottom: 0.5vw;
 }
+.image-promotion-customer{
+    height: 10vw;
+}
 .box_pro,.text_name,.text_price{
     margin: 0.3vw auto;
 }

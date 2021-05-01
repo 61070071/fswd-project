@@ -1,6 +1,10 @@
 .box_product_promotion{
     padding: 2vw 1vw;
 }
+.box_product_promotion img{
+    height: 12vw;
+    margin-bottom: 0.5vw;
+}
 .box_promotion{
     color: #FF0000;
     border: 0.1vw solid #FF0000;

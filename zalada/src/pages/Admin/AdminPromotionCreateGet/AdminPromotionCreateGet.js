@@ -84,7 +84,7 @@ function AdminPromotionCreateGet() {
                                         <span className="py-0-5-v fs-0-7-v color-third">BUY</span>
                                     </div>
                                     <div className="w-10 d-flex justify-content-center mx-auto">
-                                        <span className="py-0-5-v fs-0-7-v color-third">DISCOUNT</span>
+                                        <span className="py-0-5-v fs-0-7-v color-third">GET</span>
                                     </div>
                                     <div className="w-10 d-flex justify-content-center mx-auto">
                                         <span className="py-0-5-v fs-0-7-v color-third text-center">PROMOTION<br />START</span>
