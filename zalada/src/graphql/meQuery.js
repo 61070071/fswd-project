@@ -5,6 +5,7 @@ query {
   me {
     _id
     name
+    type
   }
 }
 `

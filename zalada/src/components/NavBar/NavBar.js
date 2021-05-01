@@ -11,14 +11,27 @@ function NavBar() {
     const userBox = useMemo(
         () => {
             if (loading) {
+                console.log(user?.type);
                 return (
                     <span className="Navbar-user" style={{ color: "red" }}>Loading ...</span>
                 )
             }
-            if (user) {
+            if (user?.type == 'Admin') {
+                console.log("2");
                 return (
                     <Fragment>
                         <span style={{ color: "grey" }} className="px-0-5-v">{user?.name}</span>
+                        <span style={{ color: "grey" }} className="px-0-5-v">ADMIN</span>
+                        <button type="button" className="btn btn-outline-danger" onClick={handleLogout}>Logout</button>
+                    </Fragment>
+                )
+            }
+            if (user?.type == 'Customer') {
+                console.log("3");
+                return (
+                    <Fragment>
+                        <span style={{ color: "grey" }} className="px-0-5-v">{user?.name}</span>
+                        <span style={{ color: "grey" }} className="px-0-5-v">CUSTOMER</span>
                         <button type="button" className="btn btn-outline-danger" onClick={handleLogout}>Logout</button>
                     </Fragment>
                 )
