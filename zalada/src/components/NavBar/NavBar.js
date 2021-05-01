@@ -51,6 +51,9 @@ function NavBar() {
                             <Link to="/products">SHOP</Link>
                         </li>
                         <li>
+                            <Link to="/promotions">PROMOTION</Link>
+                        </li>
+                        <li>
                             <Link to="/about_us">ABOUT US</Link>
                         </li>
                     </ul>

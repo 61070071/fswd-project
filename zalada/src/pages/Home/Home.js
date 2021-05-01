@@ -9,12 +9,14 @@ import C3img from "../../images/carousel/crs_3.png";
 import C4img from "../../images/carousel/crs_4.png";
 import TestImg from "../../images/leather_jacket_PNG41.png";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import ProductSale from "../../components/Products_Sale/Products_Sale";
 import { useQuery } from '@apollo/client'
-import { PRODUCTS_QUERY } from '../../graphql/productsOGQuery.js'
+import { PRODUCTS_QUERY, PROMOTIONS_SALE_QUERY } from '../../graphql/productsOGQuery.js'
 
 function Home() {
-
+  const dataSale = useQuery(PROMOTIONS_SALE_QUERY).data
   const { loading, error, data } = useQuery(PRODUCTS_QUERY)
+  const ProSale = dataSale?.promotionSales
   // const products = [{
   //   img: TestImg,
   //   promotion: "30% WHEN BUY 2",
@@ -73,17 +75,17 @@ function Home() {
   console.log(data?.products)
   const products = data?.products
 
-  const count_product = data?.products.length;
+  const count_product = dataSale?.promotionSales?.length;
   let arr_product_items = []
   let arr_products = []
 
   for (let i = 0; i < count_product / 4; i++) {
     for (let j = 0; j < 4; j++) {
       let element
-      if (products[(i * 4) + j] == null) {
-        element = <div className="w-20"><ProductCard data={products[j]} /></div>
+      if (ProSale[(i * 4) + j] == null) {
+        element = <div className="w-20"><ProductSale data={ProSale[j]} /></div>
       } else {
-        element = <div className="w-20"><ProductCard data={products[(i * 4) + j]} /></div>
+        element = <div className="w-20"><ProductSale data={ProSale[(i * 4) + j]} /></div>
       }
       arr_product_items.push(element)
     }
