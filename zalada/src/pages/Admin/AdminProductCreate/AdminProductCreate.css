@@ -16,6 +16,7 @@
     background: rgb(249,249,249);
     background: linear-gradient(197deg, rgba(249,249,249,1) 28%, rgba(219,219,219,1) 100%);
     border-radius: 15px;
+    text-align-last:center;
 }
 .btn-upload-pic{
     font-size: 0.7vw;
