@@ -24,8 +24,10 @@ import Admin from "./pages/Admin/DashBoard/Admin"
 import AdminOrder from "./pages/Admin/Order/Order.js"
 import AdminProduct from "./pages/Admin/Product/Product";
 import AdminPromotions from "./pages/Admin/AdminPromotions/AdminPromotions";
-import AdminProductCreate from "./pages/Admin/AdminProductCreate/AdminProductCreate"
-
+import AdminProductCreate from "./pages/Admin/AdminProductCreate/AdminProductCreate";
+import AdminPromotionCreate from "./pages/Admin/AdminPromotionCreate/AdminPromotionCreate";
+import AdminPromotionCreateOnSale from "./pages/Admin/AdminPromotionCreateOnSale/AdminPromotionCreateOnSale";
+import AdminPromotionCreateGet from "./pages/Admin/AdminPromotionCreateGet/AdminPromotionCreateGet";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -48,9 +50,6 @@ function App() {
           <Route path="/cart">
             <Cart />
           </Route>
-          <Route path="/" exact>
-            <Home />
-          </Route>
           <Route path="/login">
             <Login />
           </Route>
@@ -72,7 +71,6 @@ function App() {
           <Route path="/payment">
             <Payment />
           </Route>
-
           <Route path="/admin" exact>
             <Admin />
           </Route>
@@ -81,6 +79,15 @@ function App() {
           </Route>
           <Route path="/admin/product/create">
             <AdminProductCreate />
+          </Route>
+          <Route path="/admin/promotions/create/onsale">
+            <AdminPromotionCreateOnSale />
+          </Route>
+          <Route path="/admin/promotions/create/getmore">
+            <AdminPromotionCreateGet />
+          </Route>
+          <Route path="/admin/promotions/create">
+            <AdminPromotionCreate />
           </Route>
           <Route path="/admin/promotions">
             <AdminPromotions />

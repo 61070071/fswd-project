@@ -18,7 +18,6 @@ function AdminProductCreate() {
             <div className="w-15">
                 <AdminNavBar />
             </div>
-
             <div className="w-85 d-flex flex-wrap align-items-start">
                 <NamePageAdmin />
                 { popUp === true &&

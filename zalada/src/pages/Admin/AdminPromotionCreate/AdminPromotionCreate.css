@@ -1,0 +1,16 @@
+.bg-select-promotion{
+    background: #95C645;
+    opacity: 12%;
+    border: 0.2vw solid #6D8D3A;
+    border-radius: 10px;
+}
+.bd-select-promotion{
+    padding: 4vw 0vw;
+    border-radius: 10px;
+}
+.image-select-promotion{
+    height: 7vw;
+}
+.image-tag-promotion{
+    height: 1.5vw;
+}

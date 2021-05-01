@@ -1,4 +1,3 @@
-import "./Admin.css";
 import React from "react";
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar"
 import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"

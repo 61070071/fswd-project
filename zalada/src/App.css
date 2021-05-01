@@ -174,6 +174,12 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .h-95{
   height: 95%;
 }
+.h-30-v{
+  height: 30vw;
+}
+.h-95-v{
+  height: 95vw;
+}
 .justify-content-evenly{
   justify-content: space-evenly;
 }
@@ -264,8 +270,41 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .mr-1-v{
   margin-right: 1vw;
 }
+.mb-1-v{
+  margin-bottom: 1vw;
+}
+.mb-2-v{
+  margin-bottom: 2vw;
+}
+.mb-3-v{
+  margin-bottom: 3vw;
+}
+.mb-4-v{
+  margin-bottom: 4vw;
+}
+.fs-0-5-v{
+  font-size: 0.5vw;
+}
+.fs-0-7-v{
+  font-size: 0.7vw;
+}
+.fs-0-8-v{
+  font-size: 0.8vw;
+}
+.fs-0-9-v{
+  font-size: 0.9vw;
+}
+.fs-1-v{
+  font-size: 1vw;
+}
+.fs-1-2-v{
+  font-size: 1.2vw;
+}
 .bd-1-gray{
   border: .15vw solid #ddd;
+}
+.z-index-1{
+  z-index: 1;
 }
 .z-index-2{
   z-index: 2;
