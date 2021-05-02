@@ -25,3 +25,8 @@
     text-align: center;
     margin: 0vw 0.3vw;
 }
+.overflow-list-product{
+    height: 37vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

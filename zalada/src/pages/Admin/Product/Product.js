@@ -50,7 +50,7 @@ function Product() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-100">
+                            <div className="w-100 overflow-list-product">
                                 {
                                     data?.products.map(function (element, index) {
                                         return <AddListProduct data={element} />
