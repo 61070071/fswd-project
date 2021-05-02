@@ -110,7 +110,7 @@ function App() {
           <Route path="/admin/promotions/create/onsale/:productId">
             <AdminAssignPromotionOnsale />
           </Route>
-          <Route path="/admin/promotions/create/onsale">
+          <Route path="/admin/promotions/create/onsale/:productId">
             <AdminPromotionCreateOnSale />
           </Route>
           <Route path="/admin/promotions/create/getfree/:productId">
@@ -121,9 +121,6 @@ function App() {
           </Route>
           <Route path="/admin/promotions/create/:productId">
             <AdminPromotionCreate />
-          </Route>
-          <Route path="/admin/promotions/create">
-            <AdminPromotionCreateOnSale />
           </Route>
           <Route path="/admin/promotions">
             <AdminPromotions />
