@@ -5,24 +5,13 @@ import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
 import Plus from "../../../images/plus-green.svg";
 import Calendar from "../../../images/icon-calendar.svg";
 import AddPromotionOnSale from "../../../components/AddPromotionOnSale/AddPromotionOnSale";
+import { useQuery } from '@apollo/client'
+import { PRODUCTS_QUERY } from '../../../graphql/productsOGQuery.js'
 import AddAssignPromotion from "../../../components/AddAssignPromotion/AddAssignPromotion"
 function AdminPromotionCreateOnSale() {
-    const pro_data = [{
-        product_no: "#001",
-        product_name: "LEATHER JACKET",
-        product_category: "BAG",
-        pro_discount: "-",
-        pro_start: "-",
-        pro_end: "-"
-    },
-    {
-        product_no: "#002",
-        product_name: "LEATHER JACKET",
-        product_category: "BAG",
-        pro_discount: "-",
-        pro_start: "-",
-        pro_end: "-"
-    }]
+    const { loading, error, data } = useQuery(PRODUCTS_QUERY)
+    const products = data?.products
+
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
@@ -39,7 +28,7 @@ function AdminPromotionCreateOnSale() {
 
                         <div className="w-100 h-30-v">
                             {
-                                pro_data.map(function (element, index) {
+                                products.map(function (element, index) {
                                     return <AddAssignPromotion data={element} />
                                 })
                             }
