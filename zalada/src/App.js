@@ -32,6 +32,7 @@ import AdminPromotionCreateGet from "./pages/Admin/AdminPromotionCreateGet/Admin
 import AdminAssignPromotionOnsale from "./pages/Admin/AssignPromotionOnsale/AssignPromotionOnsale";
 import AdminAssignPromotionGetFree from "./pages/Admin/AssignPromotionGetFree/AssignPromotionGetFree";
 import AdminUpdateOnsale from "./pages/Admin/AdminUpdateOnsale/AdminUpdateOnsale"
+import AdminUpdateGetFree from "./pages/Admin/AdminUpdateGetFree/AdminUpdateGetFree"
 import AdminLogin from "./pages/Admin/AdminLogin/AdminLogin";
 import AdminProductDetails from "./pages/Admin/AdminProductDetails/AdminProductDetails";
 import PromotionSale from "./pages/PromotionDetailsSale/PromotionDetailsSale";
@@ -107,11 +108,13 @@ function App() {
           <Route path="/admin/promotion/update/onsale/:productId">
             <AdminUpdateOnsale />
           </Route>
-
           <Route path="/admin/promotion/create/onsale/:productId">
             <AdminAssignPromotionOnsale />
           </Route>
 
+          <Route path="/admin/promotion/update/getfree/:productId">
+            <AdminUpdateGetFree />
+          </Route>
           <Route path="/admin/promotion/create/getfree/:productId">
             <AdminAssignPromotionGetFree />
           </Route>

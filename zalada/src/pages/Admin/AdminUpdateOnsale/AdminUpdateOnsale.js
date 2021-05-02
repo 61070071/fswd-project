@@ -90,8 +90,6 @@ function AdminUpdateOnsale() {
                                     <div className="w-100 d-flex flex-column mt-0-5-v color-no-5">
                                         <span className="py-0-5-v">PRODUCT NAME</span>
                                         <input onChange={handleInputChange} value={product.productname} type="productname" name="productname" className="w-70 bg-third rounded bd-1-gray" />
-                                        
-                                        
                                     </div>
                                     <div className="w-100 d-flex flex-column mt-0-5-v color-no-5">
                                         <span className="py-0-5-v">QUANTITY</span>
@@ -103,11 +101,11 @@ function AdminUpdateOnsale() {
                                     </div>
                                     <div className="w-100 d-flex flex-column mt-1-v color-no-5">
                                         <span className="py-0-5-v">DISCOUNT (%)</span>
-                                        <input onChange={handleInputChange} value={product.discount} type="number"  name="discount" className="w-70 bg-third rounded bd-1-gray" />
+                                        <input onChange={handleInputChange} value={product.discount} type="number"  name="discount" className="w-35 bg-third rounded bd-1-gray" />
                                     </div>
                                     <div className="w-100 d-flex flex-column mt-1-v color-no-5">
                                         <span className="py-0-5-v">TOTAL PRICE</span>
-                                        <input onChange={handleInputChange} value={product.total} type="number"  name="total" className="w-70 bg-third rounded bd-1-gray" />
+                                        <input onChange={handleInputChange} value={product.total} type="number"  name="total" className="w-35 bg-third rounded bd-1-gray" />
                                     </div>
                                     <button className="w-70 mt-2-v bg-second color-white rounded border-0 py-0-5-v font-weight-bold" type="submit">UPDATE</button>
                                 </div>
