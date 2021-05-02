@@ -74,6 +74,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .bg-pearl {
   background: #FCFCFC;
 }
+.bg-cloud {
+  background: #F6F6F6;
+}
 .flex-5{
   flex: 1 1 5%;
 }
