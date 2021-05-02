@@ -17,61 +17,6 @@ function Home() {
   const dataSale = useQuery(PROMOTIONS_SALE_QUERY).data
   const { loading, error, data } = useQuery(PRODUCTS_QUERY)
   const ProSale = dataSale?.promotionSales
-  // const products = [{
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET1",
-  //   price: "1,553 ฿",
-  // }, {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET2",
-  //   price: "1,553 ฿",
-  // }, {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET3",
-  //   price: "1,553 ฿",
-  // }, {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET4",
-  //   price: "1,553 ฿",
-  // }, {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET5",
-  //   price: "1,553 ฿",
-  // }, {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET6",
-  //   price: "1,553 ฿",
-  // },
-  // {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET BLACK7",
-  //   price: "1,450 ฿",
-  // },
-  // {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET RED8",
-  //   price: "1,500 ฿",
-  // },
-  // {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET GREEN9",
-  //   price: "1,650 ฿",
-  // },
-  // {
-  //   img: TestImg,
-  //   promotion: "30% WHEN BUY 2",
-  //   name: "JEANS JACKET BLUE10",
-  //   price: "1,850 ฿",
-  // }]
   console.log(data?.products)
   const products = data?.products
 

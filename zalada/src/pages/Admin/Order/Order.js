@@ -5,8 +5,9 @@ import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import AdminOrders from "../../../components/AdminOrders/AdminOrders";
-
+// import { useQuery } from '@apollo/client';
 function Order() {
+    // const { loading, error, data } = useQuery(PRODUCTS_QUERY)
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">

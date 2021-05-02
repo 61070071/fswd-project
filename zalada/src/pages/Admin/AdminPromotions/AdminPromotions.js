@@ -7,7 +7,7 @@ import AddAdminPromotions from "../../../components/AddAdminPromotions/AddAdminP
 import AddAdminPromotionOnsale from "../../../components/AddAdminPromotionOnsale/AddAdminPromotionOnsale"
 import Shirt from "../../../images/brown_shirt.svg"
 import SearchLogo from "../../../images/search.svg"
-
+import { Link } from "react-router-dom";
 function AdminPromotions() {
     const products = [{
         id: "001",
@@ -48,15 +48,17 @@ function AdminPromotions() {
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
-                <AdminNavBar page={3}/>
+                <AdminNavBar page={3} />
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin page={3}/>
+                <NamePageAdmin page={3} />
                 <div className="w-100 mx-auto h-100 bg-main">
                     <div className="w-90 mx-auto bg-white ">
-                        <div className="w-100 d-flex justify-content-end py-1-v bg-main">
-                            <button className="btn-add-product-admin color-white font-weight-bold d-flex align-items-center">ADD PROMOTION <img alt="" src={Plus} /></button>
-                        </div>
+                        <Link to="/admin/promotions/create">
+                            <div className="w-100 d-flex justify-content-end py-1-v bg-main">
+                                <button className="btn-add-product-admin color-white font-weight-bold d-flex align-items-center">ADD PROMOTION <img alt="" src={Plus} /></button>
+                            </div>
+                        </Link>
                         <div className="w-100 box-add-product">
                             <div className="w-100 d-flex bar_select d-flex align-items-end">
                                 <div className="w-30">

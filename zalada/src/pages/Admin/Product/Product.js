@@ -4,43 +4,26 @@ import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar"
 import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
 import Plus from "../../../images/circle-plus.svg"
 import AddListProduct from "../../../components/AddListProduct/AddListProduct"
-import Shirt from "../../../images/brown_shirt.svg"
 import { useQuery } from '@apollo/client'
 import { PRODUCTS_QUERY } from '../../../graphql/productsOGQuery.js'
-
+import { Link } from "react-router-dom";
 function Product() {
     const { loading, error, data } = useQuery(PRODUCTS_QUERY)
     const products = data?.products
-    // const products = [{
-    //     id:"001",
-    //     name:"LEATHER JACKET",
-    //     image:Shirt,
-    //     stock:12,
-    // },
-    // {
-    //     id:"002",
-    //     name:"LEATHER JACKET",
-    //     image:Shirt,
-    //     stock:13,
-    // },
-    // {
-    //     id:"003",
-    //     name:"LEATHER JACKET",
-    //     image:Shirt,
-    //     stock:14,
-    // }]
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
-                <AdminNavBar page={2}/>
+                <AdminNavBar page={2} />
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin page={2}/>
+                <NamePageAdmin page={2} />
                 <div className="w-100 d-flex mx-auto h-90 bg-main py-1-v">
                     <div className="w-90 mx-auto bg-white ">
-                        <div className="w-100 d-flex justify-content-end pb-1-v bg-main">
-                            <button className="btn-add-product-admin color-white font-weight-bold d-flex align-items-center">ADD PRODUCT <img alt="" src={Plus} /></button>
-                        </div>
+                        <Link to="/admin/product/create">
+                            <div className="w-100 d-flex justify-content-end pb-1-v bg-main">
+                                <button className="btn-add-product-admin color-white font-weight-bold d-flex align-items-center">ADD PRODUCT <img alt="" src={Plus} /></button>
+                            </div>
+                        </Link>
                         <div className="w-100 box-add-product">
                             <div className="w-100 d-flex top-list-add-product">
                                 <div className="w-55">
@@ -70,10 +53,10 @@ function Product() {
                             <div className="w-100">
                                 {
                                     data?.products.map(function (element, index) {
-                                        return <AddListProduct data={element}/>
+                                        return <AddListProduct data={element} />
                                     })
                                 }
-                                
+
                             </div>
                         </div>
                     </div>
