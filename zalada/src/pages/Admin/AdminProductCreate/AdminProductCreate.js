@@ -96,7 +96,7 @@ function AdminProductCreate() {
                                 </div>
 
                                 <div className="w-50 d-flex flex-wrap">
-                                    <div className="w-90 mx-auto d-flex justify-content-center flex-column align-items-center py-1-v">
+                                    <div className="w-90 mx-auto d-flex justify-content-center flex-column align-items-center py-1-v line-bottom-gray">
                                         <span>PRODUCT PREVIEW PICTURE</span>
                                         <img className="mt-1-v" alt="" src={UploadPicture} />
                                         <div className="d-flex w-30 justify-content-around position-relative btn-upload-pic mt-1-v">

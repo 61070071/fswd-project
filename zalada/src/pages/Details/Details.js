@@ -37,7 +37,6 @@ function Details() {
                     <div className="w-75 shirt">
                         <img alt="" className="w-100" src={shirts?.photourl} />
                     </div>
-
                 </div>
                 <div className="w-50 px-2-v d-flex flex-column">
                     <span className="fs-1-5-v">{shirts.productname}</span>
