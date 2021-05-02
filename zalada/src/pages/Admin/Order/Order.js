@@ -1,8 +1,6 @@
 import React from "react";
 import "./Order.css"
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar"
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import AdminOrders from "../../../components/AdminOrders/AdminOrders";
 // import { useQuery } from '@apollo/client';
@@ -14,8 +12,6 @@ function Order() {
                 <AdminNavBar page={1}/>
             </div>
             <div className="w-85 d-flex flex-column bg-gray">
-                <NamePageAdmin page={1}/>
-
                 <div className="order_dashboard w-90 bg-white">
                     <div className="d-flex justify-content-between">
                         <div>

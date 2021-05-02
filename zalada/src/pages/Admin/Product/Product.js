@@ -1,7 +1,6 @@
 import "./Product.css";
 import React from "react";
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar"
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
 import Plus from "../../../images/circle-plus.svg"
 import AddListProduct from "../../../components/AddListProduct/AddListProduct"
 import { useQuery } from '@apollo/client'
@@ -16,7 +15,6 @@ function Product() {
                 <AdminNavBar page={2} />
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin page={2} />
                 <div className="w-100 d-flex mx-auto h-90 bg-main py-1-v">
                     <div className="w-90 mx-auto bg-white ">
                         <Link to="/admin/product/create">

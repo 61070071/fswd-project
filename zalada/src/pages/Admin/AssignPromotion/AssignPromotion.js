@@ -1,7 +1,6 @@
 import "./AssignPromotion.css";
 import React from "react";
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar"
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
 import AddAssignPromotion from "../../../components/AdminAssignPromotion/AdminAssignPromotion"
 
 import Shirt from "../../../images/brown_shirt.svg"
@@ -50,7 +49,6 @@ function AssignPromotions() {
                 <AdminNavBar page={3} />
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin page={3} />
                 <div className="w-100 mx-auto h-100 bg-main">
                     <div className="w-90 mx-auto bg-white ">
                         <div className="w-100 box-add-product mt-2-v">

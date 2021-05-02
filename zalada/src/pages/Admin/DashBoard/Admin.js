@@ -2,7 +2,6 @@ import React from "react";
 import "./Admin.css"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin";
 import Cart from "../../../images/icon-cart.svg";
 import CartLoading from "../../../images/cart-load.svg";
 import Package from "../../../images/icon-package.svg";
@@ -63,7 +62,6 @@ function Admin() {
                 <AdminNavBar page={0} />
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start bg-main">
-                <NamePageAdmin page={0} />
                 <div className="w-95 mx-auto h-25 d-flex justify-content-center color-second align-items-center">
                     <div className="w-20 h-50 d-flex mx-auto  box-desc-dashboard">
                         <div className="w-25 d-flex justify-content-center align-items-center bg-second ">

@@ -1,7 +1,6 @@
 import React from "react";
 import "./AdminPromotionCreate.css"
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin";
 import Tag from "../../../images/icon-tag.svg";
 import SaleTag from "../../../images/sale-tag.svg";
 import ShopBag from "../../../images/shop-bag.svg";
@@ -10,10 +9,9 @@ function AdminPromotionCreate() {
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
-                <AdminNavBar />
+                <AdminNavBar  page={3}/>
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start bg-main">
-                <NamePageAdmin />
                 <div className="bg-white mx-auto w-90 d-flex align-items-start flex-wrap">
                     <div className="w-90 mx-auto d-flex justify-content-center align-items-center py-1-v mt-1-v">
                         <span className="color-second fs-1-2-v">SELECT PROMOTION</span>

@@ -4,7 +4,6 @@ import { useCallback, useState } from 'react'
 import { useHistory } from 'react-router'
 import { useMutation } from '@apollo/client'
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin";
 import Plus from "../../../images/plus-green.svg";
 import UploadPicture from "../../../images/upload-picture.svg";
 import Photo from "../../../images/add-a-photo.svg";
@@ -47,10 +46,9 @@ function AdminProductCreate() {
         <div className="d-flex flex-wrap">
 
             <div className="w-15">
-                <AdminNavBar />
+                <AdminNavBar  page={2}/>
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin />
                 <div className="w-100 h-90 bg-main d-flex py-1-5-v">
                     <div className="w-95 mx-auto bg-white">
                         <div className="w-95 mx-auto line-bottom-gray">

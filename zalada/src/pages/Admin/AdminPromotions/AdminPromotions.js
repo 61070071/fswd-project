@@ -1,7 +1,6 @@
 import "./AdminPromotions.css";
 import React from "react";
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar"
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
 import Plus from "../../../images/circle-plus.svg"
 import AddAdminPromotions from "../../../components/AddAdminPromotions/AddAdminPromotions"
 import AddAdminPromotionOnsale from "../../../components/AddAdminPromotionOnsale/AddAdminPromotionOnsale"
@@ -51,7 +50,6 @@ function AdminPromotions() {
                 <AdminNavBar page={3} />
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin page={3} />
                 <div className="w-100 mx-auto bg-main pb-2-v">
                     <div className="w-90 mx-auto bg-white ">
                         <Link to="/admin/promotions/create">

@@ -1,15 +1,10 @@
 import React from "react";
 import "./AdminOrderDetail.css"
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar"
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin"
 import CustomerProduct from "../../../components/CustomerProduct/CustomerProduct.js"
-
 import packageWhite from "../../../images/package-white.svg";
 import truckWhite from "../../../images/truck-white.svg";
-import truckGray from "../../../images/truck-gray.svg";
-import deliveredWhite from "../../../images/delivered-white.svg";
 import deliveredGray from "../../../images/delivered-gray.svg";
-import brownShirt from "../../../images/brown_shirt.svg";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -17,10 +12,9 @@ function AdminOrderDetail() {
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
-                <AdminNavBar />
+                <AdminNavBar page={1}/>
             </div>
             <div className="w-85 d-flex flex-column bg-gray">
-                <NamePageAdmin />
                 <div className="d-flex justify-content-center">
                     <div className="order_detail w-60">
                         <div className="customer_detail">

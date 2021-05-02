@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./AdminPromotionCreateOnSale.css"
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
-import NamePageAdmin from "../../../components/NamePageAdmin/NamePageAdmin";
 import Plus from "../../../images/plus-green.svg";
 import Calendar from "../../../images/icon-calendar.svg";
 import AddPromotionOnSale from "../../../components/AddPromotionOnSale/AddPromotionOnSale";
@@ -26,10 +25,9 @@ function AdminPromotionCreateOnSale() {
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
-                <AdminNavBar />
+                <AdminNavBar page={3}/>
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start bg-main">
-                <NamePageAdmin />
                 <div className="bg-white mx-auto w-90 d-flex align-items-start flex-wrap">
                     <div className="w-100 box-add-product">
                         <div className="w-100 mx-auto d-flex top-list-add-promotion py-0-5-v">
