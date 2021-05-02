@@ -4,7 +4,7 @@ import del from "../../images/icon-delect.svg"
 import { Link } from "react-router-dom";
 function AddListProduct({ data }) {
 
-    const [activeBtn, setActiveBtn] = useState(true);
+    const [activeBtn, setActiveBtn] = useState(data.isActive);
 
     function toggleBtn() {
         setActiveBtn(!activeBtn);

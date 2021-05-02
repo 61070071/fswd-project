@@ -3,6 +3,7 @@ import { gql } from '@apollo/client'
 export const PRODUCTS_QUERY = gql`
 query{
     products{
+      isActive
       productname
       _id
       catagory
@@ -46,6 +47,7 @@ query {
 export const PRODUCT_QUERY_ID = gql`
 query($productId: MongoID!){
   productById(_id:$productId){
+      isActive
       productname
       _id
       catagory
