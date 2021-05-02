@@ -7,3 +7,4 @@ export const promotionSales = PromotionSaleTC.getResolver('findMany')
 export const promotionFrees = PromotionFreeTC.getResolver('findMany')
 
 export const productById = ProductTC.getResolver('findById')
+export const UpdateproductById = ProductOGTC.getResolver('updateById')

@@ -10,7 +10,8 @@ function AddListProduct({ data }) {
         setActiveBtn(!activeBtn);
     }
     return (
-        <Link to="/admin/product/:productId">
+         <Link to={`/admin/product/${data._id}`} onClick={() => window.location.href=`/admin/product/${data._id}`}> 
+         {/* /admin/product/:productId */}
             <div className="w-100 d-flex mt-1-v box-add-list-product">
                 <div className="w-50 d-flex align-items-center">
                     <div className="image-add-product-in-list">
