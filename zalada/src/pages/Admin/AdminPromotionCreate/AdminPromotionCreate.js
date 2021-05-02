@@ -5,7 +5,11 @@ import Tag from "../../../images/icon-tag.svg";
 import SaleTag from "../../../images/sale-tag.svg";
 import ShopBag from "../../../images/shop-bag.svg";
 import { Link } from "react-router-dom";
-function AdminPromotionCreate() {
+import { useParams } from "react-router";
+
+function AdminPromotionCreate({ data }) {
+    const { productId } = useParams();
+    console.log(productId);
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
@@ -18,14 +22,14 @@ function AdminPromotionCreate() {
                         <img alt="" src={Tag} className="ml-1-v image-tag-promotion" />
                     </div>
                     <div className="w-70 mx-auto d-flex py-3-v">
-                        <Link to="/admin/promotions/create/onsale" className="w-50 justify-content-center d-flex flex-wrap">
+                        <Link to={`/admin/promotion/create/onsale/${productId}`} onClick={() => window.location.href=`/admin/promotion/create/onsale/${productId}`} className="w-50 justify-content-center d-flex flex-wrap">
                             <div className="w-70 d-flex justify-content-center position-relative bd-select-promotion align-items-center">
                                 <img alt="" src={SaleTag} className="z-index-1 image-select-promotion" />
                                 <div className="w-100 h-100 position-absolute bg-select-promotion" />
                             </div>
                             <span className="w-100 text-center mt-1-v fs-1-v color-second">ON SALE</span>
                         </Link>
-                        <Link to="/admin/promotions/create/getfree" className="w-50 justify-content-center d-flex flex-wrap">
+                        <Link to={`/admin/promotion/create/getfree/${productId}`} onClick={() => window.location.href=`/admin/promotion/create/getfree/${productId}`} className="w-50 justify-content-center d-flex flex-wrap">
                             <div className="w-70 d-flex justify-content-center position-relative bd-select-promotion align-items-center">
                                 <img alt="" src={ShopBag} className="z-index-1 image-select-promotion" />
                                 <div className="w-100 h-100 position-absolute bg-select-promotion" />

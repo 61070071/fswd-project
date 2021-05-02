@@ -11,7 +11,22 @@ import AddAssignPromotion from "../../../components/AddAssignPromotion/AddAssign
 function AdminPromotionCreateOnSale() {
     const { loading, error, data } = useQuery(PRODUCTS_QUERY)
     const products = data?.products
-
+    const pro_data = [{
+        product_no: "#001",
+        product_name: "LEATHER JACKET",
+        product_category: "BAG",
+        pro_discount: "-",
+        pro_start: "-",
+        pro_end: "-"
+    },
+    {
+        product_no: "#002",
+        product_name: "LEATHER JACKET",
+        product_category: "BAG",
+        pro_discount: "-",
+        pro_start: "-",
+        pro_end: "-"
+    }]
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
@@ -28,7 +43,7 @@ function AdminPromotionCreateOnSale() {
 
                         <div className="w-100 h-30-v">
                             {
-                                products.map(function (element, index) {
+                                data?.products.map(function (element, index) {
                                     return <AddAssignPromotion data={element} />
                                 })
                             }

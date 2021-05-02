@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import './AddAssignPromotion.css'
+import { Link } from "react-router-dom";
 function AddAssignPromotion({ data }) {
     return (
+        <Link to={`/admin/promotion/create/${data._id}`} onClick={() => window.location.href=`/admin/promotion/create/${data._id}`} className="w-50">
         <div className="w-100 d-flex mt-1-v box-add-list-product justify-content-between">
             <div className="d-flex align-items-center">
                 <div className="image-add-product-in-list">
@@ -16,6 +18,7 @@ function AddAssignPromotion({ data }) {
                 <span className="fs-1-v pr-3-v">IN STOCK : {data.quantity}</span>
             </div>
         </div>
+        </Link>
     );
 }
 export default AddAssignPromotion;
