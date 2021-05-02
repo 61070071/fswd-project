@@ -10,7 +10,7 @@ function AddAdminPromotions({ data }) {
                 </div>
                 <div className="d-flex flex-wrap ml-1-v">
                     <span className="w-100 fs-1-v">#{data.id}</span>
-                    <span className="w-100 color-second fs-1-v">{data.name}</span>
+                    <span className="w-100 color-second fs-0-8-v">{data.name}</span>
                 </div>
 
             </div>
@@ -19,16 +19,16 @@ function AddAdminPromotions({ data }) {
             </div>
             <div className="w-30 d-flex align-items-center justify-content-end py-0-5-v">
                 <div className="d-flex  w-50 flex-wrap flex-column align-items-end">
-                    <span className="fs-1-v">CONDITION :</span>
-                    <span className="fs-1-v">TOTAL SAVE :</span>
-                    <span className="fs-1-v">PROMOTION START :</span>
-                    <span className="fs-1-v">PROMOTION END :</span>
+                    <span className="fs-0-9-v">CONDITION :</span>
+                    <span className="fs-0-9-v">TOTAL SAVE :</span>
+                    <span className="fs-0-9-v">PROMOTION START :</span>
+                    <span className="fs-0-9-v">PROMOTION END :</span>
                 </div>
                 <div className="w-30 d-flex flex-column justify-content-end ml-1-v">
-                    <span className="color-no-4 fs-1-v">{data.condition}</span>
-                    <span className="color-no-4 fs-1-v">{data.totalSave}</span>
-                    <span className="color-second fs-1-v">{data.promotionStart}</span>
-                    <span className="color-second fs-1-v">{data.promotionEnd}</span>
+                    <span className="color-no-4 fs-0-9-v">{data.condition}</span>
+                    <span className="color-no-4 fs-0-9-v">{data.totalSave}</span>
+                    <span className="color-second fs-0-9-v">{data.promotionStart}</span>
+                    <span className="color-second fs-0-9-v">{data.promotionEnd}</span>
                 </div>
             </div>
             <div className="d-flex w-5 justify-content-end align-items-center">

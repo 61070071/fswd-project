@@ -6,3 +6,8 @@
     padding: 0.5vw 0vw 1vw 0vw;
     border-bottom: .1vw solid #DFDFDF;
 }
+.overflow-list-promotion{
+    height: 35vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

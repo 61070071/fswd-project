@@ -23,6 +23,38 @@ function Admin() {
         {
             name: 'APRIL',
             pv: 2780
+        },
+        {
+            name: 'MAY',
+            pv: 2200
+        },
+        {
+            name: 'JUNE',
+            pv: 2540
+        },
+        {
+            name: 'JULY',
+            pv: 3000
+        },
+        {
+            name: 'AUGUST',
+            pv: 1500
+        },
+        {
+            name: 'SEPTEMBER',
+            pv: 3000
+        },
+        {
+            name: 'OCTOCBER',
+            pv: 2400
+        },
+        {
+            name: 'NOVEMBER',
+            pv: 1900
+        },
+        {
+            name: 'DECEMBER',
+            pv: 2800
         }]
 
     return (
