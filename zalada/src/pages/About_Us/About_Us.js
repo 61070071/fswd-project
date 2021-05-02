@@ -1,10 +1,17 @@
 import "./About_Us.css";
+import React from "react";
 
 // import { Card, Button, Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
+
+import Faii from "../../images/faii.svg"
+import Jay from "../../images/jay.svg"
+import Deen from "../../images/deen.svg"
+import Tin from "../../images/tin.svg"
+import facebook from "../../images/facebook.svg"
+import HomeLogo from "../../images/Zalada.svg"
 // import Slider from "react-slick";
 // import C1img from "../../images/carousel/crs_1.png";
 // import C2img from "../../images/carousel/crs_2.png";
@@ -49,55 +56,84 @@ import React from "react";
 //   );
 // }
 function About_Us() {
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   nextArrow: <SampleNextArrow />,
-  //   prevArrow: <SamplePrevArrow />,
-  // };
+   // const settings = {
+   //   dots: false,
+   //   infinite: true,
+   //   speed: 500,
+   //   slidesToShow: 3,
+   //   slidesToScroll: 1,
+   //   nextArrow: <SampleNextArrow />,
+   //   prevArrow: <SamplePrevArrow />,
+   // };
 
-  return (
-    <div className="">
-      <div className="d-flex flex-row  justify-content-around f-con">
-        <div id="left_area" className="left-area">
-          <h1>TEST</h1>
-        </div>
+   return (
+      <div className="d-flex justify-content-center align-items-center mt-2-v flex-column">
+         <div className="w-100 line-top-bottom-gray text-center">
+            <img alt="" className="home_logo" src={HomeLogo} />
+            <p className="fs-2-v m-0">About Us</p>
+            <p className="fs-1-v">งานแรกมันรอดยาก</p>
+         </div>
+         <div className="w-50">
+            <div className="d-flex flex-column justify-content-center">
+               <div className="d-flex justify-content-center align-items-center">
+                  <div className="text-center">
+                     <img alt="" className="img_us" src={Jay}></img>
+                     <p>ขี้เพี้ยะ</p>
+                  </div>
+                  <p>ถ้าอยากรู้เรื่องราวให้กระจ่าง พวกเราก็พร้อมที่จะแถลงไข</p>
+                  {/* <img src={facebook}></img> */}
+               </div>
+               <div className="d-flex justify-content-center align-items-center">
+                  <p>เพื่อปกป้องไม่ให้โลกถูกทำลาย เพื่อปกป้องสันติภาพของโลก</p>
+                  <div className="text-center">
+                     <img alt="" className="img_us" src={Tin}></img>
+                     <p>ตินคงควย</p>
+                  </div>
+                  {/* <img src={facebook}></img> */}
+               </div>
+               <div className="d-flex justify-content-center align-items-center">
+                  <div className="text-center">
+                     <img alt="" className="img_us" src={Deen}></img>
+                     <p>เจได 2.9 นิ้ว</p>
+                  </div>
+                  <p>บรรลุถึงความชั่วแห่งความกล้าหาญและความรัก</p>
+                  {/* <img src={facebook}></img> */}
+               </div>
+               <div className="d-flex justify-content-center align-items-center">
+                  <p>ตัวโกงผู้แสนน่ารักและมีเสน่ห์ มุซาชิ! โคจิโร่!<br></br>เรา 2 คน แก๊งร็อกเก็ตแห่งจักรวาล ไวต์โฮล</p>
+                  <div className="text-center">
+                     <img alt="" className="img_us" src={Faii}></img>
+                     <p>ฝ้ายเองงับ</p>
+                  </div>
+                  <div className="text-center">
+                     <img alt="" className="img_us" src={Tin}></img>
+                     <p>ตินคงควย</p>
+                  </div>
+                  {/* <img src={facebook}></img> */}
+               </div>
+               <div className="d-flex justify-content-center align-items-center">
+                  <div className="text-center">
+                     <img alt="" className="img_us" src={Jay}></img>
+                     <p>ขี้เพี้ยะ</p>
+                  </div>
+                  <p>พรุ่งนี้ที่สดใสรอเราอยู่</p>
+                  {/* <img src={facebook}></img> */}
+               </div>
+               <div className="d-flex justify-content-center align-items-center">
+                  <p>ส่วนฉันก็เนียร์ธไง!</p>
+                  <div className="text-center">
+                     <img alt="" className="img_us" src={Deen}></img>
+                     <p>เจได 2.9 นิ้ว</p>
+                  </div>
+                  {/* <img src={facebook}></img> */}
+               </div>
+               {/* <p>โปรเจคนี้เป็นส่วนหนึ่งของวิชา Full Stack สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร ลาดกระบัง
 
-        {/* <div className="d-flex sub-slide align-items-center">
-          <Slider {...settings} className="bg-secondary ">
-            <Card_Carousal />
-            <Card_Carousal />
-            <Card_Carousal />
-            <Card_Carousal />
-            <Card_Carousal />
-            <Card_Carousal />
-          </Slider>
-          <Carousel fade id="crs" className="">
-            <Carousel.Item className="d-flex flex-row justify-content-center">
-              <Card_Carousal product="Jacket 1" />
-              <Card_Carousal product="Jacket 2" />
-              <Card_Carousal product="Jacket 3" />
-            </Carousel.Item>
-            <Carousel.Item className="d-flex flex-row justify-content-center">
-              <Card_Carousal product="Jacket 4" />
-              <Card_Carousal product="Jacket 5" />
-              <Card_Carousal product="Jacket 6" />
-            </Carousel.Item>
-            <Carousel.Item className="d-flex flex-row justify-content-center">
-              <Card_Carousal product="Jacket 7" />
-              <Card_Carousal product="Jacket 8" />
-              <Card_Carousal product="Jacket 9" />
-            </Carousel.Item>
-          </Carousel>
-         
-        </div>
-        */}
+               </p> */}
+            </div>
+         </div>
       </div>
-    </div>
-  );
+   );
 }
 
 export default About_Us;
