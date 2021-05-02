@@ -96,12 +96,12 @@ function App() {
           <Route path="/admin/products">
             <AdminProduct />
           </Route>
-          <Route path="/admin/product/:productId">
-            <AdminProductDetails />
-          </Route>
-          <Route path="/admin/product/create">
+          <Route path="/admin/product/create" exact>
             <AdminProductCreate />
           </Route>
+          <Route path="/admin/product/:productId" exact>
+            <AdminProductDetails />
+          </Route>  
           <Route path="/admin/promotions/create/onsale/assign">
             <AdminAssignPromotion />
           </Route>
