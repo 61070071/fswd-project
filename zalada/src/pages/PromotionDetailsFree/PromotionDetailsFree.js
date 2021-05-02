@@ -11,7 +11,6 @@ function Details() {
     const { productId } = useParams();
     const [countAdd, setCountAdd] = useState(0);
     const handleClick = () => setCountAdd(countAdd + 1);
-    const [selectPromotion, setSelectPromotion] = useState("GETFREE");
     const [product, setProduct] = useState({});
     const [getProduct, { loading, error }] = useLazyQuery(FREE_QUERY_ID, {
         variables: { productId },
@@ -33,28 +32,24 @@ function Details() {
     // }
     const productBox = useMemo(() => {
         return (
-            <div className="w-70 mx-auto d-flex">
-                <div className="w-50 d-flex">
+            <div className="w-70 mx-auto d-flex align-items-start">
+                <div className="w-50 d-flex justify-content-center">
                     <div className="w-75 shirt">
                         <img alt="" className="w-100" src={shirts?.photourl} />
                     </div>
                 </div>
-                <div className="w-50 px-2-v d-flex flex-column">
-                    <div className="d-flex flex-column h-40">
+                <div className="w-50 px-2-v d-flex flex-column mt-1-v">
+                    <div className="d-flex flex-column">
                         <span className="fs-1-5-v">{shirts.productname}</span>
-                        <span className="color-main fs-1-v py-0-5-v">{shirts.productname}</span>
-                        <span className="text_promotion text-uppercase fs-1-v w-45 mt-1-v">buy {shirts.buy} get free {shirts.free} !</span>
-
-
+                        <span className="text_promotion text-uppercase fs-1-v w-45 mt-0-5-v">buy 2 get free 1 !</span>
                     </div>
-                    <div className="d-flex flex-column h-60">
+                    <div className="d-flex flex-column mt-1-v">
                         <div className="">
                             <span className="color-second details_price font-weight-bold fs-1-v">฿ {shirts.price} </span>
-                            {/* <span className="details_sale font-weight-bold color-no-6">{shirts.price}</span> */}
                         </div>
                         <span className="fs-0-8-v mb-0-5-v mt-0-5-v">IN STOCK : <span className="text_status">{shirts.quantity}</span></span>
                         <hr className="w-25 m-0" />
-                        <div className="w-75 mt-0-5-v">
+                        <div className="w-75 mt-1-v">
                             <p className="color-third fs-1-v">{shirts.productdescription}</p>
                         </div>
                         <hr className="w-25 m-0" />
@@ -88,3 +83,4 @@ function Details() {
 }
 
 export default Details;
+
