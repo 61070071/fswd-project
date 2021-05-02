@@ -32,16 +32,20 @@ import AdminPromotionCreateGet from "./pages/Admin/AdminPromotionCreateGet/Admin
 import AdminAssignPromotion from "./pages/Admin/AssignPromotion/AssignPromotion";
 import AdminLogin from "./pages/Admin/AdminLogin/AdminLogin";
 import AdminProductDetails from "./pages/Admin/AdminProductDetails/AdminProductDetails";
+import PromotionSale from "./pages/PromotionDetailsSale/PromotionDetailsSale";
+import PromotionFree from "./pages/PromotionDetailsFree/PromotionDetailsFree";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
       <div>
-          <NavBar />
+        <NavBar />
+
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/" exact>
+        <Route path="/" exact>
             <Home />
           </Route>
           <Route path="/about_us">
@@ -68,10 +72,13 @@ function App() {
           <Route path="/product/details">
             <Details />
           </Route>
-          <Route path="/promotions">
-            <Promotions />
+          <Route path="/promotions/sale/:productId">
+            <PromotionSale />
           </Route>
-          <Route path="/promotions/:productId">
+          <Route path="/promotions/free/:productId">
+            <PromotionFree />
+          </Route>
+          <Route path="/promotions">
             <Promotions />
           </Route>
           <Route path="/checkout">
