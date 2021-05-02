@@ -31,7 +31,7 @@ function AdminProductCreate() {
             e.preventDefault()
             try {
                 await createProduct({ variables: { record: newProduct } })
-                history.push('/')
+                history.push('/admin/products')
                 alert('Product Added')
             } catch (err) {
                 console.log(err)
