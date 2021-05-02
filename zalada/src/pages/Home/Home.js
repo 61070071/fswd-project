@@ -60,7 +60,6 @@ function Home() {
               <Link to="/products">
                 <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
               </Link>
-
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={4000}>
@@ -104,7 +103,6 @@ function Home() {
               }
             </Carousel>
           </div>
-
         </div>
 
         {/* <div className="d-flex flex-100 flex-wrap">
