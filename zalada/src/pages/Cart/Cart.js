@@ -4,48 +4,41 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import CartLogo from "../../images/shopping-cart-black-shape.svg"
-// import Goods from "../../images/leather_jacket_PNG41.png"
-// import Del from "../../images/del-product.svg"
-// import Add from "../../images/add-product.svg"
-
+import { Link } from "react-router-dom";
 import ItemGoods from "../../components/Cart/Cart.js"
 function Cart() {
-  return (
-    <div className="container">
-        <div className="row d-flex justify-content-center">
-            <div className="col-10 mt-5 p-0">
-                <div className="d-flex align-items-center">
-                    <p className="cart_header">CART</p>
-                    <img alt="" src={CartLogo} className="img_cart ml-3"></img>
-                </div>
-                <div className="cart_shop mt-2 d-flex">
-                    {/* component */}
-                    <ItemGoods/>
+    return (
+            <div className="d-flex justify-content-center bg-main py-2-v">
+                <div className="w-55 d-flex flex-wrap">
+                    <div className="d-flex align-items-center w-100 py-0-5-v">
+                        <span className="fs-1-v font-weight-bold">CART</span>
+                        <img alt="" src={CartLogo} className="img_cart ml-0-5-v"></img>
+                    </div>
+                    <div className="cart_shop d-flex w-100">
+                        {/* component */}
+                        <ItemGoods />
 
-                    {/* total price */}
-                    <hr className="line mt-5 mb-2"></hr>
-                    <div className="d-flex justify-content-between align-items-baseline w-100">
-                        <div>
-                            <h4 className="m-0">TOTAL</h4>
-                        </div>
-                        <div className="cost_th d-flex justify-content-between align-items-baseline">
-                            <h4 className="m-0">TH</h4>
-                            <div className="total_price d-flex align-items-center">
-                                <p className="m-0 mr-3 ml-5">฿</p>
-                                <p className="m-0">270</p>
+                        {/* total price */}
+                        <div className="d-flex align-items-center w-100 py-0-5-v line-top-bottom-gray mt-1-v">
+                            <div className="d-flex w-85">
+                                <div className="w-50 d-flex">
+                                    <span className="m-0 fs-1-2-v color-third">TOTAL</span>
+                                </div>
+                                <div className="d-flex w-50 justify-content-end">
+                                    <span className="m-0 fs-1-2-v color-third">TH</span>
+                                </div>
+                            </div>
+                            <div className="w-15 d-flex justify-content-end">
+                                <span className="m-0 fs-2-v color-second font-weight-bold">฿ 270</span>
                             </div>
                         </div>
-                    </div>
-                    <hr className="line"></hr>
-
-                    {/* button */}
-                    <div>
-                        <button className="btn btn_confirm">CONFIRM TO CHECKOUT</button>
+                        {/* button */}
+                        <div className="d-flex w-40 mx-auto py-0-5-v">
+                            <Link to="/checkout" className="w-100"><button className="py-0-3-v border-0 btn_confirm bg-second color-white font-weight-bold w-100 fs-0-8-v">CONFIRM TO CHECKOUT</button></Link>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
     );
 }
 

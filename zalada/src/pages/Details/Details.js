@@ -8,8 +8,8 @@ import { useLazyQuery } from '@apollo/client'
 import { PRODUCT_QUERY_ID } from '../../graphql/productsOGQuery.js'
 function Details() {
     const { productId } = useParams();
-    const [countAdd, setCountAdd] = useState(1);
-    const [selectProduct, setSelectProduct] = useState(0);
+    const [countAdd, setCountAdd] = useState(0);
+    const handleClick = () => setCountAdd(countAdd + 1);
     const [product, setProduct] = useState({});
     const [getProduct, { loading, error }] = useLazyQuery(PRODUCT_QUERY_ID, {
         variables: { productId },
@@ -23,13 +23,6 @@ function Details() {
         getProduct()
 
     }, [getProduct])
-
-    console.log(product?.photourl);
-
-    const handleImage = (e) => {
-        setSelectProduct(e)
-    }
-
     // if (loading) {
     //     return 'Loading ...'
     // }
@@ -40,20 +33,6 @@ function Details() {
         return (
             <div className="w-70 mx-auto d-flex">
                 <div className="w-50 d-flex">
-                    {/* <div className="w-25 d-flex flex-column">
-
-                        <div className="w-80 bg-white shirt"
-                            onClick={() => handleImage(0)}
-                        ><img alt="" className="w-100" src={shirts?.photourl} /></div>
-                        <div className="w-80 bg-white shirt mt-1-v"
-                            onClick={() => handleImage(1)}
-                        ><img alt="" className="w-100" src={shirts?.photourl} /></div>
-                        <div className="w-80 bg-white shirt mt-1-v"
-                            onClick={() => handleImage(2)}
-                        ><img alt="" className="w-100" src={shirts?.photourl} /></div>
-
-
-                    </div> */}
                     <div className="w-75 shirt">
                         <img alt="" className="w-100" src={shirts?.photourl} />
                     </div>
@@ -71,15 +50,17 @@ function Details() {
                     </div>
                     <div className="d-flex w-90">
                         <div className="d-flex w-30 justify-content-evenly align-items-center mx-auto">
-                            <div className="btn-change-amount d-flex align-items-center" onClick={setCountAdd(countAdd - 1)}>
+                            <button className="btn-change-amount d-flex align-items-center" onClick={handleClick}>
                                 <img alt="" src={Minus} />
+                            </button>
+                            <div className="num_buy">
+                                <span>{countAdd}</span>
                             </div>
-                            <div className="num_buy"><span>{countAdd}</span></div>
-                            <div className="btn-change-amount d-flex align-items-center" onClick={setCountAdd(countAdd + 1)}>
+                            <button className="btn-change-amount d-flex align-items-center" onClick={handleClick}>
                                 <img alt="" src={Plus} />
-                            </div>
+                            </button>
                         </div>
-                        <button className="w-50 bg-second border-0 color-white mx-auto font-weight-bold">ADD TO YOUR CART</button>
+                        <button className="w-50 bg-second border-0 color-white mx-auto font-weight-bold fs-0-8-v" type="submit">ADD TO YOUR CART</button>
                     </div>
                 </div>
             </div>
@@ -89,11 +70,6 @@ function Details() {
         <div className="w-100 bg-main py-3-v">
             <div className="w-90 mx-auto box-details py-1-5-v bg-white">
                 {productBox}
-                {/* <hr className="mt-2-v w-90" />
-                <div className="mt-2-v w-90 mx-auto">
-                    <h2 className="font-weight-bold color-third">DESCRIPTION</h2>
-                    <span className="mt-1-5-v">{shirts.productdescription}</span>
-                </div> */}
             </div>
         </div >
     )

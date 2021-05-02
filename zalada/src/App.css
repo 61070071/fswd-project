@@ -213,6 +213,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .px-2-v{
   padding: 0vw 2vw;
 }
+.py-0-3-v{
+  padding: 0.3vw 0vw;
+}
 .py-0-5-v{
   padding: 0.5vw 0vw;
 }
@@ -344,10 +347,14 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
   z-index: 2;
 }
 .line-bottom-gray{
-  border-bottom: .1vw  solid #707070 ;
+  border-bottom: .1vw  solid #b3b3b3 ;
 }
 .line-right-gray{
-  border-right: .1vw  solid #707070 ;
+  border-right: .1vw  solid #b3b3b3 ;
+}
+.line-top-bottom-gray{
+  border-bottom: .1vw  solid #b3b3b3 ;
+  border-top: .1vw  solid #b3b3b3 ;
 }
 .op-0{
   opacity:0;
