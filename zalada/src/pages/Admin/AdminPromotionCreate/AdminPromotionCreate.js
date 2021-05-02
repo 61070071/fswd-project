@@ -11,8 +11,8 @@ function AdminPromotionCreate() {
             <div className="w-15">
                 <AdminNavBar  page={3}/>
             </div>
-            <div className="w-85 d-flex flex-wrap align-items-start bg-main">
-                <div className="bg-white mx-auto w-90 d-flex align-items-start flex-wrap">
+            <div className="w-85 d-flex flex-wrap align-items-center bg-main">
+                <div className="bg-white mx-auto w-90 d-flex align-items-center flex-wrap">
                     <div className="w-90 mx-auto d-flex justify-content-center align-items-center py-1-v mt-1-v">
                         <span className="color-second fs-1-2-v">SELECT PROMOTION</span>
                         <img alt="" src={Tag} className="ml-1-v image-tag-promotion" />

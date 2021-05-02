@@ -7,7 +7,7 @@
     border-bottom: .1vw solid #DFDFDF;
 }
 .overflow-list-promotion{
-    height: 35vw;
+    height: 40vw;
     overflow-y: scroll;
     overflow-x: hidden;
 }

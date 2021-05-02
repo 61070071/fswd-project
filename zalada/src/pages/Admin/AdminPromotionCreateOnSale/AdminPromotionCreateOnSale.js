@@ -27,7 +27,7 @@ function AdminPromotionCreateOnSale() {
             <div className="w-15">
                 <AdminNavBar page={3}/>
             </div>
-            <div className="w-85 d-flex flex-wrap align-items-start bg-main">
+            <div className="w-85 d-flex flex-wrap align-items-center bg-main">
                 <div className="bg-white mx-auto w-90 d-flex align-items-start flex-wrap">
                     <div className="w-100 box-add-product">
                         <div className="w-100 mx-auto d-flex top-list-add-promotion py-0-5-v">
