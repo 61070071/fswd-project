@@ -49,6 +49,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .color-no-5{
   color: #474747;
 }
+.color-no-6{
+  color: #ff4d4d;
+}
 .color-white{
   color: white;
 }
@@ -182,6 +185,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .h-95{
   height: 95%;
+}
+.h-100-vh{
+  height: 100vh;
 }
 .h-30-v{
   height: 25vw;
