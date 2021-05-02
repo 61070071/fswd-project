@@ -15,7 +15,7 @@ function AdminNavBar({ page }) {
         <div className="w-100 m-0">
             <div className="w-100 size-admin-nav d-flex flex-column">
                 <div className="d-flex mx-auto h-20">
-                    <img alt="" src={logo} />
+                    {/* <img alt="" src={logo} /> */}
                 </div>
                 <Link to="/admin">
                     <div className="w-100 d-flex align-items-center py-1-v position-relative">
