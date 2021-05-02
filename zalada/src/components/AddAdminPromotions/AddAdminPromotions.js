@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./AddAdminPromotions.css";
-import ThirdDot from "../../images/third-dot.svg"
+import del from "../../images/icon-delect.svg"
 function AddAdminPromotions({ data }) {
     return (
         <div className="w-100 d-flex mt-1-v box-add-list-product">
@@ -17,16 +17,16 @@ function AddAdminPromotions({ data }) {
             <div className="w-50 d-flex align-items-center justify-content-center">
                 <span className="fs-1-v">IN STOCK : {data.stock}</span>
             </div>
-            <div className="w-30 d-flex align-items-center justify-content-end py-0-5-v">
-                <div className="d-flex  w-50 flex-wrap flex-column align-items-end">
+            <div className="w-30 d-flex align-items-center justify-content-start py-0-5-v">
+                <div className="d-flex  w-40 flex-wrap flex-column align-items-start">
                     <span className="fs-0-9-v">TOTAL DEALS :</span>
                 </div>
                 <div className="w-30 d-flex flex-column justify-content-end ml-1-v">
-                    <span className="color-no-4 fs-0-9-v">{data.totalSave}</span>
+                    <span className="color-no-6 fs-0-9-v">{data.totalSave}</span>
                 </div>
             </div>
-            <div className="d-flex w-5 justify-content-end align-items-center">
-                <img alt="" src={ThirdDot} />
+            <div className="d-flex w-5 justify-content-center align-items-center">
+                <img alt="" src={del} className="image-del-admin-promotion"/>
             </div>
         </div>
     );
