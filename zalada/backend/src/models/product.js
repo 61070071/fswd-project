@@ -16,6 +16,10 @@ const ProductSchema = new Schema({
         // default : 'Product',
         // required: true
     },
+    isActive:{
+        type: Boolean,
+        default: true,
+    },
     productname: {
         type: String,
         required: true,

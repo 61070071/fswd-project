@@ -72,6 +72,9 @@ function App() {
           <Route path="/promotions">
             <Promotions />
           </Route>
+          <Route path="/promotions/:productId">
+            <Promotions />
+          </Route>
           <Route path="/checkout">
             <CheckOut />
           </Route>
