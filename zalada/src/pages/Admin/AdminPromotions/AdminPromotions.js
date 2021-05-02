@@ -7,44 +7,12 @@ import AddAdminPromotionOnsale from "../../../components/AddAdminPromotionOnsale
 import Shirt from "../../../images/brown_shirt.svg"
 import SearchLogo from "../../../images/search.svg"
 import { Link } from "react-router-dom";
+import { useQuery } from '@apollo/client'
+import { PROMOTIONS_FREE_QUERY, PROMOTIONS_SALE_QUERY } from '../../../graphql/productsOGQuery.js'
 
 function AdminPromotions() {
-    const products = [{
-        id: "001",
-        name: "LEATHER JACKET",
-        image: Shirt,
-        stock: 12,
-        condition: "BUY 2",
-        get: "1",
-        totalDeals: "30%",
-        totalSave: "30% OFF",
-        promotionStart: "12 / 5 / 2564",
-        promotionEnd: "13 / 5 / 2564"
-    },
-    {
-        id: "002",
-        name: "LEATHER JACKET",
-        image: Shirt,
-        stock: 13,
-        condition: "BUY 2",
-        get: "1",
-        totalDeals: "30%",
-        totalSave: "30% OFF",
-        promotionStart: "10 / 5 / 2564",
-        promotionEnd: "11 / 5 / 2564"
-    },
-    {
-        id: "003",
-        name: "LEATHER JACKET",
-        image: Shirt,
-        stock: 14,
-        condition: "BUY 2",
-        get: "1",
-        totalDeals: "30%",
-        totalSave: "30% OFF",
-        promotionStart: "09 / 5 / 2564",
-        promotionEnd: "14 / 6 / 2564"
-    }]
+    const dataSale = useQuery(PROMOTIONS_SALE_QUERY).data
+    const dataFree = useQuery(PROMOTIONS_FREE_QUERY).data
     return (
         <div className="d-flex flex-wrap">
             <div className="w-15">
@@ -67,15 +35,16 @@ function AdminPromotions() {
                             </div>
                             <div className="w-100 overflow-list-promotion">
                                 {
-                                    products.map(function (element, index) {
+                                    dataSale?.promotionSales.map(function (element, index) {
                                         return <AddAdminPromotions data={element} />
                                     })
                                 }
                                 {
-                                    products.map(function (element, index) {
+                                    dataFree?.promotionFrees.map(function (element, index) {
                                         return <AddAdminPromotionOnsale data={element} />
                                     })
                                 }
+
                             </div>
                         </div>
                     </div>
