@@ -5,7 +5,7 @@ import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
 import Plus from "../../../images/plus-green.svg";
 import Calendar from "../../../images/icon-calendar.svg";
 import AddPromotionOnSale from "../../../components/AddPromotionOnSale/AddPromotionOnSale";
-import AddAssignPromotion from "../../../components/AdminAssignPromotion/AdminAssignPromotion"
+import AddAssignPromotion from "../../../components/AddAssignPromotion/AddAssignPromotion"
 function AdminPromotionCreateOnSale() {
     const pro_data = [{
         product_no: "#001",

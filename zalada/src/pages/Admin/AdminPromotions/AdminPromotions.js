@@ -52,42 +52,17 @@ function AdminPromotions() {
             <div className="w-85 d-flex flex-wrap align-items-start">
                 <div className="w-100 mx-auto bg-main pb-2-v">
                     <div className="w-90 mx-auto bg-white ">
-                        <Link to="/admin/promotions/create">
-                            <div className="w-100 d-flex justify-content-end py-1-v bg-main">
-                                <button className="btn-add-product-admin color-white font-weight-bold d-flex align-items-center">ADD PROMOTION <img alt="" src={Plus} /></button>
-                            </div>
-                        </Link>
+
                         <div className="w-100 box-add-product">
                             <div className="w-100 d-flex bar_select d-flex align-items-end">
-                                <div className="w-30">
+                                <div className="w-80">
                                     <span className="color-second">PRODUCT</span>
                                 </div>
-                                <div className="w-40">
-                                    <div className="d-flex align-items-center justify-content-end mr-2-v">
-                                        <img alt="" className="search_input position-absolute" src={SearchLogo} />
-                                        <input className="input-nav-bar" type="text" placeholder="Search and hit enter..." />
+                                <Link to="/admin/promotions/create">
+                                    <div className="w-100 d-flex justify-content-end">
+                                        <button className="btn-add-product-admin color-white font-weight-bold d-flex align-items-center">ADD PROMOTION <img alt="" src={Plus} /></button>
                                     </div>
-                                </div>
-                                <div className="w-50 d-flex">
-                                    <div className="d-flex align-items-center">
-                                        <span className="fs-0-8-v">PRODUCT TYPE : </span>
-                                        <select className="select_display mb-0 fs-0-8-v">
-                                            <option value="ALL">ALL</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div className="d-flex align-items-center ml-2-v">
-                                        <span className="fs-0-8-v">SORT BY : </span>
-                                        <select className="select_display mb-0 fs-0-8-v">
-                                            <option value="ALL">RECENTLY ADD</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                </Link>
                             </div>
                             <div className="w-100 overflow-list-promotion">
                                 {

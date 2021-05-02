@@ -31,7 +31,6 @@ import AdminPromotionCreateOnSale from "./pages/Admin/AdminPromotionCreateOnSale
 import AdminPromotionCreateGet from "./pages/Admin/AdminPromotionCreateGet/AdminPromotionCreateGet";
 import AdminAssignPromotionOnsale from "./pages/Admin/AssignPromotionOnsale/AssignPromotionOnsale";
 import AdminAssignPromotionGetFree from "./pages/Admin/AssignPromotionGetFree/AssignPromotionGetFree";
-
 import AdminUpdateOnsale from "./pages/Admin/AdminUpdateOnsale/AdminUpdateOnsale"
 import AdminLogin from "./pages/Admin/AdminLogin/AdminLogin";
 import AdminProductDetails from "./pages/Admin/AdminProductDetails/AdminProductDetails";
@@ -105,15 +104,14 @@ function App() {
           <Route path="/admin/product/:productId" exact>
             <AdminProductDetails />
           </Route>  
-          <Route path="/admin/promotion/update/:productId">
+          <Route path="/admin/promotion/update/onsale/:productId">
             <AdminUpdateOnsale />
           </Route>
+
           <Route path="/admin/promotion/create/onsale/:productId">
             <AdminAssignPromotionOnsale />
           </Route>
-          <Route path="/admin/promotion/create/onsale/:productId">
-            <AdminPromotionCreateOnSale />
-          </Route>
+
           <Route path="/admin/promotion/create/getfree/:productId">
             <AdminAssignPromotionGetFree />
           </Route>

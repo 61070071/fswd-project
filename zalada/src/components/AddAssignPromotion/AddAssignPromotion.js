@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './AdminAssignPromotion.css'
+import './AddAssignPromotion.css'
 function AddAssignPromotion({ data }) {
     return (
         <div className="w-100 d-flex mt-1-v box-add-list-product justify-content-between">

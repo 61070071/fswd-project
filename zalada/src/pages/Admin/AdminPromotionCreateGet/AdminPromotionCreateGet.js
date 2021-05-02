@@ -3,7 +3,7 @@ import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
 import { Link } from "react-router-dom";
 import Plus from "../../../images/plus-green.svg";
 import Calendar from "../../../images/icon-calendar.svg";
-import AdminAssignPromotion from "../../../components/AdminAssignPromotion/AdminAssignPromotion";
+import AdminAssignPromotion from "../../../components/AddAssignPromotion/AddAssignPromotion";
 function AdminPromotionCreateGet() {
     const pro_get = [{
         product_no: "#001",
