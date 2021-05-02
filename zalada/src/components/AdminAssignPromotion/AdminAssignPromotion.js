@@ -4,7 +4,6 @@ function AddAssignPromotion({ data }) {
     return (
         <div className="w-100 d-flex mt-1-v box-add-list-product justify-content-between">
             <div className="d-flex align-items-center">
-                <input type="checkbox" className="select_product"></input>
                 <div className="image-add-product-in-list">
                     <img alt="" src={data.image} />
                 </div>
