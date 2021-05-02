@@ -11,7 +11,6 @@ function Details() {
     const { productId } = useParams();
     const [countAdd, setCountAdd] = useState(0);
     const handleClick = () => setCountAdd(countAdd + 1);
-    const [selectPromotion, setSelectPromotion] = useState("GETFREE");
     const [product, setProduct] = useState({});
     const [getProduct, { loading, error }] = useLazyQuery(SALE_QUERY_ID, {
         variables: { productId },
@@ -20,7 +19,7 @@ function Details() {
             setProduct(data?.promotionSaleById)
         }
     })
-
+    
     const saleProduct = product
     useEffect(() => {
         getProduct()
@@ -32,35 +31,33 @@ function Details() {
     // if (error) {
     //     return 'Error !!'
     // }
+    const newPrice = saleProduct.price - ((saleProduct.discount * saleProduct.price) / 100)
     const productBox = useMemo(() => {
         console.log("test", saleProduct);
         return (
-            <div className="w-70 mx-auto d-flex">
-                <div className="w-50 d-flex">
+            <div className="w-70 mx-auto d-flex align-items-start">
+                <div className="w-50 d-flex justify-content-center">
                     <div className="w-75 shirt">
                         <img alt="" className="w-100" src={saleProduct?.photourl} />
                     </div>
                 </div>
-                <div className="w-50 px-2-v d-flex flex-column">
-                    <div className="d-flex flex-column h-40">
-                        <span className="fs-1-5-v">{saleProduct?.productname}</span>
-                        <span className="color-main fs-1-v py-0-5-v">{saleProduct?.productname}</span>
-                        <span className="text_promotion_sale text-uppercase fs-1-v w-45 mt-1-v">SALE 30 %</span>
-
-
+                <div className="w-50 px-2-v d-flex flex-column mt-1-v">
+                    <div className="d-flex flex-column">
+                        <span className="fs-1-5-v">{saleProduct.productname}</span>
+                        <span className="text_promotion_sale text-uppercase fs-1-v w-45 mt-1-v">SALE {saleProduct.discount} %</span>
                     </div>
-                    <div className="d-flex flex-column h-60">
+                    <div className="d-flex flex-column mt-1-v">
                         <div className="">
-                            <span className="color-second details_price font-weight-bold fs-1-v">฿ {saleProduct?.price} </span>
-                            <span className="details_sale font-weight-bold color-no-6">{saleProduct?.price}</span>
+                            <span className="color-second details_price font-weight-bold fs-1-v">฿ {saleProduct.price} </span>
+                            <span className="details_sale font-weight-bold color-no-6">{newPrice}</span>
                         </div>
-                        <span className="fs-0-8-v mb-0-5-v mt-0-5-v">Status : <span className="text_status">{saleProduct?.productdescription}</span></span>
+                        <span className="fs-0-8-v mb-0-5-v mt-0-5-v">Status : <span className="text_status">{saleProduct.productdescription}</span></span>
                         <hr className="w-25 m-0" />
-                        <div className="w-75 mt-0-5-v">
-                            <p className="color-third fs-1-v">{saleProduct?.productdescription}</p>
+                        <div className="w-75 mt-1-v">
+                            <p className="color-third fs-1-v">{saleProduct.productdescription}</p>
                         </div>
-                        <div className="d-flex w-90">
-                            <div className="d-flex w-30 justify-content-evenly align-items-center mx-auto">
+                        <div className="d-flex w-90 mt-2-v">
+                            <div className="d-flex w-30 justify-content-evenly align-items-center">
                                 <button className="btn-change-amount d-flex align-items-center" onClick={handleClick}>
                                     <img alt="" src={Minus} />
                                 </button>
