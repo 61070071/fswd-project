@@ -10,7 +10,7 @@ mutation ($record: CreateOneCommentInput!) {
 
 //ใช้ตัวนี้
 export const CREATE_PRODUCTOG_MUTATION = gql`
-mutation ($record: CreateOneCommentInput!) {
+mutation ($record: CreateOneProductOGInput!) {
   createProductOG (record: $record) {
     recordId
   }
