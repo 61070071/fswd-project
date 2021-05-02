@@ -60,13 +60,15 @@ function Register() {
                         <div className="mt-1-5-v w-100 mx-auto">
                             <input onChange={handleInputChange} value={newUser.password} name="password" className="input-login-and-reg w-100" type="text" placeholder="CONFIRM PASSWORD" />
                         </div>
-                        <div class="d-flex flex-column justify-content-center mt-1-5-v custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked"></input>
-                            <label className="custom-control-label" for="defaultUnchecked">I have read and agree to <Link to="#">the term of service</Link></label>
+                        <div class="d-flex flex-column align-items-center item- mt-1-5-v custom-control custom-checkbox">
+                            <div className="d-flex flex-row">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked"></input>
+                                <label className="custom-control-label" for="defaultUnchecked">I have read and agree to <Link to="#">the term of service</Link></label>
+                            </div>
                             <button type="submit" class="mt-2-v d-flex justify-content-center register_btn w-65 fw-bold color-white py-0-5-v rounded" >REGISTER</button>
                         </div>
                     </div>
-                    
+
                 </form>
             </div>
         </div>
