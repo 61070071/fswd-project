@@ -189,6 +189,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .h-95-v{
   height: 95vw;
 }
+.h-100-v{
+  height: 100vw;
+}
 .justify-content-evenly{
   justify-content: space-evenly;
 }

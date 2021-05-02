@@ -2,14 +2,15 @@
     font-size: 2vw;
     font-weight: bold;
     color: #504C4C;
-    padding-top: 4vw;
+    margin: 0;
+    padding: 1.5vw 0 0.5vw 0;
 }
 
 .form_info {
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 5px 6px 0 rgb(0, 0, 0, 0.16);
-    padding: 2vw 5vw 2vw 5vw;
+    padding: 2vw 3vw 2vw 3vw;
 }
 
 .dropdown_address {
@@ -22,11 +23,12 @@
 }
 
 .btn_accountInfo {
-    height: 3.5vw;
+    height: 3vw;
     color: white;
     background-color: #667B45;
     box-shadow: 0 3px 6px 0 rgb(0, 0, 0, 0.16);
     font-weight: bold;
     border-radius: 0;
+    font-size: 1vw;
 }
 
