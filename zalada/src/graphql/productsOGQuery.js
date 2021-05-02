@@ -57,4 +57,11 @@ query($productId: MongoID!){
   }
 `
 
+export const PRODUCTS_UPDATE = gql`
+mutation ($productId: MongoID!, $record: UpdateByIdProductOGInput!) {
+  UpdateproductById (_id: $productId, record: $record) {
+    recordId
+  }
+}
+`
 

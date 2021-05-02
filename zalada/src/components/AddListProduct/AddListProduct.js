@@ -12,7 +12,7 @@ function AddListProduct({ data }) {
     return (
 
         <div className="w-100 d-flex mt-1-v box-add-list-product">
-            <Link to="/admin/product/:productId" className="w-50">
+            <Link to={`/admin/product/${data._id}`} onClick={() => window.location.href=`/admin/product/${data._id}`} className="w-50">
                 <div className="w-100 d-flex align-items-center">
                     <div className="image-add-product-in-list">
                         <img class="thumbnail" src={data.photourl[0]} />
@@ -24,7 +24,7 @@ function AddListProduct({ data }) {
                 </div>
             </Link>
             <div className="w-50 d-flex align-items-center">
-                <Link to="/admin/product/:productId" className="w-50">
+                <Link to={`/admin/product/${data._id}`} onClick={() => window.location.href=`/admin/product/${data._id}`} className="w-50">
                     <div className="w-50">
                         <span className=" color-third">IN STOCK : {data.quantity}</span>
                     </div>

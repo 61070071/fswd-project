@@ -87,11 +87,11 @@ function App() {
           <Route path="/admin/products">
             <AdminProduct />
           </Route>
-          <Route path="/admin/product/create">
-            <AdminProductCreate />
-          </Route>
           <Route path="/admin/product/:productId">
             <AdminProductDetails />
+          </Route>
+          <Route path="/admin/product/create">
+            <AdminProductCreate />
           </Route>
           <Route path="/admin/promotions/create/onsale/assign">
             <AdminAssignPromotion />
