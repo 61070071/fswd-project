@@ -46,11 +46,13 @@ function Details() {
                         <div className="">
                             <span className="color-second details_price font-weight-bold fs-1-v">฿ {shirts.price} </span>
                         </div>
-                        <span className="fs-0-8-v mb-0-5-v mt-0-5-v">Status : <span className="text_status">{shirts.productdescription}</span></span>
+                        <span className="fs-0-8-v mb-0-5-v mt-0-5-v">IN STOCKS : <span className="text_status">{shirts.quantity}</span></span>
                         <hr className="w-25 m-0" />
                         <div className="w-75 mt-1-v">
                             <p className="color-third fs-1-v">{shirts.productdescription}</p>
                         </div>
+                        <hr className="w-25 m-0" />
+                        <span className="fs-0-8-v mb-0-5-v mt-0-5-v">CATAGORY : <span className="text_status">{shirts.catagory}</span></span>
                         <div className="d-flex w-90 mt-2-v">
                             <div className="d-flex w-30 justify-content-evenly align-items-center">
                                 <button className="btn-change-amount d-flex align-items-center" onClick={handleClick}>

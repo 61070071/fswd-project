@@ -283,6 +283,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .ml-1-v{
   margin-left: 1vw;
 }
+.ml-1-5-v{
+  margin-left: 1.5vw;
+}
 .ml-2-v{
   margin-left: 2vw;
 }

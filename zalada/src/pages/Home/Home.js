@@ -4,10 +4,9 @@ import { Carousel, Button } from "react-bootstrap";
 import "./Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import C1img from "../../images/carousel/crs_1.png";
-import C2img from "../../images/carousel/crs_2.png";
-import C3img from "../../images/carousel/crs_3.png";
+import C2img from "../../images/Group449.png";
+import C3img from "../../images/Group448.png";
 import C4img from "../../images/carousel/crs_4.png";
-import TestImg from "../../images/leather_jacket_PNG41.png";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import ProductSale from "../../components/Products_Sale/Products_Sale";
 import { useQuery } from '@apollo/client'
@@ -61,14 +60,12 @@ function Home() {
               <Link to="/products">
                 <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
               </Link>
-
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={4000}>
             <img className="d-block w-100" src={C2img} alt="Second slide" />
             <Carousel.Caption className="crs_desc">
-              <h3>LOOKING FOR ELECTRIC STUFF?</h3>
-              <p>SAY NO MORE, FAM</p>
+              <h3>LOOKING FOR SOME COOL CLOTH?</h3>
               <Link to="/products">
                 <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
               </Link>
@@ -77,21 +74,9 @@ function Home() {
           <Carousel.Item interval={4000}>
             <img className="d-block w-100" src={C3img} alt="Third slide" />
             <Carousel.Caption className="crs_desc">
-              <h3>STOCKING UP THESE FOOD</h3>
+              <h3>BUY MORE FOR CHEAPER PRICE</h3>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-              <Link to="/products">
-                <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
-              </Link>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={4000}>
-            <img className="d-block w-100" src={C4img} alt="Fourth slide" />
-            <Carousel.Caption className="crs_desc">
-              <h3>PACKING YOUR STUFF</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                MORE YOU BUY MORE YOU GET
             </p>
               <Link to="/products">
                 <Button className="btn-smyar" variant="outline-light">DISCOVER NOW</Button>
@@ -118,7 +103,6 @@ function Home() {
               }
             </Carousel>
           </div>
-
         </div>
 
         {/* <div className="d-flex flex-100 flex-wrap">

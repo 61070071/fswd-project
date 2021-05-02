@@ -16,7 +16,7 @@ const ProductSchema = new Schema({
         // default : 'Product',
         // required: true
     },
-    isActive:{
+    isActive: {
         type: Boolean,
         default: true,
     },
@@ -43,6 +43,7 @@ const ProductSchema = new Schema({
     photourl: [{
         type: String,
         required: true,
+        default: "https://www.12tees.com/assets/img/product_material/jacket/AW-JACKET-1.png"
     }],
 })
 const ProductOGSchema = new Schema({
