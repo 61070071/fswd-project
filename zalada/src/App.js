@@ -31,6 +31,7 @@ import AdminPromotionCreateOnSale from "./pages/Admin/AdminPromotionCreateOnSale
 import AdminPromotionCreateGet from "./pages/Admin/AdminPromotionCreateGet/AdminPromotionCreateGet";
 import AdminAssignPromotionOnsale from "./pages/Admin/AssignPromotionOnsale/AssignPromotionOnsale";
 import AdminAssignPromotionGetFree from "./pages/Admin/AssignPromotionGetFree/AssignPromotionGetFree";
+import AdminUpdateOnsale from "./pages/Admin/AdminUpdateOnsale/AdminUpdateOnsale"
 import AdminLogin from "./pages/Admin/AdminLogin/AdminLogin";
 import AdminProductDetails from "./pages/Admin/AdminProductDetails/AdminProductDetails";
 import PromotionSale from "./pages/PromotionDetailsSale/PromotionDetailsSale";
@@ -103,20 +104,26 @@ function App() {
           <Route path="/admin/product/:productId" exact>
             <AdminProductDetails />
           </Route>  
-          <Route path="/admin/promotions/create/onsale/assign">
+          <Route path="/admin/promotions/update/:productId">
+            <AdminUpdateOnsale />
+          </Route>
+          <Route path="/admin/promotions/create/onsale/:productId">
             <AdminAssignPromotionOnsale />
           </Route>
           <Route path="/admin/promotions/create/onsale">
             <AdminPromotionCreateOnSale />
           </Route>
-          <Route path="/admin/promotions/create/getfree/assign">
+          <Route path="/admin/promotions/create/getfree/:productId">
             <AdminAssignPromotionGetFree />
           </Route>
           <Route path="/admin/promotions/create/getfree">
             <AdminPromotionCreateGet />
           </Route>
-          <Route path="/admin/promotions/create">
+          <Route path="/admin/promotions/create/:productId">
             <AdminPromotionCreate />
+          </Route>
+          <Route path="/admin/promotions/create">
+            <AdminPromotionCreateOnSale />
           </Route>
           <Route path="/admin/promotions">
             <AdminPromotions />
