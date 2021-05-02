@@ -11,13 +11,13 @@ function Details() {
     const { productId } = useParams();
     const [countAdd, setCountAdd] = useState(0);
     const handleClick = () => setCountAdd(countAdd + 1);
-    const [selectPromotion,setSelectPromotion] = useState("GETFREE");
+    const [selectPromotion, setSelectPromotion] = useState("GETFREE");
     const [product, setProduct] = useState({});
     const [getProduct, { loading, error }] = useLazyQuery(FREE_QUERY_ID, {
         variables: { productId },
         onCompleted: data => {
             // console.log(data);
-            setProduct(data?.productById)
+            setProduct(data?.promotionFreeById)
         }
     })
     const shirts = product
@@ -43,20 +43,14 @@ function Details() {
                     <div className="d-flex flex-column h-40">
                         <span className="fs-1-5-v">{shirts.productname}</span>
                         <span className="color-main fs-1-v py-0-5-v">{shirts.productname}</span>
-                        {
-                            selectPromotion === "GETFREE" &&
-                            <span className="text_promotion text-uppercase fs-1-v w-45 mt-1-v">buy 2 get free 1 !</span>
-                        }
-                        {
-                            selectPromotion === "SALE" &&
-                            <span className="text_promotion_sale text-uppercase fs-1-v w-45 mt-1-v">SALE 30 %</span>
-                        }
-                        
+                        <span className="text_promotion text-uppercase fs-1-v w-45 mt-1-v">buy {shirts.buy} get free {shirts.free} !</span>
+
+
                     </div>
                     <div className="d-flex flex-column h-60">
                         <div className="">
                             <span className="color-second details_price font-weight-bold fs-1-v">฿ {shirts.price} </span>
-                            <span className="details_sale font-weight-bold color-no-6">{shirts.price}</span>
+                            {/* <span className="details_sale font-weight-bold color-no-6">{shirts.price}</span> */}
                         </div>
                         <span className="fs-0-8-v mb-0-5-v mt-0-5-v">Status : <span className="text_status">{shirts.productdescription}</span></span>
                         <hr className="w-25 m-0" />
