@@ -6,7 +6,7 @@ import { useMutation } from '@apollo/client'
 
 import AdminNavBar from "../../../components/AdminNavBar/AdminNavBar";
 import plus from "../../../images/add-circle.svg";
-import { PRODUCTS_UPDATE } from '../../../graphql/productsOGQuery';
+import { CREATE_PRODUCT_FREE_MUTATION } from '../../../graphql/createProductMutation';
 import { isNumeric } from '../../../util/isNumeric'
 import { useLazyQuery } from '@apollo/client'
 import { PRODUCT_QUERY_ID } from '../../../graphql/productsOGQuery';
@@ -22,7 +22,18 @@ function AssignPromotionGetFree() {
         variables: { productId },
         onCompleted: data => {
             // console.log(data);
-            setProduct(data?.productById)
+            // setProduct(data?.productById)
+            setProduct({
+                catagory: data?.productById.catagory,
+                isActive: true,
+                photourl: data?.productById.photourl,
+                price: data?.productById.price,
+                productdescription: data?.productById.productdescription,
+                productname: data?.productById.productname,
+                quantity: data?.productById.quantity,
+                buy: data?.productById.buy,
+                free: data?.productById.free
+            })
         }
     })
     const data = product
@@ -31,12 +42,12 @@ function AssignPromotionGetFree() {
 
     }, [getProduct])
     const history = useHistory()
-    const [newProduct, setNewProduct] = useState({
+    // const [newProduct, setNewProduct] = useState({
 
-        photourl: ["https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.18169-9/11425240_488212167995217_6545955898177657852_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_eui2=AeFOkveX07HXgUOAVziH7PmvIaFid6pEue0hoWJ3qkS57ZkU1dDs1w49EuO_g8TfdHsBLdlqPh5sYUlIE0V9bUVe&_nc_ohc=7gqNBHiWBX8AX-vVcTv&_nc_oc=AQkLVPdp2_zDbczx0uftFSiNwIoaHr9dDZcPQGEq0CQ00KQOUvfHao33qJPksxzUd6Y&_nc_ht=scontent.fbkk12-4.fna&oh=8f24a5dd90362be8a2fa64b76af64516&oe=60B4ED10"]
+    //     photourl: ["https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.18169-9/11425240_488212167995217_6545955898177657852_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_eui2=AeFOkveX07HXgUOAVziH7PmvIaFid6pEue0hoWJ3qkS57ZkU1dDs1w49EuO_g8TfdHsBLdlqPh5sYUlIE0V9bUVe&_nc_ohc=7gqNBHiWBX8AX-vVcTv&_nc_oc=AQkLVPdp2_zDbczx0uftFSiNwIoaHr9dDZcPQGEq0CQ00KQOUvfHao33qJPksxzUd6Y&_nc_ht=scontent.fbkk12-4.fna&oh=8f24a5dd90362be8a2fa64b76af64516&oe=60B4ED10"]
 
-    })
-    const [createProduct] = useMutation(PRODUCTS_UPDATE)
+    // })
+    const [createProduct] = useMutation(CREATE_PRODUCT_FREE_MUTATION)
     const handleInputChange = useCallback(
         (e) => {
 
@@ -50,12 +61,12 @@ function AssignPromotionGetFree() {
         async (e) => {
             e.preventDefault()
             try {
-                await createProduct({ variables: productId, record: product })
-                history.push('/')
-                alert('Product Updated')
+                await createProduct({ variables: {record: product} })
+                history.push('/admin/promotions')
+                alert('Promotion Added')
             } catch (err) {
                 console.log(err)
-                alert('Product Update failed')
+                alert('Promotion Added failed')
                 console.log(product);
 
             }
@@ -74,7 +85,7 @@ function AssignPromotionGetFree() {
                     <div className="w-95 mx-auto bg-white">
                         <div className="w-95 mx-auto line-bottom-gray">
                             <div className="w-30 py-0-5-v mt-1-v d-flex align-items-center">
-                                <span className="color-second mr-1-v">ADD PRODUCTS</span>
+                                <span className="color-second mr-1-v">ADD PROMOTION</span>
                                 <img alt="" src={plus} />
                             </div>
                         </div>
@@ -104,11 +115,11 @@ function AssignPromotionGetFree() {
                                     <div className="w-100 d-flex mt-1-v color-no-5">
                                         <div className="w-35 d-flex flex-column mr-0-5-v">
                                             <span className="py-0-5-v">BUY</span>
-                                            <input onChange={handleInputChange} value={product.buy} type="number" name="total" className="w-95 bg-third rounded bd-1-gray" />
+                                            <input onChange={handleInputChange} value={product.buy} type="number" name="buy" className="w-95 bg-third rounded bd-1-gray" />
                                         </div>
                                         <div className="w-35 d-flex flex-column">
                                             <span className="py-0-5-v">GET</span>
-                                            <input onChange={handleInputChange} value={product.free} type="number" name="total" className="w-95 bg-third rounded bd-1-gray" />
+                                            <input onChange={handleInputChange} value={product.free} type="number" name="free" className="w-95 bg-third rounded bd-1-gray" />
                                         </div>
                                     </div>
                                     <button className="w-70 mt-2-v bg-second color-white rounded border-0 py-0-5-v font-weight-bold" type="submit">ADD PROMOTION</button>

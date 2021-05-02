@@ -19,7 +19,7 @@ mutation ($record: CreateOneProductOGInput!) {
 
 //สร้างโปรแบบsale
 export const CREATE_PRODUCT_SALE_MUTATION = gql`
-mutation ($record: CreateOneCommentInput!) {
+mutation ($record: CreateOnePromotionSaleInput!) {
   createPromotionSale (record: $record) {
     recordId
   }
@@ -27,7 +27,7 @@ mutation ($record: CreateOneCommentInput!) {
 `
 //สร้างโปรแบบแถม
 export const CREATE_PRODUCT_FREE_MUTATION = gql`
-mutation ($record: CreateOneCommentInput!) {
+mutation ($record: CreateOnePromotionFreeInput!) {
   createPromotionFree (record: $record) {
     recordId
   }
