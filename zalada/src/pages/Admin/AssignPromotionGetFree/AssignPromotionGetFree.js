@@ -83,10 +83,10 @@ function AssignPromotionGetFree() {
                         <form onSubmit={handleCreateProduct}>
                             <div className="w-95 d-flex mx-auto">
                                 <div className="w-50 d-flex flex-column mt-0-5-v">
-                                    <div className="w-100 d-flex flex-column color-no-5">
+                                    {/* <div className="w-100 d-flex flex-column color-no-5">
                                         <span className="py-0-5-v">PRODUCT ID</span>
                                         <input onChange={handleInputChange} value={data.productId} name="productId" className="w-70 bg-third rounded bd-1-gray" />
-                                    </div>
+                                    </div> */}
                                     <div className="w-100 d-flex flex-column mt-0-5-v color-no-5">
                                         <span className="py-0-5-v">PRODUCT NAME</span>
                                         <input onChange={handleInputChange} value={product.productname} type="productname" name="productname" className="w-70 bg-third rounded bd-1-gray" />

@@ -7,6 +7,7 @@ import AddAdminPromotionOnsale from "../../../components/AddAdminPromotionOnsale
 import Shirt from "../../../images/brown_shirt.svg"
 import SearchLogo from "../../../images/search.svg"
 import { Link } from "react-router-dom";
+
 function AdminPromotions() {
     const products = [{
         id: "001",
