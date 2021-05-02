@@ -1,11 +1,11 @@
-import "./Account_Info.css";
+import "./CheckOut.css";
 import React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // import CartLogo from "../../images/shopping-cart-black-shape.svg"
 
-function Account_Info() {
+function CheckOut() {
    return (
       <div className="bg-cloud">
          <div className="w-50 mx-auto">
@@ -58,4 +58,4 @@ function Account_Info() {
    );
 }
 
-export default Account_Info;
+export default CheckOut;

@@ -14,7 +14,7 @@ import NavBar from "./components/NavBar/NavBar.js";
 import Login from "./pages/Login/Login.js";
 import Register from "./pages/Register/Register.js";
 import Promotions from "./pages/Promotions/Promotions.js";
-import AccountInfo from "./pages/Account_Info/Account_Info.js";
+import CheckOut from "./pages/CheckOut/CheckOut";
 import Details from "./pages/Details/Details"
 import Payment from "./pages/Payment/Payment.js"
 import Customer from "./pages/Customer/Customer.js";
@@ -73,7 +73,7 @@ function App() {
             <Promotions />
           </Route>
           <Route path="/checkout">
-            <AccountInfo />
+            <CheckOut />
           </Route>
           <Route path="/payment">
             <Payment />
