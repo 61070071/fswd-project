@@ -17,6 +17,7 @@ query{
 export const PROMOTIONS_SALE_QUERY = gql`
 query {
   promotionSales {
+    _id
     type
     productname
     discount
@@ -31,6 +32,7 @@ query {
 export const PROMOTIONS_FREE_QUERY = gql`
 query {
   promotionFrees {
+    _id
     type
     productname
     catagory
@@ -69,8 +71,7 @@ mutation ($productId: MongoID!, $record: UpdateByIdProductOGInput!) {
 
 export const SALE_QUERY_ID = gql`
 query($productId: MongoID!){
-  productById(_id:$productId){
-      
+  promotionSaleById(_id:$productId){
       productname
       _id
       catagory
@@ -84,7 +85,7 @@ query($productId: MongoID!){
 `
 export const FREE_QUERY_ID = gql`
 query($productId: MongoID!){
-  productById(_id:$productId){
+  promotionFreeById(_id:$productId){
       productname
       _id
       catagory

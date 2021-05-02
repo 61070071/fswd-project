@@ -5,7 +5,7 @@ import "./PromotionDetailsFree.css";
 import Plus from "../../images/add-product.svg"
 import Minus from "../../images/del-product.svg"
 import { useLazyQuery } from '@apollo/client'
-import { PRODUCT_QUERY_ID } from '../../graphql/productsOGQuery.js';
+import { FREE_QUERY_ID } from '../../graphql/productsOGQuery.js';
 import { Link } from "react-router-dom";
 function Details() {
     const { productId } = useParams();
@@ -13,7 +13,7 @@ function Details() {
     const handleClick = () => setCountAdd(countAdd + 1);
     const [selectPromotion,setSelectPromotion] = useState("GETFREE");
     const [product, setProduct] = useState({});
-    const [getProduct, { loading, error }] = useLazyQuery(PRODUCT_QUERY_ID, {
+    const [getProduct, { loading, error }] = useLazyQuery(FREE_QUERY_ID, {
         variables: { productId },
         onCompleted: data => {
             // console.log(data);
