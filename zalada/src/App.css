@@ -246,6 +246,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .pb-1-v{
   padding-bottom: 1vw;
 }
+.pb-2-v{
+  padding-bottom: 2vw;
+}
 .pt-3-v{
   padding-top: 3vw;
 }

@@ -37,12 +37,15 @@ function App() {
   return (
     <Router>
       <div>
-        <NavBar />
+        {
+          window.location.pathname !== "/admin" &&
+          <NavBar />
+        }
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-        <Route path="/" exact>
+          <Route path="/" exact>
             <Home />
           </Route>
           <Route path="/about_us">
