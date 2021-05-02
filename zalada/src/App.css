@@ -49,6 +49,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .color-no-5{
   color: #474747;
 }
+.color-no-6{
+  color: #ff4d4d;
+}
 .color-white{
   color: white;
 }
@@ -73,6 +76,9 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 }
 .bg-pearl {
   background: #FCFCFC;
+}
+.bg-cloud {
+  background: #F6F6F6;
 }
 .flex-5{
   flex: 1 1 5%;
@@ -180,11 +186,17 @@ body,h1,h2,h4,h5,h6,li,span,input,p{
 .h-95{
   height: 95%;
 }
+.h-100-vh{
+  height: 100vh;
+}
 .h-30-v{
   height: 25vw;
 }
 .h-95-v{
   height: 95vw;
+}
+.h-100-v{
+  height: 100vw;
 }
 .justify-content-evenly{
   justify-content: space-evenly;
