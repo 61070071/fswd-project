@@ -5,7 +5,8 @@ import "./Details.css";
 import Plus from "../../images/add-product.svg"
 import Minus from "../../images/del-product.svg"
 import { useLazyQuery } from '@apollo/client'
-import { PRODUCT_QUERY_ID } from '../../graphql/productsOGQuery.js'
+import { PRODUCT_QUERY_ID } from '../../graphql/productsOGQuery.js';
+import { Link } from "react-router-dom";
 function Details() {
     const { productId } = useParams();
     const [countAdd, setCountAdd] = useState(0);
@@ -60,7 +61,7 @@ function Details() {
                                 <img alt="" src={Plus} />
                             </button>
                         </div>
-                        <button className="w-50 bg-second border-0 color-white mx-auto font-weight-bold fs-0-8-v" type="submit">ADD TO YOUR CART</button>
+                        <Link to="/cart" className="h-100 w-60 d-flex align-items-center"><button className="py-0-5-v w-90 bg-second border-0 color-white mx-auto font-weight-bold fs-0-8-v" type="submit">ADD TO YOUR CART</button></Link>
                     </div>
                 </div>
             </div>
