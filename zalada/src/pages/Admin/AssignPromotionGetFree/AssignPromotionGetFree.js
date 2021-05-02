@@ -104,11 +104,11 @@ function AssignPromotionGetFree() {
                                     <div className="w-100 d-flex mt-1-v color-no-5">
                                         <div className="w-35 d-flex flex-column mr-0-5-v">
                                             <span className="py-0-5-v">BUY</span>
-                                            <input onChange={handleInputChange} value={product.total} type="number" name="total" className="w-95 bg-third rounded bd-1-gray" />
+                                            <input onChange={handleInputChange} value={product.buy} type="number" name="total" className="w-95 bg-third rounded bd-1-gray" />
                                         </div>
                                         <div className="w-35 d-flex flex-column">
                                             <span className="py-0-5-v">GET</span>
-                                            <input onChange={handleInputChange} value={product.total} type="number" name="total" className="w-95 bg-third rounded bd-1-gray" />
+                                            <input onChange={handleInputChange} value={product.free} type="number" name="total" className="w-95 bg-third rounded bd-1-gray" />
                                         </div>
                                     </div>
                                     <button className="w-70 mt-2-v bg-second color-white rounded border-0 py-0-5-v font-weight-bold" type="submit">ADD PROMOTION</button>
