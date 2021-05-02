@@ -1,5 +1,5 @@
 import React from "react";
-import "./AdminProductCreate.css"
+import "./AdminProductDetails.css"
 import { useCallback, useState } from 'react'
 import { useHistory } from 'react-router'
 import { useMutation } from '@apollo/client'
@@ -10,7 +10,11 @@ import UploadPicture from "../../../images/upload-picture.svg";
 import Photo from "../../../images/add-a-photo.svg";
 import { CREATE_PRODUCTOG_MUTATION } from '../../../graphql/createProductMutation';
 import {isNumeric} from '../../../util/isNumeric'
-function AdminProductCreate() {
+import { useQuery } from '@apollo/client'
+import { PRODUCTS_QUERY } from '../../../graphql/productsOGQuery.js'
+function AdminProductDetails() {
+    const { loading, error, data } = useQuery(PRODUCTS_QUERY)
+    const products = data?.products
     const history = useHistory()
     const [newProduct, setNewProduct] = useState({
 
@@ -47,10 +51,10 @@ function AdminProductCreate() {
         <div className="d-flex flex-wrap">
 
             <div className="w-15">
-                <AdminNavBar />
+                <AdminNavBar page={2}/>
             </div>
             <div className="w-85 d-flex flex-wrap align-items-start">
-                <NamePageAdmin />
+                <NamePageAdmin page={2}/>
                 <div className="w-100 h-90 bg-main d-flex py-1-5-v">
                     <div className="w-95 mx-auto bg-white">
                         <div className="w-95 mx-auto line-bottom-gray">
@@ -65,21 +69,21 @@ function AdminProductCreate() {
                                 <div className="w-50 d-flex flex-column line-right-gray mt-0-5-v">
                                     <div className="w-100 d-flex flex-column color-no-5">
                                         <span className="py-0-5-v">PRODUCT NAME</span>
-                                        <input onChange={handleInputChange} value={newProduct.productname} name="productname" className="w-70 bg-third rounded bd-1-gray" />
+                                        <input onChange={handleInputChange} value={data.productname} name="productname" className="w-70 bg-third rounded bd-1-gray" />
                                     </div>
                                     <div className="w-100 d-flex flex-column mt-0-5-v color-no-5">
                                         <span className="py-0-5-v">QUANTITY</span>
-                                        <input onChange={handleInputChange} value={newProduct.quantity} type="number" name="quantity" className="w-70 bg-third rounded bd-1-gray" />
+                                        <input onChange={handleInputChange} value={data.quantity} type="number" name="quantity" className="w-70 bg-third rounded bd-1-gray" />
                                         
                                         
                                     </div>
                                     <div className="w-100 d-flex flex-column mt-0-5-v color-no-5">
                                         <span className="py-0-5-v">PRICE</span>
-                                        <input onChange={handleInputChange} value={newProduct.price} type="number"  name="price" className="w-70 bg-third rounded bd-1-gray" />
+                                        <input onChange={handleInputChange} value={data.price} type="number"  name="price" className="w-70 bg-third rounded bd-1-gray" />
                                     </div>
                                     <div className="w-100 d-flex flex-column mt-1-v color-no-5">
                                         <span className="py-0-5-v">CATEGORY</span>
-                                        <select className="w-35 btn-add-categories" value={newProduct.catagory} onChange={handleInputChange} name="catagory">
+                                        <select className="w-35 btn-add-categories" value={data.catagory} onChange={handleInputChange} name="catagory">
                                             <option className="d-none" value="" >ADD CATEGORIES</option>
                                             <option value="cloth">CLOTH</option>
                                             <option value="equipment">EQUIPMENT</option>
@@ -90,7 +94,7 @@ function AdminProductCreate() {
                                     </div>
                                     <div className="w-100 d-flex flex-column mt-1-v color-no-5">
                                         <span className="py-0-5-v">DESCRIPTION</span>
-                                        <textarea onChange={handleInputChange} value={newProduct.productdescription}  name="productdescription" className="w-70 bg-third rounded bd-1-gray" rows="4" cols="50"></textarea>
+                                        <textarea onChange={handleInputChange} value={data.productdescription}  name="productdescription" className="w-70 bg-third rounded bd-1-gray" rows="4" cols="50"></textarea>
                                     </div>
                                     <button className="w-70 mt-2-v bg-second color-white rounded border-0 py-0-5-v font-weight-bold" type="submit">ADD PRODUCT</button>
                                 </div>
@@ -128,4 +132,4 @@ function AdminProductCreate() {
     );
 }
 
-export default AdminProductCreate;
+export default AdminProductDetails;
