@@ -40,3 +40,7 @@
     border-radius: 3px;
     padding: 0vw .7vw;
 }
+.product_overflow {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
