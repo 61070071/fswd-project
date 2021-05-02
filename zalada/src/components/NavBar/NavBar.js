@@ -49,10 +49,10 @@ function NavBar() {
             return (
                 <>
                     <Link to="/login">
-                        <span id="sign_in_text" className="px-0-5-v">SIGN IN</span>
+                        <span id="sign_in_text" className="px-0-5-v fs-1-v">SIGN IN</span>
                     </Link>
                     <Link to="/register">
-                        <span className="px-0-5-v">SIGN UP</span>
+                        <span className="px-0-5-v fs-1-v">SIGN UP</span>
                     </Link>
                 </>
             )
@@ -68,16 +68,16 @@ function NavBar() {
                 <div className="align-items-center flex-100">
                     <ul className="d-flex align-items-center justify-content-evenly nav-text">
                         <li>
-                            <Link to="/">HOME</Link>
+                            <Link to="/" className="fs-0-9-v">HOME</Link>
                         </li>
                         <li>
-                            <Link to="/products">SHOP</Link>
+                            <Link to="/products" className="fs-0-9-v">SHOP</Link>
                         </li>
                         <li>
-                            <Link to="/promotions">PROMOTION</Link>
+                            <Link to="/promotions" className="fs-0-9-v">PROMOTION</Link>
                         </li>
                         <li>
-                            <Link to="/about_us">ABOUT US</Link>
+                            <Link to="/about_us" className="fs-0-9-v">ABOUT US</Link>
                         </li>
                     </ul>
                 </div>
@@ -85,9 +85,9 @@ function NavBar() {
             <div className="d-flex justify-content-end flex-50">
                 <div className="d-flex mr-5-v">
                     <img alt="" className="search_logo" src={SearchLogo} />
-                    <input className="mr-1-v pr-2-v input-nav-bar" type="text" placeholder="Search and hit enter..." />
+                    <input className="mr-1-v pr-2-v input-nav-bar fs-0-8-v" type="text" placeholder="Search and hit enter..." />
                     <Link to="/cart">
-                        <img alt="" className="cart_logo" src={CartLogo} />
+                        <img alt="" className="cart-logo" src={CartLogo} />
                     </Link>
                 </div>
                 <div className="d-flex align-items-center">

@@ -1,25 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../App.css"
 import "../../pages/Cart/Cart.css";
 
 import Goods from "../../images/leather_jacket_PNG41.png"
-import Del from "../../images/del-product.svg"
-import Add from "../../images/add-product.svg"
+import Minus from "../../images/del-product.svg"
+import Plus from "../../images/add-product.svg"
 
 function Cart() {
-    return ( 
-        <div className="d-flex justify-content-between align-items-center w-100 mb-4">
+    const [countAdd, setCountAdd] = useState(0);
+    return (
+        <div className="d-flex justify-content-between align-items-center w-100 py-1-v">
             <div className="d-flex align-items-center">
-                <img alt="" src={Goods} className="img_goods"></img>
-                <h5 className="ml-3">Modern Pastel Lamp </h5>
+                <img alt="" src={Goods} className="img_goods"/>
+                <span className="ml-1-v fs-1-v">Modern Pastel Lamp </span>
             </div>
-            <div>
-                <img alt="" src={Del} className="img_items"></img>
-                <span className="items_count">1</span>
-                <img alt="" src={Add} className="img_items"></img>
+            <div className="d-flex w-20 justify-content-evenly align-items-center mx-auto">
+                <button className="btn-change-amount d-flex align-items-center">
+                    <img alt="" src={Minus} />
+                </button>
+                <div className="num_buy">
+                    <span>{countAdd}</span>
+                </div>
+                <button className="btn-change-amount d-flex align-items-center">
+                    <img alt="" src={Plus} />
+                </button>
             </div>
-            <div className="cost_good">
-                <p>฿ 270</p>
+            <div className="color-second fs-1-5-v d-flex align-items-center">
+                <span>฿ 270</span>
             </div>
         </div>
     );
