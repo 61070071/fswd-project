@@ -58,7 +58,7 @@ function AdminPromotions() {
                                 <div className="w-80">
                                     <span className="color-second">PRODUCT</span>
                                 </div>
-                                <Link to="/admin/promotions/create">
+                                <Link to="/admin/promotion/create">
                                     <div className="w-100 d-flex justify-content-end">
                                         <button className="btn-add-product-admin color-white font-weight-bold d-flex align-items-center">ADD PROMOTION <img alt="" src={Plus} /></button>
                                     </div>
