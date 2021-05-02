@@ -1,9 +1,32 @@
-import React, { useState } from "react";
+import React, { useState,useCallback } from "react";
 import "./AddListProduct.css";
 import del from "../../images/icon-delect.svg"
 import { Link } from "react-router-dom";
+import { useHistory } from 'react-router'
+import { useMutation } from '@apollo/client'
+import { REMOVE_PRODUCT } from '../../graphql/removeProductMutation';
 function AddListProduct({ data }) {
+    const [createProduct] = useMutation(REMOVE_PRODUCT)
+    const history = useHistory()
+    const productId = data._id
+    const handleDelete = useCallback(
+        async (e) => {
+            e.preventDefault()
+            console.log(productId);
+            try {
+                await createProduct({ variables: { productId } })
+                history.push('/admin/products')
+                window.location.href = '/admin/products'
+                alert('Product Delete')
+            } catch (err) {
+                console.log(err)
+                alert('Product Delete failed')
+                // console.log(product);
 
+            }
+        },
+        [createProduct, history],
+    )
     const [activeBtn, setActiveBtn] = useState(data.isActive);
 
     function toggleBtn() {
@@ -33,7 +56,7 @@ function AddListProduct({ data }) {
                     <div class={`mr-1-v ${activeBtn === true ? "toggle-wrapper" : "toggle-wrapper-off"}`} onClick={toggleBtn}>
                         <div class={`toggle-circle ${activeBtn === true ? "on" : "off"}`}></div>
                     </div>
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center" onClick={handleDelete}>
                         <img alt="" src={del} className="image-product-delect" />
                     </div>
 
