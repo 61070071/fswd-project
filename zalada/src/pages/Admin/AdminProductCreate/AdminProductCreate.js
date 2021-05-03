@@ -13,7 +13,7 @@ function AdminProductCreate() {
     const history = useHistory()
     const [newProduct, setNewProduct] = useState({
 
-        photourl: ["https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.18169-9/11425240_488212167995217_6545955898177657852_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_eui2=AeFOkveX07HXgUOAVziH7PmvIaFid6pEue0hoWJ3qkS57ZkU1dDs1w49EuO_g8TfdHsBLdlqPh5sYUlIE0V9bUVe&_nc_ohc=7gqNBHiWBX8AX-vVcTv&_nc_oc=AQkLVPdp2_zDbczx0uftFSiNwIoaHr9dDZcPQGEq0CQ00KQOUvfHao33qJPksxzUd6Y&_nc_ht=scontent.fbkk12-4.fna&oh=8f24a5dd90362be8a2fa64b76af64516&oe=60B4ED10"]
+        photourl: ["https://backend.central.co.th/media/catalog/product/c/d/cds31996563-1.jpg"]
 
     })
     const [createProduct] = useMutation(CREATE_PRODUCTOG_MUTATION)
@@ -96,13 +96,13 @@ function AdminProductCreate() {
                                 <div className="w-50 d-flex flex-wrap">
                                     <div className="w-90 mx-auto d-flex justify-content-center flex-column align-items-center py-1-v line-bottom-gray">
                                         <span>PRODUCT PREVIEW PICTURE</span>
-                                        <img className="mt-1-v" alt="" src={UploadPicture} />
-                                        <div className="d-flex w-30 justify-content-around position-relative btn-upload-pic mt-1-v">
+                                        <img className="mt-1-v w-40" alt="" src={"https://backend.central.co.th/media/catalog/product/c/d/cds31996563-1.jpg"} />
+                                        <input onChange={handleInputChange} value={newProduct.photourl}  name="photourl" className="w-70 bg-third rounded bd-1-gray mt-1-v" />
+                                        {/* <div className="d-flex w-30 justify-content-around position-relative btn-upload-pic mt-1-v">
                                             <span >UPLOAD PICTURE</span>
                                             <img alt="" src={Photo} />
-                                            {/* <input onChange={handleInputChange} value={newProduct.photourl} name="photourl" type="file" className="position-absolute w-100 h-100 op-0"/> */}
-                                            <input onChange={handleInputChange} value={newProduct.photourl}  name="photourl" className="w-70 bg-third rounded bd-1-gray" />
-                                        </div>
+                                            <input onChange={handleInputChange} value={newProduct.photourl} name="photourl" type="file" className="position-absolute w-100 h-100 op-0"/>
+                                        </div> */}
                                     </div>
 
                                     {/* <div className="w-90 mx-auto d-flex justify-content-center flex-column align-items-center py-1-v">
