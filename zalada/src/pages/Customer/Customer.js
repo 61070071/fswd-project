@@ -34,26 +34,7 @@ function Customer() {
                             <input type="email" className="form-control" />
                         </div>
                     </div>
-                    <div className="mt-1-v ml-2-v row">
-                        <label className="col-sm-2 pl-0 col-form-label text-uppercase text-right">number :</label>
-                        <div className="col-sm-6">
-                            <input type="number" className="form-control" />
-                        </div>
-                    </div>
-                    <div className="mt-1-v ml-2-v row">
-                        <label className="col-sm-2 pl-0 col-form-label text-uppercase text-right">display name :</label>
-                        <div className="col-sm-6">
-                            <input type="text" className="form-control" />
-                        </div>
-                    </div>
-                    <div className="mt-1-v ml-2-v row">
-                        <label className="col-sm-2 pl-0 col-form-label text-uppercase text-right">dob :</label>
-                        <div className="col-sm-6 d-flex">
-                            <input type="number" className="form-control mr-1-v" />
-                            <input type="number" className="form-control mr-1-v" />
-                            <input type="number" className="form-control mr-1-v" />
-                        </div>
-                    </div>
+
                 </form>
 
                 <div className="d-flex justify-content-center m-2-v">

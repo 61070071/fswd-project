@@ -16,10 +16,7 @@ function CustomerMenu() {
                     <img src={account}></img>
                     <p className="m-0">account setting</p>
                 </div>
-                <div className="d-flex align-items-center py-1-v">
-                    <img src={order}></img>
-                    <p className="m-0">my orders</p>
-                </div>
+
                 {/* color active อยู่ใน .menu */}
             </div>
         </div>
