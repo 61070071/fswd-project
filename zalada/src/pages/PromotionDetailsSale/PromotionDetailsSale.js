@@ -48,8 +48,8 @@ function Details() {
                     </div>
                     <div className="d-flex flex-column mt-1-v">
                         <div className="">
-                            <span className="color-second details_price font-weight-bold fs-1-v">฿ {saleProduct.price} </span>
-                            <span className="details_sale font-weight-bold color-no-6">{newPrice}</span>
+                            <span className="color-second details_price font-weight-bold fs-1-v">฿ {newPrice} </span>
+                            <span className="details_sale font-weight-bold color-no-6">{saleProduct.price}</span>
                         </div>
                         <span className="fs-0-8-v mb-0-5-v mt-0-5-v">IN STOCK : <span className="text_status">{saleProduct.quantity}</span></span>
                         <hr className="w-25 m-0" />
