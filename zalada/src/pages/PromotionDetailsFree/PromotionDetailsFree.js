@@ -41,7 +41,7 @@ function Details() {
                 <div className="w-50 px-2-v d-flex flex-column mt-1-v">
                     <div className="d-flex flex-column">
                         <span className="fs-1-5-v">{shirts.productname}</span>
-                        <span className="text_promotion text-uppercase fs-1-v w-45 mt-0-5-v">buy 2 get free 1 !</span>
+                        <span className="text_promotion text-uppercase fs-1-v w-45 mt-0-5-v">buy {shirts.buy} get free {shirts.free} !</span>
                     </div>
                     <div className="d-flex flex-column mt-1-v">
                         <div className="">
