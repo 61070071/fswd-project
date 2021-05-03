@@ -18,7 +18,7 @@ const server = new ApolloServer({
 app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
+app.use(cors({ origin: 'http://localhost:3302', credentials: true }))
 app.use(
   path,
   jwt({
@@ -48,9 +48,9 @@ app.use(
     })
   },
 )
-server.applyMiddleware({ app, path, cors: { origin: 'http://localhost:3000', credentials: true } })
+server.applyMiddleware({ app, path, cors: { origin: 'http://localhost:3302', credentials: true } })
 
-const port = process.env.PORT ?? 3001
+const port = process.env.PORT ?? 3301
 app.listen({ port }, () => {
   console.log(`🚀 Server ready at http://localhost:${port}${server.graphqlPath}`)
 })
