@@ -38,8 +38,8 @@ function NavBar() {
                 return (
                     <Fragment>
                         <div className="d-flex w-100">
-                            <div className="d-flex flex-wrap justify-content-center">
-                                <Link className="w-100 text-center fs-0-7-v color-second color-second-hover">{user?.username}</Link>
+                            <div  className="d-flex flex-wrap justify-content-center">
+                                <Link to="/customer" className="w-100 text-center fs-0-7-v color-second color-second-hover">{user?.username}</Link>
                                 <button type="button" className="w-100 mx-auto bg-second color-white border-0 fs-0-5-v rounded-pill" onClick={handleLogout}>LOG OUT</button>
                             </div>
                         </div>

@@ -33,6 +33,7 @@ export const SessionProvider = (props) => {
     () => {
       setUser(null)
       removeCookie('token', { maxAge: 86400 })
+      window.location.href = '/login'
     },
     [removeCookie],
   )
