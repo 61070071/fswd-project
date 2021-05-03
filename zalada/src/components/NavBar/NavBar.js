@@ -76,9 +76,9 @@ function NavBar() {
                         <li>
                             <Link to="/promotions" className="fs-0-9-v">PROMOTION</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/about_us" className="fs-0-9-v">ABOUT US</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
